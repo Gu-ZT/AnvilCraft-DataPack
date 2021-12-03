@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 2
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:spawner",
+              "functions": [
+                {
+                  "function": "copy_nbt",
+                  "source": "block_entity",
+                  "ops": [
+                    {
+                    "source": "Delay",
+                    "target": "BlockEntityTag.Delay",
+                    "op": "replace"
+                    },
+                    {
+                    "source": "MaxNearbyEntities",
+                    "target": "BlockEntityTag.MaxNearbyEntities",
+                    "op": "replace"
+                    },
+                    {
+                    "source": "MaxSpawnDelay",
+                    "target": "BlockEntityTag.MaxSpawnDelay",
+                    "op": "replace"
+                    },
+                    {
+                    "source": "MinSpawnDelay",
+                    "target": "BlockEntityTag.MinSpawnDelay",
+                    "op": "replace"
+                    },
+                    {
+                    "source": "RequiredPlayerRange",
+                    "target": "BlockEntityTag.RequiredPlayerRange",
+                    "op": "replace"
+                    },
+                    {
+                    "source": "SpawnCount",
+                    "target": "BlockEntityTag.SpawnCount",
+                    "op": "replace"
+                    },
+                    {
+                    "source": "SpawnData",
+                    "target": "BlockEntityTag.SpawnData",
+                    "op": "replace"
+                    },
+                    {
+                    "source": "SpawnPotentials",
+                    "target": "BlockEntityTag.SpawnPotentials",
+                    "op": "replace"
+                    },
+                    {
+                    "source": "SpawnRange",
+                    "target": "BlockEntityTag.SpawnRange",
+                    "op": "replace"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

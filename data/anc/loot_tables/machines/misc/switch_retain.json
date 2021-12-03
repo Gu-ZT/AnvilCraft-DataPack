@@ -1,0 +1,41 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancRetain": 1
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_yes.name\"}'},CustomModelData:11141007}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancRetain": 2
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_no.name\"}'},CustomModelData:11141008}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

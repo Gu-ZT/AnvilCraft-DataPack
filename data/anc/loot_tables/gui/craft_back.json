@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11141012,id:'anc:craft_back',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.craft_back.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

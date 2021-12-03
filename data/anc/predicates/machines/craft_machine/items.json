@@ -1,0 +1,41 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items1"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items2"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items3"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items4"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items5"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items6"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items7"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items8"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "anc:machines/craft_machine/items9"
+		}
+	]
+}

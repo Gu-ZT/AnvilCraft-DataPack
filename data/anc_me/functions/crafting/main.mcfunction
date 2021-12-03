@@ -1,0 +1,6 @@
+execute as @e[type=item,distance=..1.5,nbt={Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}}}] at @s run function anc_me:crafting/enchanted_book/mending_2
+execute as @e[type=item,distance=..1.5,nbt={Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"minecraft:infinity",lvl:1s}]}}}] at @s run function anc_me:crafting/enchanted_book/infinity_2
+execute as @e[type=item,distance=..1.5,nbt={Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"minecraft:flame",lvl:1s}]}}}] at @s run function anc_me:crafting/enchanted_book/flame_2
+execute as @e[type=item,distance=..1.5,nbt={Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"minecraft:channeling",lvl:1s}]}}}] at @s run function anc_me:crafting/enchanted_book/channeling_2
+execute as @e[type=item,distance=..1.5,nbt={Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"minecraft:aqua_affinity",lvl:1s}]}}}] at @s run function anc_me:crafting/enchanted_book/aqua_affinity_2
+execute as @e[type=item,distance=..1.5,nbt={Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"minecraft:silk_touch",lvl:1s}]}}}] at @s run function anc_me:crafting/enchanted_book/silk_touch_2

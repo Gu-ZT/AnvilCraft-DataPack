@@ -1,0 +1,93 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancMacOut": 1
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_e.name\"}'},CustomModelData:11141004}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancMacOut": 2
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_s.name\"}'},CustomModelData:11141003}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancMacOut": 3
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_w.name\"}'},CustomModelData:11141001}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancMacOut": 4
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_n.name\"}'},CustomModelData:11141002}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancMacOut": 5
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_d.name\"}'},CustomModelData:11141006}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancMacOut": 6
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_u.name\"}'},CustomModelData:11141005}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

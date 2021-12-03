@@ -1,0 +1,11 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"block": {
+			"state": {
+				"type": "right",
+				"facing": "west"
+			}
+		}
+	}
+}

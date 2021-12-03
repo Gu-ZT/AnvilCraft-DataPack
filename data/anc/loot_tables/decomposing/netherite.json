@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_scrap",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 0
+							}
+						}
+					],
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

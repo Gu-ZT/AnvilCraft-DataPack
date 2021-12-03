@@ -1,0 +1,29 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"_comment": "鞘翅",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:1b,tag:{id:\"anc:elytra_membrane\"}},{Slot:2b,id:\"minecraft:string\"},{Slot:3b,tag:{id:\"anc:elytra_membrane\"}},{Slot:10b,id:\"minecraft:feather\"},{Slot:12b,id:\"minecraft:feather\"},{Slot:19b,id:\"minecraft:feather\"},{Slot:21b,id:\"minecraft:feather\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:elytra"
+						}
+					]
+				}
+			]
+		}
+	]
+}

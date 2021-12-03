@@ -1,0 +1,207 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/firework_star",
+        "layer1": "item/firework_star_overlay"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 11140002
+            },
+            "model": "anc:item/empty_protocol"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140003
+            },
+            "model": "anc:item/absorb_protocol"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140004
+            },
+            "model": "anc:item/repair_protocol"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140005
+            },
+            "model": "anc:item/dispel_protocol_random"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140006
+            },
+            "model": "anc:item/dispel_protocol_first"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140007
+            },
+            "model": "anc:item/dispel_protocol_last"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140008
+            },
+            "model": "anc:item/dispel_protocol_curse"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140009
+            },
+            "model": "anc:item/dispel_protocol_punishment"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140010
+            },
+            "model": "anc:item/seed_of_the_sea"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140011
+            },
+            "model": "anc:item/fruit_of_the_sea"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140012
+            },
+            "model": "anc:item/kernel_of_the_sea"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140013
+            },
+            "model": "anc:item/tear_of_the_sea"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140014
+            },
+            "model": "anc:item/blade_of_the_sea"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140015
+            },
+            "model": "anc:item/elytra_frame"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140016
+            },
+            "model": "anc:item/elytra_membrane"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140017
+            },
+            "model": "anc:item/nether_star_shard"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140018
+            },
+            "model": "anc:item/debris_scrap"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140019
+            },
+            "model": "anc:item/netherite_core"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140020
+            },
+            "model": "anc:item/netherite_coil"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141000
+            },
+            "model": "anc:gui/empty"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141001
+            },
+            "model": "anc:gui/button_w"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141002
+            },
+            "model": "anc:gui/button_n"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141003
+            },
+            "model": "anc:gui/button_s"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141004
+            },
+            "model": "anc:gui/button_e"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141005
+            },
+            "model": "anc:gui/button_u"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141006
+            },
+            "model": "anc:gui/button_d"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141007
+            },
+            "model": "anc:gui/button_yes"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141008
+            },
+            "model": "anc:gui/button_no"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141009
+            },
+            "model": "anc:gui/warning_material"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141010
+            },
+            "model": "anc:gui/warning_none"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141011
+            },
+            "model": "anc:gui/warning_protocol"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141012
+            },
+            "model": "anc:gui/craft_back"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11141013
+            },
+            "model": "anc:gui/interact_back"
+        }
+    ]
+}

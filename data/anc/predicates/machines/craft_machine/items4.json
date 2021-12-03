@@ -1,0 +1,23 @@
+[
+	{
+		"condition": "minecraft:entity_scores",
+		"entity": "this",
+		"scores": {
+			"ancValue": 22
+		}
+	},
+	{
+		"condition": "minecraft:alternative",
+		"terms": [
+			{
+				"_comment": "翅膜",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:elytra_frame\"}},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"}]}"
+					}
+				}
+			}
+		]
+	}
+]

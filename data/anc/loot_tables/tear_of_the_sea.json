@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancTearSuccess:0,CustomModelData:11140013,id:'anc:tear_of_the_sea',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.tear_of_the_sea.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+[
+	{
+		"condition": "minecraft:entity_scores",
+		"entity": "this",
+		"scores": {
+			"ancValue": 25
+		}
+	},
+	{
+		"condition": "minecraft:alternative",
+		"terms": [
+			{
+				"_comment": "鞘翅",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{Slot:1b,tag:{id:\"anc:elytra_membrane\"}},{Slot:2b,id:\"minecraft:string\"},{Slot:3b,tag:{id:\"anc:elytra_membrane\"}},{Slot:10b,id:\"minecraft:feather\"},{Slot:12b,id:\"minecraft:feather\"},{Slot:19b,id:\"minecraft:feather\"},{Slot:21b,id:\"minecraft:feather\"}]}"
+					}
+				}
+			}
+		]
+	}
+]

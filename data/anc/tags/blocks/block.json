@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:trapdoors",
+        "#anc:cauldron",
+        "minecraft:smithing_table",
+        "minecraft:piston"
+    ]
+}

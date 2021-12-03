@@ -1,0 +1,53 @@
+{{
+	"credit": "Made by Gugle",
+	"textures": {{
+		"0": "{namespace}:block/{side}",
+		"1": "{namespace}:block/{top}",
+		"2": "{namespace}:block/{bottom}",
+		"particle": "{namespace}:block/{side}"
+	}},
+	"elements": [
+		{{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {{
+				"north": {{"uv": [0, 0, 16, 16], "texture": "#0"}},
+				"east": {{"uv": [0, 0, 16, 16], "texture": "#0"}},
+				"south": {{"uv": [0, 0, 16, 16], "texture": "#0"}},
+				"west": {{"uv": [0, 0, 16, 16], "texture": "#0"}},
+				"up": {{"uv": [0, 0, 16, 16], "texture": "#1"}},
+				"down": {{"uv": [0, 0, 16, 16], "texture": "#2"}}
+			}}
+		}}
+	],
+	"display": {{
+		"thirdperson_righthand": {{
+			"translation": [0, 1.75, 0],
+			"scale": [0.3, 0.3, 0.3]
+		}},
+		"thirdperson_lefthand": {{
+			"translation": [0, 1.75, 0],
+			"scale": [0.3, 0.3, 0.3]
+		}},
+		"firstperson_righthand": {{
+			"translation": [0, 1.75, 0],
+			"scale": [0.3, 0.3, 0.3]
+		}},
+		"firstperson_lefthand": {{
+			"translation": [0, 1.75, 0],
+			"scale": [0.3, 0.3, 0.3]
+		}},
+		"ground": {{
+			"scale": [0.3, 0.3, 0.3]
+		}},
+		"gui": {{
+			"rotation": [30, 45, 0],
+			"scale": [0.6, 0.6, 0.6]
+		}},
+		"fixed": {{
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -13.985],
+			"scale": [2.01, 2.01, 2.01]
+		}}
+	}}
+}}

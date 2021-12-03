@@ -1,0 +1,131 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 19
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items1"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 20
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items2"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 21
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items3"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 22
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items4"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 23
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items5"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 24
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items6"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 25
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items7"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 26
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items8"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancValue": 27
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:machines/craft_machine/items9"
+						}
+					]
+				}
+			]
+		}
+	]
+}

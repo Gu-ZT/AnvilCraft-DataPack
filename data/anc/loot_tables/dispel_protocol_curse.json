@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140008,id:'anc:dispel_protocol_curse',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.dispel_protocol_curse.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

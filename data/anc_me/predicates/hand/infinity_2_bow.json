@@ -1,0 +1,93 @@
+{
+	"condition": "alternative",
+	"terms": [
+		{
+			"condition": "entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand": {
+						"items": ["bow"],
+						"enchantments": [
+							{
+								"enchantment": "infinity",
+								"levels": {
+									"min": 2
+								}
+							}
+						]
+					}
+				},
+				"player": {
+					"gamemode": "survival"
+				}
+			}
+		},
+		{
+			"condition": "entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"offhand": {
+						"items": ["bow"],
+						"enchantments": [
+							{
+								"enchantment": "infinity",
+								"levels": {
+									"min": 2
+								}
+							}
+						]
+					}
+				},
+				"player": {
+					"gamemode": "survival"
+				}
+			}
+		},
+		{
+			"condition": "entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand": {
+						"items": ["bow"],
+						"enchantments": [
+							{
+								"enchantment": "infinity",
+								"levels": {
+									"min": 2
+								}
+							}
+						]
+					}
+				},
+				"player": {
+					"gamemode": "adventure"
+				}
+			}
+		},
+		{
+			"condition": "entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"offhand": {
+						"items": ["bow"],
+						"enchantments": [
+							{
+								"enchantment": "infinity",
+								"levels": {
+									"min": 2
+								}
+							}
+						]
+					}
+				},
+				"player": {
+					"gamemode": "adventure"
+				}
+			}
+		}
+	]
+}

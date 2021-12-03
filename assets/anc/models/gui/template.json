@@ -1,0 +1,21 @@
+{
+	"elements": [
+		{
+			"from": [ -16, 0, 0 ],
+			"to": [ 32, 16, 1 ],
+			"faces": {
+				"south": { "uv": [0,0,16,16 ],"texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"scale": [ 3.666666667, 4, 1 ],
+			"translation": [ 79, -23, -80 ]
+		},
+		"ground": {
+			"scale": [ 0, 0, 0 ]
+		}
+	}
+}

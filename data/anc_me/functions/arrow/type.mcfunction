@@ -1,0 +1,1 @@
+execute as @e[tag=amFlameArrow] run function anc_me:arrow/flame_2/main

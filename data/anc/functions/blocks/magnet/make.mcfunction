@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:lightning_bolt] at @s run fill ~-1 ~-2 ~-1 ~1 ~1 ~1 minecraft:command_block{auto:1b,Command:"function anc:blocks/magnet/set"} replace iron_block

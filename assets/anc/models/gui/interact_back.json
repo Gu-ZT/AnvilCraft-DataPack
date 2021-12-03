@@ -1,0 +1,6 @@
+{
+	"parent": "anc:gui/template",
+	"textures": {
+		"layer0": "anc:gui/interact_back"
+	}
+}

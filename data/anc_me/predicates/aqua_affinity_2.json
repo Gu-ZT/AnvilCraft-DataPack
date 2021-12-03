@@ -1,0 +1,29 @@
+{
+	"condition": "alternative",
+	"terms": [
+		{
+			"condition": "entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"head": {
+						"items": ["iron_helmet","golden_helmet","turtle_helmet","diamond_helmet","leather_helmet","chainmail_helmet","netherite_helmet"],
+						"enchantments": [
+							{
+								"enchantment": "aqua_affinity",
+								"levels": {
+									"min": 2
+								}
+							}
+						]
+					}
+				},
+				"location": {
+					"fluid": {
+						"fluid": "water"
+					}
+				}
+			}
+		}
+	]
+}

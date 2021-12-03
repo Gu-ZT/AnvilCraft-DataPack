@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11141004,id:'anc:button_e',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_e.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+[
+	{
+		"condition": "minecraft:entity_scores",
+		"entity": "this",
+		"scores": {
+			"ancValue": 23
+		}
+	},
+	{
+		"condition": "minecraft:alternative",
+		"terms": [
+			{
+				"_comment": "三叉戟",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{Slot:2b,tag:{id:\"anc:blade_of_the_sea\"}},{Slot:3b,tag:{id:\"anc:blade_of_the_sea\"}},{Slot:11b,id:\"minecraft:prismarine_shard\"},{Slot:12b,tag:{id:\"anc:blade_of_the_sea\"}},{Slot:19b,id:\"minecraft:prismarine_shard\"}]}"
+					}
+				}
+			}
+		]
+	}
+]

@@ -1,0 +1,29 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"_comment": "翅膜",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:\"anc:elytra_frame\"}},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:elytra_membrane"
+						}
+					]
+				}
+			]
+		}
+	]
+}

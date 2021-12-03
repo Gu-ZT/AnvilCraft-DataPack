@@ -1,0 +1,29 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"_comment": "三叉戟",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:2b,tag:{id:\"anc:blade_of_the_sea\"}},{Slot:3b,tag:{id:\"anc:blade_of_the_sea\"}},{Slot:11b,id:\"minecraft:prismarine_shard\"},{Slot:12b,tag:{id:\"anc:blade_of_the_sea\"}},{Slot:19b,id:\"minecraft:prismarine_shard\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:trident"
+						}
+					]
+				}
+			]
+		}
+	]
+}

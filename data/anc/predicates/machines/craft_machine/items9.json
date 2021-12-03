@@ -1,0 +1,32 @@
+[
+	{
+		"condition": "minecraft:entity_scores",
+		"entity": "this",
+		"scores": {
+			"ancValue": 27
+		}
+	},
+	{
+		"condition": "minecraft:alternative",
+		"terms": [
+			{
+				"_comment": "下界核心",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{Slot:1b,tag:{id:\"anc:debris_scrap\"}},{Slot:2b,tag:{id:\"anc:debris_scrap\"}},{Slot:3b,tag:{id:\"anc:debris_scrap\"}},{Slot:10b,tag:{id:\"anc:debris_scrap\"}},{Slot:11b,tag:{id:\"anc:nether_star_shard\"}},{Slot:12b,tag:{id:\"anc:debris_scrap\"}},{Slot:19b,tag:{id:\"anc:debris_scrap\"}},{Slot:20b,tag:{id:\"anc:debris_scrap\"}},{Slot:21b,tag:{id:\"anc:debris_scrap\"}}]}"
+					}
+				}
+			},
+			{
+				"_comment": "合金卷材",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{Slot:1b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:2b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:3b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:10b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:11b,tag:{id:\"anc:netherite_core\"}},{Slot:12b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:19b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:20b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:21b,id:\"minecraft:light_weighted_pressure_plate\"}]}"
+					}
+				}
+			}
+		]
+	}
+]

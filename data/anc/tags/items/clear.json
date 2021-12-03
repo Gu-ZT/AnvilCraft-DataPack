@@ -1,0 +1,26 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:carrot_on_a_stick",
+		"minecraft:firework_star",
+		"minecraft:item_frame",
+		"minecraft:leather_helmet",
+		"minecraft:leather_chestplate",
+		"minecraft:leather_leggings",
+		"minecraft:leather_boots",
+		"minecraft:leather_horse_armor",
+		"minecraft:tropical_fish_bucket",
+		"#minecraft:banners",
+		"#minecraft:beds",
+		"#minecraft:candles",
+		"#minecraft:carpets",
+		"#anc:concrete",
+		"#anc:concrete_powder",
+		"#anc:glass",
+		"#anc:glass_pane",
+		"#anc:glazed_terracotta",
+		"#anc:shulker_box",
+		"#anc:terracotta",
+		"#minecraft:wool"
+	]
+}
