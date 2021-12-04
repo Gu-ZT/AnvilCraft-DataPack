@@ -4,4 +4,3 @@ execute if block ~ ~-1 ~ dispenser[facing=west] run function anc:more/better_dis
 execute if block ~ ~-1 ~ dispenser[facing=north] run function anc:more/better_dispenser/facing/north
 execute if block ~ ~-1 ~ dispenser[facing=south] run function anc:more/better_dispenser/facing/south
 execute as @e[tag=anc_dispenser] at @s run function anc:more/better_dispenser/dispenser
-kill @s

@@ -5,3 +5,4 @@ execute if block ~ ~-1 ~ minecraft:moss_block if block ~ ~-2 ~ minecraft:stone_b
 execute if block ~ ~-1 ~ minecraft:moss_block if block ~ ~-2 ~ minecraft:dirt run function anc:recipes/laminating/to/grass_block
 execute if block ~ ~-1 ~ minecraft:nether_wart_block if block ~ ~-2 ~ minecraft:netherrack run function anc:recipes/laminating/to/crimson_nylium
 execute if block ~ ~-1 ~ minecraft:warped_wart_block if block ~ ~-2 ~ minecraft:netherrack run function anc:recipes/laminating/to/warped_nylium
+kill @s

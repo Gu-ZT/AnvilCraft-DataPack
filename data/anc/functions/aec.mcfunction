@@ -5,16 +5,19 @@ execute as @e[type=minecraft:falling_block,tag=anc_marked] if score @s ancAnvil 
 # 实体掉落 attack
 execute at @s[tag=anc_temp_aec,scores={ancDistance=3..}] run function anc:more/attack/main
 
+# 测试
+# execute at @s[tag=anc_temp_aec] run function anc:test
+
 # 膨发 puffing
-execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:water_cauldron run function anc:recipes/puffing/break
+execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:water_cauldron positioned ~ ~-1 ~ run function anc:recipes/puffing/break
 # 晶化 crystallization
-execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:powder_snow_cauldron run function anc:recipes/crystallization/break
+execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:powder_snow_cauldron positioned ~ ~-1 ~ run function anc:recipes/crystallization/break
 # 粉碎 smashing
 execute at @s[tag=anc_temp_aec] unless block ~ ~-1 ~ #anc:block run function anc:recipes/smashing/break
 # 压榨 pressing
 execute at @s[tag=anc_temp_aec] if block ~ ~-2 ~ #anc:cauldron run function anc:recipes/pressing/break
 # 物品压缩 compressing
-execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ #anc:cauldron run function anc:recipes/compressing/break
+execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ #anc:cauldron positioned ~ ~-1 ~ run function anc:recipes/compressing/break
 # 切割 cutting
 execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ #minecraft:trapdoors run function anc:recipes/cutting/break
 # 分解 decomposing
@@ -37,4 +40,3 @@ execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:dispenser unless bloc
 execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ #anvil run function #anc:recipes/enchantments_merge
 # 超限附魔
 execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ crying_obsidian run function anc_me:crafting/main
-
