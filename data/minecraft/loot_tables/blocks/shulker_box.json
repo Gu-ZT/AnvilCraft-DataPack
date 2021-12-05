@@ -14,7 +14,7 @@
 								{
 									"condition": "minecraft:match_tool",
 									"predicate": {
-										"nbt":"{drop_content:1b}"
+										"nbt": "{drop_content:1b}"
 									}
 								}
 							]
@@ -49,6 +49,7 @@
 								},
 								{
 									"function": "minecraft:set_contents",
+									"type": "minecraft:shulker_box",
 									"entries": [
 										{
 											"type": "minecraft:dynamic",
