@@ -1,0 +1,1 @@
+execute as @e[type=item,distance=..1.5,nbt={{Item:{{id:"minecraft:enchanted_book",Count:1b,tag:{{StoredEnchantments:[{{id:"minecraft:{ench_id}",lvl:{old_lvl}s}}]}}}}}}] at @s run function {name_space}:crafting/enchanted_book/{ench_id}_{new_lvl}

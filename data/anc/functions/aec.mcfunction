@@ -3,7 +3,7 @@ tag @s add anc_temp_aec
 execute as @e[type=minecraft:falling_block,tag=anc_marked] if score @s ancAnvil = #t ancAnvil run function anc:compare
 
 # 实体掉落 attack
-execute at @s[tag=anc_temp_aec,scores={ancDistance=3..}] run function anc:more/attack/main
+execute at @s[tag=anc_temp_aec,scores={ancDistance=2..}] run function anc:more/attack/main
 
 # 测试
 # execute at @s[tag=anc_temp_aec] run function anc:test

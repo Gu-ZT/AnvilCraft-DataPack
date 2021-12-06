@@ -1,0 +1,3 @@
+tag @s add {namespace}Crafting
+execute if entity @e[type=item,distance=..1,nbt={{Item:{{id:"minecraft:enchanted_book",Count:1b,tag:{{StoredEnchantments:[{{id:"minecraft:{ench_id}",lvl:{old_lvl}s}}]}}}}}},tag=!{namespace}Crafting] run data modify entity @s Item.tag.StoredEnchantments.[{{id:"minecraft:{ench_id}"}}].lvl set value {lvl}s
+execute as @e[type=item,distance=..1,nbt={{Item:{{id:"minecraft:enchanted_book",Count:1b,tag:{{StoredEnchantments:[{{id:"minecraft:{ench_id}",lvl:{old_lvl}s}}]}}}}}},tag=!{namespace}Crafting] at @s run kill @s
