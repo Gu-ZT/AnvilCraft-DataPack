@@ -1,0 +1,58 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.warning_none.name\"}'},CustomModelData:11141010}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancInteract": 0
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.warning_protocol.name\"}'},CustomModelData:11141011}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+                                        "ancValue": 18
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.warning_material.name\"}'},CustomModelData:11141009}"
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+										"ancInteract": 0
+									}
+								}
+							],
+							"function": "minecraft:set_nbt",
+							"tag": "{ancClear:1b,display:{Name:'{\"italic\":false,\"translate\":\"anc.item.warning_protocol.name\"}'},CustomModelData:11141011}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

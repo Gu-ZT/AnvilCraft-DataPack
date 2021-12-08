@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:11140007,id:'anc:dispel_protocol_last',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.dispel_protocol_last.name\"}'}}"
+                            "tag": "{CustomModelData:11140007,dict:[\"protocol\"],id:'anc:dispel_protocol_last',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.dispel_protocol_last.name\"}'}}"
                         }
                     ]
                 }

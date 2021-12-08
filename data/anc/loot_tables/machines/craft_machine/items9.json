@@ -35,6 +35,36 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:netherite_coil"
+						},
+						{
+							"_comment": "维修协议",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:heavy_weighted_pressure_plate\"},{id:\"minecraft:heavy_weighted_pressure_plate\"},{id:\"minecraft:heavy_weighted_pressure_plate\"},{id:\"minecraft:heavy_weighted_pressure_plate\"},{Slot:11b,tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:iron_ingot\"},{id:\"minecraft:iron_ingot\"},{id:\"minecraft:iron_ingot\"},{id:\"minecraft:iron_ingot\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:repair_protocol"
+						},
+						{
+							"_comment": "吸收协议",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{Slot:11b,tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:repair_protocol"
 						}
 					]
 				}

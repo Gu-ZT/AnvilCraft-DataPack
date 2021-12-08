@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:11140003,id:'anc:absorb_protocol',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.absorb_protocol.name\"}'}}"
+                            "tag": "{CustomModelData:11140003,dict:[\"protocol\"],id:'anc:absorb_protocol',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.absorb_protocol.name\"}'}}"
                         }
                     ]
                 }

@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:11141009,id:'anc:warning_material',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.warning_material.name\"}'}}"
+                            "tag": "{ancClear:1b,CustomModelData:11141009,id:'anc:warning_material',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.warning_material.name\"}'}}"
                         }
                     ]
                 }

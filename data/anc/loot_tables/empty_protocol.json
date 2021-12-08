@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:11140002,id:'anc:empty_protocol',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.empty_protocol.name\"}'}}"
+                            "tag": "{CustomModelData:11140002,dict:[\"protocol\"],id:'anc:empty_protocol',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.empty_protocol.name\"}'}}"
                         }
                     ]
                 }

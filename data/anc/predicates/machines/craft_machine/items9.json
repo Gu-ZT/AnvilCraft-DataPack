@@ -26,6 +26,24 @@
 						"nbt": "{Items:[{Slot:1b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:2b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:3b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:10b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:11b,tag:{id:\"anc:netherite_core\"}},{Slot:12b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:19b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:20b,id:\"minecraft:light_weighted_pressure_plate\"},{Slot:21b,id:\"minecraft:light_weighted_pressure_plate\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "维修协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:heavy_weighted_pressure_plate\"},{id:\"minecraft:heavy_weighted_pressure_plate\"},{id:\"minecraft:heavy_weighted_pressure_plate\"},{id:\"minecraft:heavy_weighted_pressure_plate\"},{Slot:11b,tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:iron_ingot\"},{id:\"minecraft:iron_ingot\"},{id:\"minecraft:iron_ingot\"},{id:\"minecraft:iron_ingot\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "吸收协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{Slot:11b,tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"}]}"
+					}
+				}
 			}
 		]
 	}

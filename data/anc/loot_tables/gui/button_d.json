@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:11141006,id:'anc:button_d',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_d.name\"}'}}"
+                            "tag": "{ancClear:1b,CustomModelData:11141006,id:'anc:button_d',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.button_d.name\"}'}}"
                         }
                     ]
                 }

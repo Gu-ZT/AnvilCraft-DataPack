@@ -9,6 +9,15 @@
 	{
 		"condition": "minecraft:alternative",
 		"terms": [
+			{
+				"_comment": "空协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:paper\"},{id:\"minecraft:feather\"},{id:\"minecraft:glow_ink_sac\"}]}"
+					}
+				}
+			}
 		]
 	}
 ]

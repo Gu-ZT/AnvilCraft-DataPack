@@ -1,7 +1,14 @@
+execute as @e run function anc:tick/entity
+execute as @e[type=experience_orb] run function anc:tick/experience_orb
+
 execute as @e[type=minecraft:falling_block,predicate=anc:anvil,tag=!anc_marked] run function anc:mark
 execute as @e[type=minecraft:area_effect_cloud,tag=anc_aec_mark] run function anc:aec
 execute as @e[type=falling_block] store result score @s ancDistance run data get entity @s FallDistance
+
 execute as @e[tag=anc_craft_machine] at @s run function anc:machines/craft_machine/tick
+execute as @e[tag=anc_interact_machine] at @s run function anc:machines/interact_machine/tick
+execute as @e[tag=anc_magnet] at @s run function anc:machines/magnet/tick
+
 function anc:blocks/magnet/main
 function anc:blocks/craft_machine/main
 function anc:blocks/interact_machine/main
