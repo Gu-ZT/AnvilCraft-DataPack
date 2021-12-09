@@ -19,7 +19,7 @@ execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:melon",Count:1
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:hay_block",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:wheat",Count:9b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:bone_block",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:bone_meal",Count:9b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:snow_block",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:snowball",Count:4b}}
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:clay",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:clay",Count:4b}}
+execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:clay",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:clay_ball",Count:4b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:dried_kelp_block",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:dried_kelp",Count:9b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:honey_block",Count:1b}}] if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:glass_bottle",Count:4b}},distance=..1] run function anc:recipes/cutting/honey
 

@@ -17,6 +17,15 @@
 						"nbt": "{Items:[{tag:{id:\"anc:elytra_frame\"}},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "祛魔协议（惩罚）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:dispel_protocol_first\"}},{tag:{id:\"anc:dispel_protocol_last\"}},{tag:{id:\"anc:dispel_protocol_curse\"}},{id:\"minecraft:diamond\"}]}"
+					}
+				}
 			}
 		]
 	}

@@ -8,8 +8,15 @@ scoreboard objectives add ancInteract dummy
 scoreboard objectives add ancSuccess dummy
 scoreboard objectives add ancHealth dummy
 
+scoreboard objectives add ancRandom dummy
+scoreboard players set $max ancRandom 0
+scoreboard players set $min ancRandom 0
+scoreboard players set $output ancRandom 0
+
 scoreboard objectives add ancRepairSuccess dummy
 scoreboard objectives add ancAbsorbSuccess dummy
+scoreboard objectives add ancDispelSuccess dummy
+scoreboard objectives add ancDispenserSuccess dummy
 scoreboard objectives add ancExpValue dummy
 
 # scoreboard objectives add testX dummy

@@ -6,6 +6,21 @@
 				{
 					"type": "minecraft:alternatives",
 					"children": [
+						{
+							"_comment": "祛魔协议（随机）",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:lapis_lazuli\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:dispel_protocol_random"
+						}
 					]
 				}	
 			]

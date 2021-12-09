@@ -44,6 +44,33 @@
 						"nbt": "{Items:[{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{Slot:11b,tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "祛魔协议（去首）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:glowstone\"},{id:\"minecraft:glowstone\"},{id:\"minecraft:glowstone\"},{id:\"minecraft:glowstone\"},{Slot:11b,tag:{id:\"anc:dispel_protocol_random\"}},{id:\"minecraft:glowstone\"},{id:\"minecraft:glowstone\"},{id:\"minecraft:glowstone\"},{id:\"minecraft:glowstone\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "祛魔协议（去尾）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:obsidian\"},{id:\"minecraft:obsidian\"},{id:\"minecraft:obsidian\"},{id:\"minecraft:obsidian\"},{Slot:11b,tag:{id:\"anc:dispel_protocol_random\"}},{id:\"minecraft:obsidian\"},{id:\"minecraft:obsidian\"},{id:\"minecraft:obsidian\"},{id:\"minecraft:obsidian\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "祛魔协议（去诅咒）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{Slot:11b,tag:{id:\"anc:dispel_protocol_random\"}},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"}]}"
+					}
+				}
 			}
 		]
 	}
