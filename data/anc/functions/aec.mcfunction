@@ -40,3 +40,5 @@ execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:dispenser unless bloc
 execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ #anvil run function #anc:recipes/enchantments_merge
 # 超限附魔
 execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ crying_obsidian run function anc_me:crafting/main
+# 红石EMP
+execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ redstone_block positioned ~ ~-1 ~ run function anc:emp/main

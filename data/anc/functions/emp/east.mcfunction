@@ -1,0 +1,7 @@
+fill ~1 ~ ~-6 ~1 ~ ~6 redstone_torch[lit=false] replace redstone_torch[lit=true]
+fill ~2 ~ ~-5 ~2 ~ ~5 redstone_torch[lit=false] replace redstone_torch[lit=true]
+fill ~3 ~ ~-4 ~3 ~ ~4 redstone_torch[lit=false] replace redstone_torch[lit=true]
+fill ~4 ~ ~-3 ~4 ~ ~3 redstone_torch[lit=false] replace redstone_torch[lit=true]
+fill ~5 ~ ~-2 ~5 ~ ~2 redstone_torch[lit=false] replace redstone_torch[lit=true]
+fill ~6 ~ ~-1 ~6 ~ ~1 redstone_torch[lit=false] replace redstone_torch[lit=true]
+fill ~7 ~ ~ ~7 ~ ~ redstone_torch[lit=false] replace redstone_torch[lit=true]

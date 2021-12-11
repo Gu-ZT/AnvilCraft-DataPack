@@ -1,0 +1,11 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld"
+            }
+        }
+    ]
+}

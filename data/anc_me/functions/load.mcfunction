@@ -12,6 +12,8 @@ scoreboard objectives add amValue dummy
 scoreboard objectives add amRepairCost dummy
 scoreboard objectives add amEnchCount dummy
 
+scoreboard objectives add amMerge dummy
+
 scoreboard players set $448 amDamage 448
 scoreboard players set $2 amRepairCost 2
 scoreboard players set $1 amRepairCost 1
