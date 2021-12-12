@@ -64,10 +64,10 @@ def shapeCheck(img):
     return False
 
 
-def blockImage(img_top, img_left, img_right):
-    img_top = cv2.imread(img_top, flags=-1)
-    img_left = cv2.imread(img_left, flags=-1)
-    img_right = cv2.imread(img_right, flags=-1)
+def blockIcon(img_top, img_left, img_right):
+    img_top = cv2.imread(img_top)
+    img_left = cv2.imread(img_left)
+    img_right = cv2.imread(img_right)
     img_top = cv2.resize(img_top, (512, 512), interpolation=cv2.INTER_NEAREST)
     img_right = cv2.resize(img_right, (512, 512), interpolation=cv2.INTER_NEAREST)
     img_left = cv2.resize(img_left, (512, 512), interpolation=cv2.INTER_NEAREST)
@@ -110,7 +110,6 @@ def blockImage(img_top, img_left, img_right):
     mask = ((b == 0) * (g == 0) * (r == 0))
     alpha[mask] = 0
     img = cv2.merge((b, g, r, alpha))
-
     img_big = cv2.resize(img, (110, 128))
     img_small = cv2.resize(img, (55, 64))
     base64_large = str(cv2_base64(img_big), 'utf-8')

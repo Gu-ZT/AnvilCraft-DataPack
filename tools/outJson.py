@@ -12,30 +12,29 @@ add_item_sheet = getConfig('addfile', 'item')
 
 
 def outJson():
-    out_json = {}
     namespace = getConfig('settings', 'namespace')
-    json_temp = {
+    data = xlrd.open_workbook(add_excel_path)
+    block_table = data.sheet_by_name(add_block_sheet)
+    item_table = data.sheet_by_name(add_item_sheet)
+    block_rows = block_table.nrows
+    item_rows = item_table.nrows
+    out_file = os.path.join(pro_dir, getConfig('outjson', 'file'))
+    out_file_write = open(out_file, 'w', encoding='utf-8')
+    out_file_write.close()
+
+    for i in range(block_rows - 1):
+        block_temp = {
         "name": "",
         "englishName": "",
         "registerName": "",
         "CreativeTabName": "",
+        "OredictList": [],
         "type": "",
         "maxStackSize": 64,
         "maxDurability": 1,
         "smallIcon": "",
         "largeIcon": ""
     }
-    data = xlrd.open_workbook(add_excel_path)
-    block_table = data.sheet_by_name(add_block_sheet)
-    item_table = data.sheet_by_name(add_item_sheet)
-    block_rows = block_table.nrows
-    item_rows = item_table.nrows
-    out_file = os.path.join(pro_dir, "neapolitan_item.json")
-    out_file_write = open(out_file, 'w', encoding='utf-8')
-    out_file_write.close()
-
-    for i in range(block_rows - 1):
-        block_temp = json_temp
         block_temp['type'] = 'Block'
         row = i + 1
         block_id = block_table.cell(row, 1).value  # 方块ID
@@ -44,6 +43,10 @@ def outJson():
         block_texture_dir = os.path.join(pro_dir, "assets", namespace, "textures", "block")  # 方块贴图文件位置
         had_side = block_table.cell(row, 7).value
         had_top = block_table.cell(row, 8).value
+        if block_table.cell(row, 10).value != 'Null':
+            block_temp['OredictList'] = [f"{block_table.cell(row, 10).value}"]
+        else:
+            block_temp.pop('OredictList')
         if had_side == 'True':
             side = block_id + '_side'
             if had_top == 'True':
@@ -55,8 +58,8 @@ def outJson():
             top = block_id
         side_texture = os.path.join(block_texture_dir, f"{side}.png")
         top_texture = os.path.join(block_texture_dir, f"{top}.png")
-        smallIcon = base64Image.blockImage(top_texture, side_texture, side_texture)['smallIcon']
-        largeIcon = base64Image.blockImage(top_texture, side_texture, side_texture)['largeIcon']
+        smallIcon = base64Image.blockIcon(top_texture, side_texture, side_texture)['smallIcon']
+        largeIcon = base64Image.blockIcon(top_texture, side_texture, side_texture)['largeIcon']
         block_temp['smallIcon'] = smallIcon
         block_temp['largeIcon'] = largeIcon
         block_temp['name'] = block_trans_zhcn
@@ -70,13 +73,28 @@ def outJson():
         out_file_write.close()
 
     for i in range(item_rows - 1):
-        item_temp = json_temp
+        item_temp = {
+        "name": "",
+        "englishName": "",
+        "registerName": "",
+        "CreativeTabName": "",
+        "OredictList": [],
+        "type": "",
+        "maxStackSize": 64,
+        "maxDurability": 1,
+        "smallIcon": "",
+        "largeIcon": ""
+    }
         item_temp['type'] = 'Item'
         row = i + 1
         item_id = item_table.cell(row, 1).value  # 物品ID
         item_trans_enus = item_table.cell(row, 2).value  # 物品英文名
         item_trans_zhcn = item_table.cell(row, 3).value  # 物品简体中文名
         item_texture_dir = os.path.join(pro_dir, "assets", namespace, "textures", "item", f"{item_id}.png")  # 物品贴图文件位置
+        if item_table.cell(row, 7).value != 'Null':
+            item_temp['OredictList'] = [f"{item_table.cell(row, 7).value}"]
+        else:
+            item_temp.pop('OredictList')
         smallIcon = base64Image.file_base64(item_texture_dir)['smallIcon']
         largeIcon = base64Image.file_base64(item_texture_dir)['largeIcon']
         item_temp['smallIcon'] = smallIcon

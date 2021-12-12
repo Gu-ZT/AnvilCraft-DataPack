@@ -4,11 +4,11 @@ import xlrd
 from . import pro_dir
 from tools.lib.readConfig import getConfig
 
-with open(pro_dir + '\\templates\\item_loot_table.txt', 'r', encoding='utf-8') as f:
+with open(os.path.join(pro_dir, 'templates', 'item_loot_table.txt'), 'r', encoding='utf-8') as f:
     item_template = f.read()
-with open(pro_dir + '\\templates\\item_model.txt', 'r', encoding='utf-8') as fm:
+with open(os.path.join(pro_dir, 'templates', 'item_model.txt'), 'r', encoding='utf-8') as fm:
     item_model_template = fm.read()
-add_excel_path = pro_dir + '\\' + getConfig('settings', 'addfile')
+add_excel_path = os.path.join(pro_dir, getConfig('settings', 'addfile'))
 add_item_sheet = getConfig('addfile', 'item')
 
 
@@ -29,20 +29,20 @@ def addItem():
             item_trans_zhcn = table.cell(row, 3).value  # 物品简体中文名
             item_trans_zhtw = table.cell(row, 4).value  # 物品繁体中文（台湾）名
             item_trans_zhhk = table.cell(row, 5).value  # 物品繁体中文（香港）名
-            iltd = pro_dir + f'\\data\\{namespace}\\loot_tables'  # 物品战利品表位置
-            itd = pro_dir + f'\\assets\\{namespace}\\lang'  # 物品本地化文件位置
-            md = pro_dir + f'\\assets\\{namespace}\\models'  # 物品模型文件位置
-            imd = md + '\\item'  # 物品模型文件位置
-            iteu = itd + "\\en_us.json"  # 物品本地化文件(英文)
-            itzc = itd + "\\zh_cn.json"  # 物品本地化文件(简体中文)
-            itzt = itd + "\\zh_tw.json"  # 物品本地化文件(繁体中文（台湾）)
-            itzh = itd + "\\zh_hk.json"  # 物品本地化文件(繁体中文（香港）)
+            iltd = os.path.join(pro_dir, 'data', namespace, 'loot_tables')  # 物品战利品表位置
+            itd = os.path.join(pro_dir, 'assets', namespace, 'lang')  # 物品本地化文件位置
+            md = os.path.join(pro_dir, 'assets', namespace, 'models')  # 物品模型文件位置
+            imd = os.path.join(md, 'item')  # 物品模型文件位置
+            iteu = os.path.join(itd, 'en_us.json')  # 物品本地化文件(英文)
+            itzc = os.path.join(itd, 'zh_cn.json')  # 物品本地化文件(简体中文)
+            itzt = os.path.join(itd, 'zh_tw.json')  # 物品本地化文件(繁体中文（台湾）)
+            itzh = os.path.join(itd, 'zh_hk.json')  # 物品本地化文件(繁体中文（香港）)
 
             # 判断文件夹/文件是否存在
-            if not os.path.isdir(pro_dir + f'\\data\\{namespace}'):
-                os.mkdir(pro_dir + f'\\data\\{namespace}')
-            if not os.path.isdir(pro_dir + f'\\assets\\{namespace}'):
-                os.mkdir(pro_dir + f'\\assets\\{namespace}')
+            if not os.path.isdir(os.path.join(pro_dir, 'data', namespace)):
+                os.mkdir(os.path.join(pro_dir, 'data', namespace))
+            if not os.path.isdir(os.path.join(pro_dir, 'assets', namespace)):
+                os.mkdir(os.path.join(pro_dir, 'assets', namespace))
             if not os.path.isdir(iltd):
                 os.mkdir(iltd)
             if not os.path.isdir(itd):
@@ -72,7 +72,7 @@ def addItem():
             item_loot_table = item_template.format(cmd=cmd, id=item_id, namespace=namespace, cmd_prefix=cmd_prefix)
 
             #  写入战利品表
-            iltdf = open(iltd + f'\\{item_id}.json', 'w', encoding='utf-8')
+            iltdf = open(os.path.join(iltd, f'{item_id}.json'), 'w', encoding='utf-8')
             iltdf.write(item_loot_table)
             iltdf.close()
 
@@ -103,8 +103,9 @@ def addItem():
             json.dump(itzh_json, itzhf, ensure_ascii=False)
 
             # 写入自定义模型区段
-            item_model_father = open(pro_dir + '\\assets\\minecraft\\models\\item\\firework_star.json', 'r',
-                                     encoding='utf-8')
+            item_model_father = open(
+                os.path.join(pro_dir, 'assets', 'minecraft', 'models', 'item', 'firework_star.json'), 'r',
+                encoding='utf-8')
             itf = json.loads(item_model_father.read())
             try:
                 itf_list = itf['overrides']
@@ -112,15 +113,16 @@ def addItem():
                 itf.update({'overrides': []})
                 itf_list = itf['overrides']
             itf_list.append({
-                "predicate": {
-                    "custom_model_data": int(f"{cmd_prefix}{cmd}")
+                'predicate': {
+                    'custom_model_data': int(f'{cmd_prefix}{cmd}')
                 },
-                "model": f"{namespace}:item/{item_id}"
+                'model': f'{namespace}:item/{item_id}'
             })
             itf['overrides'] = itf_list
             print(itf['overrides'][len(itf['overrides']) - 1])
-            item_model_father_last = open(pro_dir + '\\assets\\minecraft\\models\\item\\firework_star.json', 'w+',
-                                          encoding='utf-8')
+            item_model_father_last = open(
+                os.path.join(pro_dir, 'assets', 'minecraft', 'models', 'item', 'firework_star.json'), 'w+',
+                encoding='utf-8')
             json.dump(itf, item_model_father_last, ensure_ascii=False)
             item_model_father.close()
             item_model_father_last.close()

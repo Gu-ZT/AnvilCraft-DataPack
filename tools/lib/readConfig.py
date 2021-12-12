@@ -11,7 +11,7 @@ def getConfig(section: str, param: str):
         value = conf.get(section, param)
         return value
     else:
-        file = open(pro_dir + '\\config.ini', 'w')
+        file = open(os.path.join(pro_dir, 'config.ini'), 'w')
         file.close()
         conf = configparser.ConfigParser()
         conf.read(config_path)

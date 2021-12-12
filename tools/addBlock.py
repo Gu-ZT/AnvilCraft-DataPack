@@ -4,14 +4,15 @@ import xlrd
 from . import pro_dir
 from tools.lib.readConfig import getConfig
 
-with open(pro_dir + '\\templates\\block_loot_table.txt', 'r', encoding='utf-8') as f:
+with open(os.path.join(pro_dir, 'templates', 'block_loot_table.txt'), 'r', encoding='utf-8') as f:
     block_template = f.read()
-with open(pro_dir + '\\templates\\block_model.txt', 'r', encoding='utf-8') as fm:
+with open(os.path.join(pro_dir, 'templates', 'block_model.txt'), 'r', encoding='utf-8') as fm:
     block_model_template = fm.read()
-add_excel_path = pro_dir + '\\' + getConfig('settings', 'addfile')
+add_excel_path = os.path.join(pro_dir, getConfig('settings', 'addfile'))
 add_block_sheet = getConfig('addfile', 'block')
 
 
+# noinspection DuplicatedCode
 def addblock():
     namespace = getConfig('settings', 'namespace')
     cmd_prefix = getConfig('settings', 'cmd_prefix')
@@ -20,6 +21,7 @@ def addblock():
     table = data.sheet_by_name(add_block_sheet)
     nrows = table.nrows
     for i in range(nrows - 1):
+        real_block = 'barrel'
         row = i + 1
         existence = table.cell(row, 6).value  # 判断是否不需要进行写入
         if existence != 'True':
@@ -29,20 +31,20 @@ def addblock():
             block_trans_zhcn = table.cell(row, 3).value  # 方块简体中文名
             block_trans_zhtw = table.cell(row, 4).value  # 方块繁体中文（台湾）名
             block_trans_zhhk = table.cell(row, 5).value  # 方块繁体中文（香港）名
-            iltd = pro_dir + f'\\data\\{namespace}\\loot_tables'  # 方块战利品表位置
-            itd = pro_dir + f'\\assets\\{namespace}\\lang'  # 方块本地化文件位置
-            md = pro_dir + f'\\assets\\{namespace}\\models'  # 方块模型文件位置
-            imd = md + '\\block'  # 方块模型文件位置
-            iteu = itd + "\\en_us.json"  # 方块本地化文件(英文)
-            itzc = itd + "\\zh_cn.json"  # 方块本地化文件(简体中文)
-            itzt = itd + "\\zh_tw.json"  # 方块本地化文件(繁体中文（台湾）)
-            itzh = itd + "\\zh_hk.json"  # 方块本地化文件(繁体中文（香港）)
+            iltd = os.path.join(pro_dir, 'data', namespace, 'loot_tables')  # 方块战利品表位置
+            itd = os.path.join(pro_dir, 'assets', namespace, 'lang')  # 方块本地化文件位置
+            md = os.path.join(pro_dir, 'assets', namespace, 'models')  # 方块模型文件位置
+            imd = os.path.join(md, 'block')  # 方块模型文件位置
+            iteu = os.path.join(itd, 'en_us.json')  # 方块本地化文件(英文)
+            itzc = os.path.join(itd, 'zh_cn.json')  # 方块本地化文件(简体中文)
+            itzt = os.path.join(itd, 'zh_tw.json')  # 方块本地化文件(繁体中文（台湾）)
+            itzh = os.path.join(itd, 'zh_hk.json')  # 方块本地化文件(繁体中文（香港）)
 
             # 判断文件夹/文件是否存在
-            if not os.path.isdir(pro_dir + f'\\data\\{namespace}'):
-                os.mkdir(pro_dir + f'\\data\\{namespace}')
-            if not os.path.isdir(pro_dir + f'\\assets\\{namespace}'):
-                os.mkdir(pro_dir + f'\\assets\\{namespace}')
+            if not os.path.isdir(os.path.join(pro_dir, 'data', namespace)):
+                os.mkdir(os.path.join(pro_dir, 'data', namespace))
+            if not os.path.isdir(os.path.join(pro_dir, 'assets', namespace)):
+                os.mkdir(os.path.join(pro_dir, 'assets', namespace))
             if not os.path.isdir(iltd):
                 os.mkdir(iltd)
             if not os.path.isdir(itd):
@@ -72,7 +74,7 @@ def addblock():
             block_loot_table = block_template.format(cmd=cmd, id=block_id, namespace=namespace, cmd_prefix=cmd_prefix)
 
             #  写入战利品表
-            iltdf = open(iltd + f'\\{block_id}.json', 'w', encoding='utf-8')
+            iltdf = open(os.path.join(iltd, f'{block_id}.json'), 'w', encoding='utf-8')
             iltdf.write(block_loot_table)
             iltdf.close()
 
@@ -103,8 +105,8 @@ def addblock():
             json.dump(itzh_json, itzhf, ensure_ascii=False)
 
             # 写入自定义模型区段
-            block_model_father = open(pro_dir + '\\assets\\minecraft\\models\\item\\barrel.json', 'r',
-                                      encoding='utf-8')
+            block_model_father = open(os.path.join(pro_dir, 'assets', 'minecraft', 'models', 'item', 'barrel.json'),
+                                      'r', encoding='utf-8')
             itf = json.loads(block_model_father.read())
             try:
                 itf_list = itf['overrides']
@@ -112,15 +114,16 @@ def addblock():
                 itf.update({'overrides': []})
                 itf_list = itf['overrides']
             itf_list.append({
-                "predicate": {
-                    "custom_model_data": int(f"{cmd_prefix}{cmd}")
+                'predicate': {
+                    'custom_model_data': int(f'{cmd_prefix}{cmd}')
                 },
-                "model": f"{namespace}:block/{block_id}"
+                'model': f'{namespace}:block/{block_id}'
             })
             itf['overrides'] = itf_list
             print(itf['overrides'][len(itf['overrides']) - 1])
-            block_model_father_last = open(pro_dir + '\\assets\\minecraft\\models\\item\\barrel.json', 'w+',
-                                           encoding='utf-8')
+            block_model_father_last = open(
+                os.path.join(pro_dir, 'assets', 'minecraft', 'models', 'item', 'barrel.json'), 'w+',
+                encoding='utf-8')
             json.dump(itf, block_model_father_last, ensure_ascii=False)
             block_model_father.close()
             block_model_father_last.close()
@@ -146,40 +149,48 @@ def addblock():
                 top = block_id
             block_model = block_model_template.format(side=side, top=top, bottom=bottom, namespace=namespace)
             # 模型文件写入
-            imdf = open(imd + f'\\{block_id}.json', 'w', encoding='utf-8')
+            imdf = open(os.path.join(imd, f'{block_id}.json'), 'w', encoding='utf-8')
             imdf.write(block_model)
             imdf.close()
 
-            # 函数文件写入
-            func_dir = pro_dir + f'\\data\\{namespace}\\functions'
+            # 写入函数文件
+            func_dir = os.path.join(pro_dir, 'data', namespace, 'functions')  # 函数目录
             if not os.path.isdir(func_dir):
                 os.mkdir(func_dir)
-                os.mkdir(func_dir + f'\\blocks')
-            if not os.path.isdir(func_dir+f'\\blocks\\{block_id}'):
-                os.mkdir(func_dir+f'\\blocks\\{block_id}')
-            with open(pro_dir + '\\templates\\block_set_mcfun.txt', 'r', encoding='utf-8') as bsf:
+                os.mkdir(os.path.join(func_dir, 'blocks'))
+            if not os.path.isdir(os.path.join(func_dir, 'blocks', block_id)):
+                os.mkdir(os.path.join(func_dir, 'blocks', block_id))
+            # 放置函数模板
+            with open(os.path.join(pro_dir, 'templates', 'block_set_mcfun.txt'), 'r', encoding='utf-8') as bsf:
                 set_func_temp = bsf.read()
-            with open(pro_dir + '\\templates\\block_playerset_mcfun.txt', 'r', encoding='utf-8') as bpsf:
+            # 玩家操作函数模板
+            with open(os.path.join(pro_dir, 'templates', 'block_playerset_mcfun.txt'), 'r', encoding='utf-8') as bpsf:
                 playerset_func_temp = bpsf.read()
-            with open(pro_dir + '\\templates\\block_broken_mcfun.txt', 'r', encoding='utf-8') as bbf:
+            # 破坏函数模板
+            with open(os.path.join(pro_dir, 'templates', 'block_broken_mcfun.txt'), 'r', encoding='utf-8') as bbf:
                 broken_func_temp = bbf.read()
 
+            # 函数拼接
             set_func = set_func_temp.format(namespace=namespace, id=block_id, cmd=cmd, cmd_prefix=cmd_prefix)
             playerset_func = playerset_func_temp.format(namespace=namespace, id=block_id)
             broken_func = broken_func_temp.format(namespace=namespace, id=block_id)
-            set_mcf = open(func_dir + f'\\blocks\\{block_id}\\set.mcfunction', 'w', encoding='utf-8')
+
+            # 函数写入
+            set_mcf = open(os.path.join(func_dir, 'blocks', block_id, 'set.mcfunction'), 'w', encoding='utf-8')
             set_mcf.write(set_func)
             set_mcf.close()
-            playerset_mcf = open(func_dir + f'\\blocks\\{block_id}\\playerset.mcfunction', 'w', encoding='utf-8')
+            playerset_mcf = open(os.path.join(func_dir, 'blocks', block_id, 'playerset.mcfunction'), 'w',
+                                 encoding='utf-8')
             playerset_mcf.write(playerset_func)
             playerset_mcf.close()
-            broken_mcf = open(func_dir + f'\\blocks\\{block_id}\\broken.mcfunction', 'w', encoding='utf-8')
+            broken_mcf = open(os.path.join(func_dir, 'blocks', block_id, 'broken.mcfunction'), 'w', encoding='utf-8')
             broken_mcf.write(broken_func)
             broken_mcf.close()
 
-            with open(pro_dir + '\\templates\\block_main_mcfun.txt', 'r', encoding='utf-8') as bmf:
+            # 写入主函数
+            with open(os.path.join(pro_dir, 'templates', 'block_main_mcfun.txt'), 'r', encoding='utf-8') as bmf:
                 main_func_temp = bmf.read()
             main_func = main_func_temp.format(id=block_id, namespace=namespace)
-            main_mcf = open(func_dir + f'\\blocks\\{block_id}\\main.mcfunction', 'w', encoding='utf-8')
+            main_mcf = open(os.path.join(func_dir, 'blocks', block_id, 'main.mcfunction'), 'w', encoding='utf-8')
             main_mcf.write(main_func)
             main_mcf.close()
