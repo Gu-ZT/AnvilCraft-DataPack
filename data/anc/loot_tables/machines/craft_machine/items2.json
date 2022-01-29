@@ -22,7 +22,67 @@
 							"name": "anc:dispel_protocol_random"
 						}
 					]
-				}	
+				},
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"_comment": "保护协议",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:shield\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:protect_protocol"
+						}
+					]
+				},
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"_comment": "放置协议",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:piston\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:placement_protocol"
+						}
+					]
+				},
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"_comment": "补货协议",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:gold_block\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:restock_protocol"
+						}
+					]
+				}
 			]
 		}
 	]

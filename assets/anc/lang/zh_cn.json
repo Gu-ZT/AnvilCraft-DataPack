@@ -38,5 +38,8 @@
     "anc.item.warning_protocol.name": "警告：协议缺失",
     "anc.item.craft_back.name": "GUI",
     "anc.item.interact_back.name": "GUI",
-    "item.anc.output_slot.name": "输出"
+    "item.anc.output_slot.name": "输出",
+    "anc.item.placement_protocol.name": "放置协议",
+    "anc.item.protect_protocol.name": "保护协议",
+    "anc.item.restock_protocol.name": "补货协议"
 }

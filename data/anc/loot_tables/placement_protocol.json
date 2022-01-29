@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140023,id:'anc:placement_protocol',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.placement_protocol.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

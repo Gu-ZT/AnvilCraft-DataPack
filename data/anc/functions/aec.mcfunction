@@ -28,6 +28,8 @@ execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:piston[facing=up] run
 execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ #anc:laminating run function anc:recipes/laminating/break
 # 合金重生 netherite
 execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:soul_soil run function anc:recipes/netherite/break
+# 祛魔协议
+execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:grindstone run function anc:recipes/dispel/break
 
 # 破坏 destroying
 execute at @s[tag=anc_temp_aec] unless block ~ ~-1 ~ #anc:not_destroy if block ~ ~-2 ~ stonecutter run function anc:more/broken/main

@@ -20,7 +20,7 @@ execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:melon_slice",C
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:wheat",Count:9b}}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:hay_block",Count:1b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:bone_meal",Count:9b}}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:bone_block",Count:1b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:bone",Count:3b}}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:bone_block",Count:1b}}
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:snow",Count:4b}}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:snow_block",Count:1b}}
+execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:snowball",Count:4b}}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:snow_block",Count:1b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:clay_ball",Count:4b}}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:clay",Count:1b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:brick",Count:4b}}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:bricks",Count:1b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:nether_brick",Count:4b}}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:nether_bricks",Count:1b}}

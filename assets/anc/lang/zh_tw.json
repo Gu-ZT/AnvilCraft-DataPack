@@ -36,5 +36,8 @@
     "anc.item.warning_protocol.name": "警告：協定缺失",
     "anc.item.craft_back.name": "GUI",
     "anc.item.interact_back.name": "GUI",
-    "item.anc.output_slot.name": "輸出"
+    "item.anc.output_slot.name": "輸出",
+    "anc.item.placement_protocol.name": "放置協定",
+    "anc.item.protect_protocol.name": "保護協定",
+    "anc.item.restock_protocol.name": "補貨協定"
 }

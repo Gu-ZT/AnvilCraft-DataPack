@@ -159,7 +159,7 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:snow\",Count:4b}}"
+				"nbt": "{Item:{id:\"minecraft:snowball\",Count:4b}}"
 			}
 		},
 		{

@@ -23,19 +23,9 @@ def outJson():
     out_file_write.close()
 
     for i in range(block_rows - 1):
-        block_temp = {
-        "name": "",
-        "englishName": "",
-        "registerName": "",
-        "CreativeTabName": "",
-        "OredictList": [],
-        "type": "",
-        "maxStackSize": 64,
-        "maxDurability": 1,
-        "smallIcon": "",
-        "largeIcon": ""
-    }
-        block_temp['type'] = 'Block'
+        block_temp = {"name": "", "englishName": "", "registerName": "", "CreativeTabName": "", "OredictList": [],
+                      "maxStackSize": 64, "maxDurability": 1, "smallIcon": "", "largeIcon": "",
+                      'type': 'Block'}
         row = i + 1
         block_id = block_table.cell(row, 1).value  # 方块ID
         block_trans_enus = block_table.cell(row, 2).value  # 方块英文名
@@ -73,19 +63,9 @@ def outJson():
         out_file_write.close()
 
     for i in range(item_rows - 1):
-        item_temp = {
-        "name": "",
-        "englishName": "",
-        "registerName": "",
-        "CreativeTabName": "",
-        "OredictList": [],
-        "type": "",
-        "maxStackSize": 64,
-        "maxDurability": 1,
-        "smallIcon": "",
-        "largeIcon": ""
-    }
-        item_temp['type'] = 'Item'
+        item_temp = {"name": "", "englishName": "", "registerName": "", "CreativeTabName": "", "OredictList": [],
+                     "maxStackSize": 64, "maxDurability": 1, "smallIcon": "", "largeIcon": "",
+                     'type': 'Item'}
         row = i + 1
         item_id = item_table.cell(row, 1).value  # 物品ID
         item_trans_enus = item_table.cell(row, 2).value  # 物品英文名

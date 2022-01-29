@@ -36,5 +36,8 @@
     "anc.item.warning_protocol.name": "Warning Protocol",
     "anc.item.craft_back.name": "GUI",
     "anc.item.interact_back.name": "GUI",
-    "item.anc.output_slot.name": "Output"
+    "item.anc.output_slot.name": "Output",
+    "anc.item.placement_protocol.name": "Placement Protocol",
+    "anc.item.protect_protocol.name": "Protect Protocol",
+    "anc.item.restock_protocol.name": "Restock Protocol"
 }

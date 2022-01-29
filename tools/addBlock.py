@@ -21,7 +21,6 @@ def addblock():
     table = data.sheet_by_name(add_block_sheet)
     nrows = table.nrows
     for i in range(nrows - 1):
-        real_block = 'barrel'
         row = i + 1
         existence = table.cell(row, 6).value  # 判断是否不需要进行写入
         if existence != 'True':
@@ -31,6 +30,7 @@ def addblock():
             block_trans_zhcn = table.cell(row, 3).value  # 方块简体中文名
             block_trans_zhtw = table.cell(row, 4).value  # 方块繁体中文（台湾）名
             block_trans_zhhk = table.cell(row, 5).value  # 方块繁体中文（香港）名
+            haveGui = table.cell(row,11).value  # 方块是否有GUI
             iltd = os.path.join(pro_dir, 'data', namespace, 'loot_tables')  # 方块战利品表位置
             itd = os.path.join(pro_dir, 'assets', namespace, 'lang')  # 方块本地化文件位置
             md = os.path.join(pro_dir, 'assets', namespace, 'models')  # 方块模型文件位置
@@ -161,14 +161,22 @@ def addblock():
             if not os.path.isdir(os.path.join(func_dir, 'blocks', block_id)):
                 os.mkdir(os.path.join(func_dir, 'blocks', block_id))
             # 放置函数模板
-            with open(os.path.join(pro_dir, 'templates', 'block_set_mcfun.txt'), 'r', encoding='utf-8') as bsf:
-                set_func_temp = bsf.read()
+            if haveGui == "True":
+                with open(os.path.join(pro_dir, 'templates', 'block_set_mcfun.txt'), 'r', encoding='utf-8') as bsf:
+                    set_func_temp = bsf.read()
+            else:
+                with open(os.path.join(pro_dir, 'templates', 'nogui_block_set_mcfun.txt'), 'r', encoding='utf-8') as bsf:
+                    set_func_temp = bsf.read()
             # 玩家操作函数模板
             with open(os.path.join(pro_dir, 'templates', 'block_playerset_mcfun.txt'), 'r', encoding='utf-8') as bpsf:
                 playerset_func_temp = bpsf.read()
             # 破坏函数模板
-            with open(os.path.join(pro_dir, 'templates', 'block_broken_mcfun.txt'), 'r', encoding='utf-8') as bbf:
-                broken_func_temp = bbf.read()
+            if haveGui == "True":
+                with open(os.path.join(pro_dir, 'templates', 'block_broken_mcfun.txt'), 'r', encoding='utf-8') as bbf:
+                    broken_func_temp = bbf.read()
+            else:
+                with open(os.path.join(pro_dir, 'templates', 'nogui_block_broken_mcfun.txt'), 'r', encoding='utf-8') as bbf:
+                    broken_func_temp = bbf.read()
 
             # 函数拼接
             set_func = set_func_temp.format(namespace=namespace, id=block_id, cmd=cmd, cmd_prefix=cmd_prefix)
@@ -188,8 +196,12 @@ def addblock():
             broken_mcf.close()
 
             # 写入主函数
-            with open(os.path.join(pro_dir, 'templates', 'block_main_mcfun.txt'), 'r', encoding='utf-8') as bmf:
-                main_func_temp = bmf.read()
+            if haveGui == "True":
+                with open(os.path.join(pro_dir, 'templates', 'block_main_mcfun.txt'), 'r', encoding='utf-8') as bmf:
+                    main_func_temp = bmf.read()
+            else:
+                with open(os.path.join(pro_dir, 'templates', 'nogui_block_main_mcfun.txt'), 'r', encoding='utf-8') as bmf:
+                    main_func_temp = bmf.read()
             main_func = main_func_temp.format(id=block_id, namespace=namespace)
             main_mcf = open(os.path.join(func_dir, 'blocks', block_id, 'main.mcfunction'), 'w', encoding='utf-8')
             main_mcf.write(main_func)

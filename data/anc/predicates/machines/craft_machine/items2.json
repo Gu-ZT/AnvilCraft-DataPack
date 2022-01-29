@@ -17,6 +17,33 @@
 						"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:lapis_lazuli\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "保护协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:shield\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "放置协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:piston\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "补货协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:gold_block\"}]}"
+					}
+				}
 			}
 		]
 	}

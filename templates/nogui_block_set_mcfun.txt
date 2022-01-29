@@ -1,0 +1,2 @@
+summon minecraft:glow_item_frame ~ ~ ~ {{Tags:["{namespace}_{id}"],Item:{{id:"minecraft:barrel",Count:1b,tag:{{CustomModelData:{cmd_prefix}{cmd}}}}},Facing:1b,Fixed:1b}}
+setblock ~ ~ ~ minecraft:lodestone
