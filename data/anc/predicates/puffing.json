@@ -28,6 +28,41 @@
 			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:spider_eye\",Count:1b}}"
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:fire_coral\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:horn_coral\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:tube_coral\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:brain_coral\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:bubble_coral\",Count:1b}}"
+			}
 		}
     ]
 }
