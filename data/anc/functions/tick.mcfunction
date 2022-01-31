@@ -16,8 +16,8 @@ function anc:blocks/interact_machine/main
 # 清理物品
 clear @a #anc:clear{ancClear:1b}
 kill @e[nbt={Item:{tag:{ancClear:1b}}}]
-execute as @e[type=glow_item_frame] at @s if data block ~ ~ ~ Items.[{Slot:0b,tag:{ancClear:1b}}] run item replace block ~ ~-1 ~ container.0 with air
-execute as @e[type=glow_item_frame] at @s if data block ~ ~ ~ Items.[{Slot:1b,tag:{ancClear:1b}}] run item replace block ~ ~-1 ~ container.1 with air
-execute as @e[type=glow_item_frame] at @s if data block ~ ~ ~ Items.[{Slot:2b,tag:{ancClear:1b}}] run item replace block ~ ~-1 ~ container.2 with air
-execute as @e[type=glow_item_frame] at @s if data block ~ ~ ~ Items.[{Slot:3b,tag:{ancClear:1b}}] run item replace block ~ ~-1 ~ container.3 with air
-execute as @e[type=glow_item_frame] at @s if data block ~ ~ ~ Items.[{Slot:4b,tag:{ancClear:1b}}] run item replace block ~ ~-1 ~ container.4 with air
+execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ if data block ~ ~ ~ Items.[{Slot:0b,tag:{ancClear:1b}}] unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] run item replace block ~ ~ ~ container.0 with air
+execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ if data block ~ ~ ~ Items.[{Slot:1b,tag:{ancClear:1b}}] unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] run item replace block ~ ~ ~ container.1 with air
+execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ if data block ~ ~ ~ Items.[{Slot:2b,tag:{ancClear:1b}}] unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] run item replace block ~ ~ ~ container.2 with air
+execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ if data block ~ ~ ~ Items.[{Slot:3b,tag:{ancClear:1b}}] unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] run item replace block ~ ~ ~ container.3 with air
+execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ if data block ~ ~ ~ Items.[{Slot:4b,tag:{ancClear:1b}}] unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] run item replace block ~ ~ ~ container.4 with air
