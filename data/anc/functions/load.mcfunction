@@ -26,6 +26,10 @@ scoreboard objectives add ancDispelSuccess dummy
 scoreboard objectives add ancDispenserSuccess dummy
 scoreboard objectives add ancExpValue dummy
 
+scoreboard objectives add ancConfig dummy
+
+function anc:config
+
 # scoreboard objectives add testX dummy
 # scoreboard objectives add testY dummy
 # scoreboard objectives add testZ dummy
