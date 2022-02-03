@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11100027,id:'anc:magnet',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.magnet.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

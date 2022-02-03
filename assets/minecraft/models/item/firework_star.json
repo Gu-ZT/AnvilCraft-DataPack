@@ -139,6 +139,12 @@
         },
         {
             "predicate": {
+                "custom_model_data": 11100026
+            },
+            "model": "anc:item/magnet_ingot"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 11141000
             },
             "model": "anc:gui/empty"
