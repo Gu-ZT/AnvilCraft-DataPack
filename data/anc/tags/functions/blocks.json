@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "anc:blocks/magnet/main",
+        "anc:blocks/craft_machine/main",
+        "anc:blocks/interact_machine/main"
+    ]
+}

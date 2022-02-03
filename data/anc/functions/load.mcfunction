@@ -9,6 +9,8 @@ scoreboard objectives add ancSuccess dummy
 scoreboard objectives add ancHealth dummy
 scoreboard objectives add ancLastRestock dummy
 
+scoreboard objectives add ancCarrotStickUse minecraft.used:carrot_on_a_stick
+
 scoreboard objectives add ancRandom dummy
 scoreboard players set $max ancRandom 0
 scoreboard players set $min ancRandom 0

@@ -71,6 +71,42 @@
 						"nbt": "{Items:[{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{Slot:11b,tag:{id:\"anc:dispel_protocol_random\"}},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"},{id:\"minecraft:rabbit_foot\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "保护协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "放置协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "补货协议",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "磁铁块",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:iron_ingot\"},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}}]}"
+					}
+				}
 			}
 		]
 	}

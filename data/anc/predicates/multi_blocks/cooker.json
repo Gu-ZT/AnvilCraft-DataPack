@@ -1,0 +1,37 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "offsetY": -1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "fire",
+                        "campfire",
+                        "soul_fire",
+                        "soul_campfire",
+                        "lava",
+                        "lava_cauldron"
+                    ]
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetY": -1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "furnace",
+                        "blast_furnace",
+                        "smoker"
+                    ],
+                    "state": {
+                        "lit": true
+                    }
+                }
+            }
+        }
+    ]
+}

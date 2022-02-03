@@ -58,7 +58,8 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{Slot:11b,tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"}]}"}
+											"nbt": "{Items:[{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{Slot:11b,tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"},{id:\"minecraft:glass_bottle\"}]}"
+										}
 									}
 								}
 							],
@@ -109,6 +110,86 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:dispel_protocol_curse"
+						},
+						{
+							"type": "minecraft:alternatives",
+							"children": [
+								{
+									"_comment": "保护协议",
+									"conditions": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"},{id:\"minecraft:shield\"}]}"
+												}
+											}
+										}
+									],
+									"type": "minecraft:loot_table",
+									"name": "anc:protect_protocol"
+								}
+							]
+						},
+						{
+							"type": "minecraft:alternatives",
+							"children": [
+								{
+									"_comment": "放置协议",
+									"conditions": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"},{id:\"minecraft:piston\"}]}"
+												}
+											}
+										}
+									],
+									"type": "minecraft:loot_table",
+									"name": "anc:placement_protocol"
+								}
+							]
+						},
+						{
+							"type": "minecraft:alternatives",
+							"children": [
+								{
+									"_comment": "补货协议",
+									"conditions": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"},{id:\"minecraft:gold_block\"}]}"
+												}
+											}
+										}
+									],
+									"type": "minecraft:loot_table",
+									"name": "anc:restock_protocol"
+								}
+							]
+						},
+						{
+							"type": "minecraft:alternatives",
+							"children": [
+								{
+									"_comment": "磁铁块",
+									"conditions": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"block": {
+													"nbt": "{Items:[{id:\"minecraft:iron_ingot\"},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}}]}"
+												}
+											}
+										}
+									],
+									"type": "minecraft:loot_table",
+									"name": "anc:magnet_block"
+								}
+							]
 						}
 					]
 				}

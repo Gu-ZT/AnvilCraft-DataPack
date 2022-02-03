@@ -1,3 +1,4 @@
+execute as @a at @s run function anc:tick/player
 execute as @e run function anc:tick/entity
 execute as @e[type=experience_orb] run function anc:tick/experience_orb
 
@@ -9,12 +10,9 @@ execute as @e[tag=anc_craft_machine] at @s run function anc:machines/craft_machi
 execute as @e[tag=anc_interact_machine] at @s run function anc:machines/interact_machine/tick
 execute as @e[tag=anc_magnet] at @s run function anc:machines/magnet/tick
 
-function anc:blocks/magnet/main
-function anc:blocks/craft_machine/main
-function anc:blocks/interact_machine/main
+function #anc:blocks
 
 # 清理物品
-clear @a #anc:clear{ancClear:1b}
 kill @e[nbt={Item:{tag:{ancClear:1b}}}]
 execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ if data block ~ ~ ~ Items.[{Slot:0b,tag:{ancClear:1b}}] unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] run item replace block ~ ~ ~ container.0 with air
 execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ if data block ~ ~ ~ Items.[{Slot:1b,tag:{ancClear:1b}}] unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] run item replace block ~ ~ ~ container.1 with air

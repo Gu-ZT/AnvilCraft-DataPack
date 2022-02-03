@@ -20,6 +20,21 @@
 							],
 							"type": "minecraft:item",
 							"name": "minecraft:trident"
+						},
+						{
+							"_comment": "手持磁铁",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{Slot:2b,id:\"minecraft:ender_pearl\"},{Slot:10b,tag:{id:\"anc:magnet_ingot\"}},{Slot:11b,id:\"minecraft:redstone\"},{Slot:12b,tag:{id:\"anc:magnet_ingot\"}},{Slot:20b,id:\"minecraft:ender_pearl\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:magnet"
 						}
 					]
 				}
