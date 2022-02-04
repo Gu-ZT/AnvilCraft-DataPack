@@ -1,3 +1,7 @@
+function anc_me:entities/items/get/repaircost
+
+function anc_me:entities/items/get/amenchcount
+
 tag @s add amCrafting
 scoreboard players operation @s amEnchCount += @e[type=item,limit=1,tag=!amCrafting,distance=..1] amEnchCount
 execute unless score @s amEnchCount matches 9.. as @e[type=item,limit=1,tag=!amCrafting,distance=..1] if score @s amRepairCost matches 26.. if predicate anc:random/1_5 run function anc_me:crafting/anvil_yes

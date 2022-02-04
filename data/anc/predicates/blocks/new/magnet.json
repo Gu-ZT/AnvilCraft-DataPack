@@ -1,0 +1,11 @@
+{
+    "condition":"location_check",
+    "predicate": {
+        "block": {
+            "blocks": [
+                "barrel"
+            ],
+            "nbt": "{CustomName:'{\"italic\":false,\"translate\":\"anc.block.magnet_block.name\"}',Lock:\"276082751CF95F35648CB2F47928AB2B\"}"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+data remove block ~ ~ ~ Items[{Slot:0b,tag:{ancClear:1b}}]
+data remove block ~ ~ ~ Items[{Slot:1b,tag:{ancClear:1b}}]
+data remove block ~ ~ ~ Items[{Slot:2b,tag:{ancClear:1b}}]
+data remove block ~ ~ ~ Items[{Slot:3b,tag:{ancClear:1b}}]
+data remove block ~ ~ ~ Items[{Slot:4b,tag:{ancClear:1b}}]
