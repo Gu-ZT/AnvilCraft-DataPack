@@ -5,28 +5,28 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:iron_ingot\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:iron_ingot\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:gold_ingot\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:gold_ingot\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:sugar_cane\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:sugar_cane\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:snowball\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:snowball\"}}"
 			}
 		}
     ]

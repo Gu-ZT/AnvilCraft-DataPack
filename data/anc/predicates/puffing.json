@@ -5,63 +5,63 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:dirt\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:dirt\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:crimson_fungus\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:crimson_fungus\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:warped_fungus\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:warped_fungus\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:spider_eye\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:spider_eye\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:fire_coral\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:fire_coral\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:horn_coral\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:horn_coral\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:tube_coral\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:tube_coral\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:brain_coral\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:brain_coral\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:bubble_coral\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:bubble_coral\"}}"
 			}
 		}
     ]
