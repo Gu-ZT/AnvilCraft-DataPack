@@ -166,8 +166,16 @@
 			}
 		},
 		{
-			"condition": "reference",
-			"name": "anc:strong/redstone_torch"
+			"condition": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": ["minecraft:redstone_torch","minecraft:redstone_wall_torch"],
+					"state": {
+						"lit": true
+					}
+				}
+			}
 		},
 		{
 			"condition": "minecraft:location_check",

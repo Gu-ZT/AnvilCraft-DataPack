@@ -5,6 +5,13 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:barrel\",Count:1b,tag:{id:\"magnet_block\"}}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:iron_block\",Count:1b}}"
 			}
 		},

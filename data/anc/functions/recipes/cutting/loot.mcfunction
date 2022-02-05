@@ -1,3 +1,4 @@
+execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:barrel",Count:1b,tag:{id:"magnet_block"}}}] run loot spawn ~ ~-1 ~ loot anc:cutting/magnet_ingot_9
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:iron_block",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:iron_ingot",Count:9b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:iron_ingot",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:iron_nugget",Count:9b}}
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:gold_block",Count:1b}}] run summon minecraft:item ~ ~-1 ~ {Item:{id:"minecraft:gold_ingot",Count:9b}}
