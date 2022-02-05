@@ -7,6 +7,12 @@
     "overrides": [
         {
             "predicate": {
+                "custom_model_data": 11100026
+            },
+            "model": "anc:item/magnet_ingot"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 11140002
             },
             "model": "anc:item/empty_protocol"
@@ -136,12 +142,6 @@
                 "custom_model_data": 11140025
             },
             "model": "anc:item/restock_protocol"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 11100026
-            },
-            "model": "anc:item/magnet_ingot"
         },
         {
             "predicate": {
