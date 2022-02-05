@@ -1,5 +1,4 @@
 function anc:entities/gethealth
+execute if score @s ancHealth matches ..75 run scoreboard players set #succeed ancValue 1
+execute if score @s ancHealth matches ..75 run function anc:machines/interact_machine/interact/repair/iron_golem_
 
-scoreboard players operation @s ancHealth += $25 ancHealth
-execute store result entity @s Health int 1 run scoreboard players get @s ancHealth
-execute at @s positioned ~ ~2.5 ~ run particle minecraft:heart ~ ~ ~ 0 0 0 0 0 force

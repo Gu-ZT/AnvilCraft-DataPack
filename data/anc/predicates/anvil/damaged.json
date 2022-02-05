@@ -1,0 +1,7 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"nbt": "{BlockState:{Name:\"minecraft:damaged_anvil\"}}"
+	}
+}

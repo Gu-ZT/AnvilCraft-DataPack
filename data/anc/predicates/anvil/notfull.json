@@ -1,0 +1,13 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "anc:anvil/chipped"
+        },
+        {
+            "condition": "reference",
+            "name": "anc:anvil/damaged"
+        }
+    ]
+}
