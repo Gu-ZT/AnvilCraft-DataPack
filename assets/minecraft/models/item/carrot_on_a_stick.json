@@ -6,7 +6,7 @@
   "overrides":[
         {
             "predicate": {
-                "custom_model_data": 11100027
+                "custom_model_data": 11140027
             },
             "model": "anc:item/magnet"
         }
