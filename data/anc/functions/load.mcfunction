@@ -38,3 +38,7 @@ scoreboard players set $25 ancHealth 25
 scoreboard players set $7 ancExpValue 7
 
 gamerule commandBlockOutput false
+
+scoreboard players set $4 ancValue 4
+scoreboard players set $9 ancValue 9
+scoreboard objectives add ancItemCount dummy

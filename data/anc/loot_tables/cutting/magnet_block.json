@@ -14,7 +14,12 @@
                         },
                         {
                             "function": "set_count",
-                            "count": 9
+                            "count": {
+                                "type": "score",
+                                "target": "this",
+                                "score": "ancItemCount",
+                                "scale": 9
+                            }
                         }
                     ]
                 }
