@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:11100026,id:'anc:magnet_ingot',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.magnet_ingot.name\"}'}}"
+                            "tag": "{CustomModelData:11140026,id:'anc:magnet_ingot',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.magnet_ingot.name\"}'}}"
                         }
                     ]
                 }
