@@ -1,0 +1,33 @@
+[{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:location_check",
+			"offsetX": 1,
+			"predicate": {
+				"block": {
+					"blocks": ["minecraft:redstone_torch","minecraft:redstone_wall_torch"],
+					"state": {
+						"lit": true
+					}
+				}
+			}
+		}
+	]
+},
+{
+	"condition": "inverted",
+	"term": {
+		"condition": "location_check",
+		"offsetX": 1,
+		"predicate": {
+			"block":{
+				"blocks":["minecraft:redstone_wall_torch"],
+				"state": {
+					"facing":"east"
+				}
+			}
+		}
+	}
+}
+]
