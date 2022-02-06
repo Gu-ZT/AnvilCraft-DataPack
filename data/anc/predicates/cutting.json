@@ -145,13 +145,6 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:honey_block\"}}"
-			}
-		},
-        {
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:emerald_block\"}}"
 			}
 		},

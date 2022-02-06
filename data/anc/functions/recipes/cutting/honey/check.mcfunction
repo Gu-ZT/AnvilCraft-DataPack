@@ -1,10 +1,10 @@
 # 数清楚有多少蜂蜜块
 scoreboard players set #honeyCount ancValue 0
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:honey_block",Count:1b}},distance=..1,tag=!anc.killed] run function anc:recipes/cutting/honey/as_honey_block
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:honey_block"}},distance=..1] run function anc:recipes/cutting/honey/as_honey_block
 
 # 数清楚有多少瓶子
 scoreboard players set #bottleCount ancValue 0
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:glass_bottle",Count:4b}},distance=..1,tag=!anc.killed] run function anc:recipes/cutting/honey/as_bottle
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:glass_bottle"}},distance=..1] run function anc:recipes/cutting/honey/as_bottle
 
 # 瓶子/4得出消耗的蜂蜜块数量
 scoreboard players operation #need_honeyCount ancValue = #bottleCount ancValue

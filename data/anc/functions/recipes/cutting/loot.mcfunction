@@ -25,7 +25,6 @@ execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:snow_block"}}]
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:clay"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/clay
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:dried_kelp_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/dried_kelp_block
 
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:honey_block",Count:1b}},tag=!anc.killed] run function anc:recipes/cutting/honey/check
 
 
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/nether_star

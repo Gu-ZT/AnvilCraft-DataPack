@@ -1,0 +1,43 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "prismarine_shard",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "type": "score",
+                                "target": "this",
+                                "score": "ancValue"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "prismarine_bricks",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "type": "score",
+                                "target": "this",
+                                "score": "ancItemCount"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
