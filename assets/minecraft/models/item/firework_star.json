@@ -145,6 +145,66 @@
         },
         {
             "predicate": {
+                "custom_model_data": 11140028
+            },
+            "model": "anc:item/cream"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140029
+            },
+            "model": "anc:item/grease"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140030
+            },
+            "model": "anc:item/flour"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140031
+            },
+            "model": "anc:item/dough"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140032
+            },
+            "model": "anc:item/flatdough"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140033
+            },
+            "model": "anc:item/dumpling_raw"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140034
+            },
+            "model": "anc:item/shengjian_raw"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140035
+            },
+            "model": "anc:item/meatballs_raw"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140036
+            },
+            "model": "anc:item/beef_mushroom_stew_raw"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140037
+            },
+            "model": "anc:item/meat_stuffing"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 11141000
             },
             "model": "anc:gui/empty"

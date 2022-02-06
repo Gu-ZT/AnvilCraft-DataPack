@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/cooked_chicken"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 11140038
+      },
+      "model": "anc:item/creamy_bread_roll"
+    }
+  ]
+}
