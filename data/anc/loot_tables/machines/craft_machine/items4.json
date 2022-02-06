@@ -35,6 +35,21 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:dispel_protocol_punishment"
+						},
+						{
+							"_comment": "牛肉炖蘑菇（生）",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:beef\"},{id:\"minecraft:red_mushroom\"},{id:\"minecraft:brown_mushroom\"},{id:\"minecraft:bowl\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:beef_mushroom_stew_raw"
 						}
 					]
 				}

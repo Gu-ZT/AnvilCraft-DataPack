@@ -9,11 +9,11 @@ execute at @s[tag=anc_temp_aec,scores={ancDistance=2..}] run function anc:more/a
 # execute at @s[tag=anc_temp_aec] run function anc:test
 
 # 物品压缩 compressing
-execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:cauldron run function anc:recipes/compressing/break
+execute at @s[tag=anc_temp_aec] positioned ~ ~-1 ~ unless predicate anc:multi_blocks/cooker if block ~ ~ ~ minecraft:cauldron run function anc:recipes/compressing/break
 # 膨发 puffing
-execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:water_cauldron run function anc:recipes/puffing/break
+execute at @s[tag=anc_temp_aec] positioned ~ ~-1 ~ unless predicate anc:multi_blocks/cooker if block ~ ~ ~ minecraft:water_cauldron run function anc:recipes/puffing/break
 # 晶化 crystallization
-execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:powder_snow_cauldron run function anc:recipes/crystallization/break
+execute at @s[tag=anc_temp_aec] positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:powder_snow_cauldron run function anc:recipes/crystallization/break
 # 粉碎 smashing
 execute at @s[tag=anc_temp_aec] unless block ~ ~-1 ~ #anc:block run function anc:recipes/smashing/break
 # 压榨 pressing
@@ -32,9 +32,9 @@ execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:soul_soil run functio
 execute at @s[tag=anc_temp_aec] if block ~ ~-1 ~ minecraft:grindstone run function anc:recipes/dispel/break
 
 # 煎炒 decoct
-execute at @s[tag=anc_temp_aec] positioned ~ ~ ~ if predicate anc:multi_blocks/cooker if block ~ ~ ~ minecraft:cauldron run function anc:recipes/decoct/cooking
+execute at @s[tag=anc_temp_aec] positioned ~ ~-1 ~ if predicate anc:multi_blocks/cooker if block ~ ~ ~ minecraft:cauldron run function anc:recipes/decoct/cooking
 # 蒸煮 boil
-execute at @s[tag=anc_temp_aec] positioned ~ ~ ~ if predicate anc:multi_blocks/cooker if block ~ ~ ~ minecraft:water_cauldron run function anc:recipes/boil/cooking
+execute at @s[tag=anc_temp_aec] positioned ~ ~-1 ~ if predicate anc:multi_blocks/cooker if block ~ ~ ~ minecraft:water_cauldron run function anc:recipes/boil/cooking
 
 # 破坏 destroying
 execute at @s[tag=anc_temp_aec] unless block ~ ~-1 ~ #anc:not_destroy if block ~ ~-2 ~ stonecutter run function anc:more/broken/main

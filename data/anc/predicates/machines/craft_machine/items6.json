@@ -9,6 +9,15 @@
 	{
 		"condition": "minecraft:alternative",
 		"terms": [
+			{
+				"_comment": "巧克力",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:cream\"}},{id:\"minecraft:cocoa_beans\"},{id:\"minecraft:cocoa_beans\"},{id:\"minecraft:cocoa_beans\"},{id:\"minecraft:cocoa_beans\"},{id:\"minecraft:sugar\"}]}"
+					}
+				}
+			}
 		]
 	}
 ]

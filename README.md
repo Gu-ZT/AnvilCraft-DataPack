@@ -29,7 +29,7 @@
 + 快速上手：
     + 下载地址中包含一个配方.xlsx即为可用的配方。
 + 联系我们：
-    + 请前往我们的[开黑啦服务器（AoOkmM）](https://kaihei.co/AoOkmM)进行交流和反馈。
+    + 请前往我们的[开黑啦服务器（mFBCbM）](https://kaihei.co/mFBCbM)进行交流和反馈。
 + 介绍视频：
     + https://www.bilibili.com/video/BV1sg411T74v
     + https://www.bilibili.com/video/BV1Yq4y1z79J
@@ -41,7 +41,7 @@
 
 ### 制作名单
 
-+ 数据包&资源包：[古镇天Gugle](https://space.bilibili.com/19822751)
++ 数据包&资源包：[古镇天Gugle](https://space.bilibili.com/19822751)、[sch246](https://space.bilibili.com/172818145)
 + 策划&纹理：[XeKr](https://space.bilibili.com/5930630)
 + 特别鸣谢：
 + [ruhuasiyu](https://www.mcbbs.net/home.php?mod=space&uid=975525)数据包作品[《铁砧砸石头》](https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/other_datapacks/%E9%93%81%E7%A0%A7%E7%A0%B8%E7%9F%B3%E5%A4%B4)的基础判断函数

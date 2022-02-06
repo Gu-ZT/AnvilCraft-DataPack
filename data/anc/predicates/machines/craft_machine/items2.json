@@ -17,6 +17,15 @@
 						"nbt": "{Items:[{tag:{id:\"anc:empty_protocol\"}},{id:\"minecraft:lapis_lazuli\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "水饺（生）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:flatdough\"}},{tag:{id:\"anc:meat_stuffing\"}}]}"
+					}
+				}
 			}
 		]
 	}

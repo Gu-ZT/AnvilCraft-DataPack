@@ -17,6 +17,33 @@
 						"nbt": "{Items:[{id:\"minecraft:paper\"},{id:\"minecraft:feather\"},{id:\"minecraft:glow_ink_sac\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "奶油面包卷",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:cream\"}},{id:\"minecraft:bread\"},{id:\"minecraft:sugar\"}]}"
+					}
+				}
+			},
+			{
+				"_comment": "生煎（生）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:flatdough\"}},{tag:{id:\"anc:meat_stuffing\"}},{tag:{id:\"anc:grease\"}}]}"
+					}
+				}
+			},
+			{
+				"_comment": "肉丸（生）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:flour\"}},{tag:{id:\"anc:meat_stuffing\"}},{tag:{id:\"anc:grease\"}}]}"
+					}
+				}
 			}
 		]
 	}

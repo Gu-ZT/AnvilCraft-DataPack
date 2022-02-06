@@ -8,9 +8,7 @@
                 "block": {
                     "blocks": [
                         "fire",
-                        "campfire",
                         "soul_fire",
-                        "soul_campfire",
                         "lava",
                         "lava_cauldron"
                     ]
@@ -25,7 +23,9 @@
                     "blocks": [
                         "furnace",
                         "blast_furnace",
-                        "smoker"
+                        "smoker",
+                        "soul_campfire",
+                        "campfire"
                     ],
                     "state": {
                         "lit": true

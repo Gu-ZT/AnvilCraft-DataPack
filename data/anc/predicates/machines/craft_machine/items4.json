@@ -26,6 +26,15 @@
 						"nbt": "{Items:[{tag:{id:\"anc:dispel_protocol_first\"}},{tag:{id:\"anc:dispel_protocol_last\"}},{tag:{id:\"anc:dispel_protocol_curse\"}},{id:\"minecraft:diamond\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "牛肉炖蘑菇（生）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:beef\"},{id:\"minecraft:red_mushroom\"},{id:\"minecraft:brown_mushroom\"},{id:\"minecraft:bowl\"}]}"
+					}
+				}
 			}
 		]
 	}

@@ -20,6 +20,21 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:dispel_protocol_random"
+						},
+						{
+							"_comment": "水饺（生）",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:\"anc:flatdough\"}},{tag:{id:\"anc:meat_stuffing\"}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:dumpling_raw"
 						}
 					]
 				}

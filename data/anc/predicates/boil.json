@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:dumpling_raw\"}}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:beef_mushroom_stew_raw\"}}}"
+			}
+		}
+    ]
+}

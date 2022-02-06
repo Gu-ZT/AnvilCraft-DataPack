@@ -28,6 +28,13 @@
 			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:snowball\"}}"
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:milk_bucket\"}}"
+			}
 		}
     ]
 }
