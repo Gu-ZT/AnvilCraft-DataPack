@@ -23,7 +23,7 @@ def outJson():
     out_file_write.close()
 
     for i in range(block_rows - 1):
-        block_temp = {"name": "", "englishName": "", "registerName": "", "CreativeTabName": "", "OredictList": [],
+        block_temp = {"name": "", "englishName": "", "registerName": "", "CreativeTabName": "", "OredictList": "[]",
                       "maxStackSize": 64, "maxDurability": 1, "smallIcon": "", "largeIcon": "",
                       'type': 'Block'}
         row = i + 1
@@ -34,7 +34,7 @@ def outJson():
         had_side = block_table.cell(row, 7).value
         had_top = block_table.cell(row, 8).value
         if block_table.cell(row, 10).value != 'Null':
-            block_temp['OredictList'] = [f"{block_table.cell(row, 10).value}"]
+            block_temp['OredictList'] = f"[block_table.cell(row, 10).value]"
         else:
             block_temp.pop('OredictList')
         if had_side == 'True':
@@ -63,7 +63,7 @@ def outJson():
         out_file_write.close()
 
     for i in range(item_rows - 1):
-        item_temp = {"name": "", "englishName": "", "registerName": "", "CreativeTabName": "", "OredictList": [],
+        item_temp = {"name": "", "englishName": "", "registerName": "", "CreativeTabName": "", "OredictList": "[]",
                      "maxStackSize": 64, "maxDurability": 1, "smallIcon": "", "largeIcon": "",
                      'type': 'Item'}
         row = i + 1
@@ -72,7 +72,7 @@ def outJson():
         item_trans_zhcn = item_table.cell(row, 3).value  # 物品简体中文名
         item_texture_dir = os.path.join(pro_dir, "assets", namespace, "textures", "item", f"{item_id}.png")  # 物品贴图文件位置
         if item_table.cell(row, 7).value != 'Null':
-            item_temp['OredictList'] = [f"{item_table.cell(row, 7).value}"]
+            item_temp['OredictList'] = f"[datapack:item/{item_table.cell(row, 7).value}]"
         else:
             item_temp.pop('OredictList')
         smallIcon = base64Image.file_base64(item_texture_dir)['smallIcon']
