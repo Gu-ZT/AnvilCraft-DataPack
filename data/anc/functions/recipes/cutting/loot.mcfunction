@@ -1,7 +1,7 @@
 execute store result score @s ancItemCount run data get entity @s Item.Count
 
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:barrel",tag:{id:"magnet_block"}}}] run loot spawn ~ ~-1 ~ loot anc:cutting/magnet_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:iron_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/magnet_block
+execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:iron_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/iron_block
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:iron_ingot"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/iron_ingot
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:gold_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/gold_block
 execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:gold_ingot"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/gold_ingot
