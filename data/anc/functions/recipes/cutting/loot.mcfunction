@@ -1,33 +1,135 @@
-execute store result score @s ancItemCount run data get entity @s Item.Count
+data remove storage temp input
+data modify storage temp input set value []
 
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:barrel",tag:{id:"magnet_block"}}}] run loot spawn ~ ~-1 ~ loot anc:cutting/magnet_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:iron_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/iron_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:iron_ingot"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/iron_ingot
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:gold_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/gold_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:gold_ingot"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/gold_ingot
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:copper_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/copper_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:raw_iron_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/raw_iron_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:raw_gold_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/raw_gold_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:raw_copper_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/raw_copper_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:netherite_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/netherite_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:diamond_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/diamond_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:emerald_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/emerald_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:lapis_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/lapis_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/redstone_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:quartz_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/quartz_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:coal_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/coal_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:glowstone"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/glowstone
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:slime_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/slime_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:melon"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/melon
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:hay_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/hay_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:bone_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/bone_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:snow_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/snow_block
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:clay"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/clay
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:dried_kelp_block"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/dried_kelp_block
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrel",tag:{id:"magnet_block"}}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140026,id:'anc:magnet_ingot',display:{Name:'{"italic":false,"translate":"anc.item.magnet_ingot.name"}'}}}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:iron_ingot"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_ingot"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:iron_nugget"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:gold_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:gold_ingot"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:gold_ingot"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:gold_nugget"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:copper_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:copper_ingot"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:raw_iron_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:raw_iron"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:raw_gold_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:raw_gold"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:raw_copper_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:raw_copper"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:netherite_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:netherite_ingot"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:diamond_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:diamond"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:emerald_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:emerald"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:lapis_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:lapis_lazuli"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:redstone"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:quartz_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:quartz"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:coal_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:coal"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:glowstone"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:glowstone_dust"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:slime_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:slime_ball"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:melon"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:melon_slice"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:hay_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:wheat"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:bone_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:bone_meal"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:snow_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:snowball"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:clay"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:clay_ball"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:dried_kelp_block"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:dried_kelp"}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140017,id:'anc:nether_star_shard',display:{Name:'{"italic":false,"translate":"anc.item.nether_star_shard.name"}'}}}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
 
 
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:heart_of_the_sea"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140010,id:'anc:seed_of_the_sea',display:{Name:'{"italic":false,"translate":"anc.item.seed_of_the_sea.name"}'}}}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
 
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/nether_star
-
-execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:heart_of_the_sea"}}] run loot spawn ~ ~-1 ~ loot anc:cutting/heart_of_the_sea
-kill @s
+execute positioned ~ ~-1 ~ run function anc:funcloot/loot
