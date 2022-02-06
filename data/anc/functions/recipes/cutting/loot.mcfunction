@@ -1,3 +1,5 @@
+execute as @e[type=item,nbt={Item:{id:"minecraft:wheat"}}] run data modify entity @s Item merge value {id:"minecraft:firework_star",tag:{CustomModelData:11140030,id:'anc:flour',display:{Name:'{"italic":false,"translate":"anc.item.flour.name"}'}}}
+
 data remove storage temp input
 data modify storage temp input set value []
 
@@ -126,10 +128,19 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star"}},distan
 execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140017,id:'anc:nether_star_shard',display:{Name:'{"italic":false,"translate":"anc.item.nether_star_shard.name"}'}}}
 execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
 
-
 scoreboard players set #Count ancValue 0
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:heart_of_the_sea"}},distance=..1] run function anc:recipes/cutting/add_count
 execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140010,id:'anc:seed_of_the_sea',display:{Name:'{"italic":false,"translate":"anc.item.seed_of_the_sea.name"}'}}}
 execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:beef"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140037,id:'anc:meat_stuffing',display:{Name:'{"italic":false,"translate":"anc.item.meat_stuffing.name"}'}}}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 2 run scoreboard players get #Count ancValue
+
+scoreboard players set #Count ancValue 0
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:porkchop"}},distance=..1] run function anc:recipes/cutting/add_count
+execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140037,id:'anc:meat_stuffing',display:{Name:'{"italic":false,"translate":"anc.item.meat_stuffing.name"}'}}}
+execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 2 run scoreboard players get #Count ancValue
 
 execute positioned ~ ~-1 ~ run function anc:funcloot/loot
