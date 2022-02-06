@@ -34,7 +34,7 @@ def outJson():
         had_side = block_table.cell(row, 7).value
         had_top = block_table.cell(row, 8).value
         if block_table.cell(row, 10).value != 'Null':
-            block_temp['OredictList'] = f"[block_table.cell(row, 10).value]"
+            block_temp['OredictList'] = f"[datapack:block/{block_table.cell(row, 10).value}]"
         else:
             block_temp.pop('OredictList')
         if had_side == 'True':
