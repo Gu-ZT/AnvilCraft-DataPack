@@ -5,7 +5,7 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:barrel\",tag:{id:\"magnet_block\"}}}"
+				"nbt": "{Item:{tag:{id:\"magnet_block\"}}}"
 			}
 		},
 		{
@@ -181,6 +181,27 @@
 			"entity": "this",
 			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:heart_of_the_sea\"}}"
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:wheat\"}}"
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:beef\"}}"
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:porkchop\"}}"
 			}
 		}
 	]
