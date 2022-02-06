@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140042,id:'anc:beef_mushroom_stew',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.beef_mushroom_stew.name\"}'},Effects:[{EffectId:23b,EffectDuration:1200}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

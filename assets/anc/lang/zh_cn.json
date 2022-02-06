@@ -43,5 +43,21 @@
     "anc.item.protect_protocol.name": "保护协议",
     "anc.item.restock_protocol.name": "补货协议",
     "anc.item.magnet_ingot.name": "磁铁锭",
-    "anc.item.magnet.name": "手持磁铁"
+    "anc.item.magnet.name": "手持磁铁",
+    "anc.item.cream.name": "奶油",
+    "anc.item.grease.name": "油脂",
+    "anc.item.flour.name": "面粉",
+    "anc.item.dough.name": "面团",
+    "anc.item.flatdough.name": "面皮",
+    "anc.item.dumpling_raw.name": "水饺（生）",
+    "anc.item.shengjian_raw.name": "生煎（生）",
+    "anc.item.meatballs_raw.name": "肉丸（生）",
+    "anc.item.beef_mushroom_stew_raw.name": "牛肉炖蘑菇（生）",
+    "anc.item.meat_stuffing.name": "肉馅",
+    "anc.item.creamy_bread_roll.name": "奶油面包卷",
+    "anc.item.chocolate.name": "巧克力",
+    "anc.item.shengjian.name": "生煎",
+    "anc.item.meatballs.name": "炸肉丸",
+    "anc.item.beef_mushroom_stew.name": "牛肉炖蘑菇",
+    "anc.item.dumpling.name": "水饺"
 }
