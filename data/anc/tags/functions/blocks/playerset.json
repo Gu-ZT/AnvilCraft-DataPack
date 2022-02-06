@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "anc:blocks/craft_machine/playerset",
+        "anc:blocks/interact_machine/playerset",
+        "anc:blocks/magnet_block/playerset"
+    ]
+}

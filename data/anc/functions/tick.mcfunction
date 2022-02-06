@@ -8,9 +8,8 @@ execute as @e[type=falling_block] store result score @s ancDistance run data get
 
 execute as @e[tag=anc_craft_machine] at @s run function anc:machines/craft_machine/tick
 execute as @e[tag=anc_interact_machine] at @s run function anc:machines/interact_machine/tick
-execute as @e[tag=anc_magnet] if score $ancMagnetUseful ancConfig matches 1 at @s run function anc:machines/magnet/tick
+execute as @e[tag=anc_magnet_block] if score $ancMagnetUseful ancConfig matches 1 at @s run function anc:machines/magnet_block/tick
 
-execute as @a at @s anchored eyes run function anc:blocks/playerset
 function #anc:blocks
 
 # 清理物品

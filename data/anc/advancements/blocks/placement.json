@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "barrel"
+            }
+        }
+    },
+    "requirements": [["place"]],
+    "rewards":{
+        "function": "anc:blocks/main"
+    }
+}

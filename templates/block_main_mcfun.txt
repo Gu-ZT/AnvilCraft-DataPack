@@ -1,2 +1,2 @@
-execute as @a at @s run function {namespace}:blocks/{id}/playerset
+# execute as @a at @s run function {namespace}:blocks/{id}/playerset
 execute as @e[type=glow_item_frame,tag={namespace}_{id}] at @s unless block ~ ~ ~ minecraft:barrel run function {namespace}:blocks/{id}/broken
