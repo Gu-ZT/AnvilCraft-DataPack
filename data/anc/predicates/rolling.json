@@ -54,7 +54,7 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{tag:{id:\"dough\"}}}"
+				"nbt": "{Item:{tag:{id:\"anc:dough\"}}}"
 			}
 		},
 		{
