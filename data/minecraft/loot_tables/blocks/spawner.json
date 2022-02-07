@@ -23,6 +23,15 @@
                       }
                     ]
                   }
+                },
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "ancLevel":{
+                      "min": 1
+                    }
+                  }
                 }
               ],
               "name": "minecraft:spawner",

@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "anc:meatballs_raw"
+                }
+            ]
+        }
+    ]
+}

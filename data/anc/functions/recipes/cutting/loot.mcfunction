@@ -1,10 +1,11 @@
+execute as @e[type=item,nbt={Item:{id:"minecraft:wheat"}}] run tp @s ~ ~-1 ~
 execute as @e[type=item,nbt={Item:{id:"minecraft:wheat"}}] run data modify entity @s Item merge value {id:"minecraft:firework_star",tag:{CustomModelData:11140030,id:'anc:flour',display:{Name:'{"italic":false,"translate":"anc.item.flour.name"}'}}}
 
 data remove storage temp input
 data modify storage temp input set value []
 
 scoreboard players set #Count ancValue 0
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrel",tag:{id:"magnet_block"}}},distance=..1] run function anc:recipes/cutting/add_count
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrel",tag:{id:"anc:magnet_block"}}},distance=..1] run function anc:recipes/cutting/add_count
 execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140026,id:'anc:magnet_ingot',display:{Name:'{"italic":false,"translate":"anc.item.magnet_ingot.name"}'}}}
 execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 9 run scoreboard players get #Count ancValue
 

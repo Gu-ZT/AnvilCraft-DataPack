@@ -34,7 +34,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "anc:dumpling_raw"
+							"name": "anc:loots/2_dumpling_raw"
 						}
 					]
 				}

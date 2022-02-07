@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 4,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "anc:cream"
+                }
+            ]
+        }
+    ]
+}

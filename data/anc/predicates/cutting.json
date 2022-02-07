@@ -5,7 +5,7 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{tag:{id:\"magnet_block\"}}}"
+				"nbt": "{Item:{tag:{id:\"anc:magnet_block\"}}}"
 			}
 		},
 		{
