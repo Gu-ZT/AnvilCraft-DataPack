@@ -1,5 +1,5 @@
 {
-    "Please install the correct resource pack":"§f§l============================§r\n§b§l欢迎使用铁砧工艺，数据包版本：§r%s§b§l，资源包版本：§6§l0.5.1§r\n§b§l数据包作者：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l资源包作者：§r§6§lXe_Kr§r\n§f§l============================§r",
+    "Please install the correct resource pack":"§f§l============================§r\n§b§l欢迎使用铁砧工艺，数据包版本：§r%s§b§l，资源包版本：§6§l0.5.2§r\n§b§l数据包作者：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l资源包作者：§r§6§lXe_Kr§r\n§f§l============================§r",
     "anc.block.magnet_block.name": "磁铁",
     "anc.block.magnet_block.lore": "被红石激活时可以吸起其正下方（4个方块内）的铁砧",
     "anc.block.crafting_machine.name": "合成器",
