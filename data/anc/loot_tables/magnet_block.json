@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:11140001,id:'anc:magnet_block',display:{Name:'{\"italic\":false,\"translate\":\"anc.block.magnet_block.name\"}'},BlockEntityTag:{Lock:'276082751CF95F35648CB2F47928AB2B'}}"
+                            "tag": "{CustomModelData:11140001,id:'anc:magnet_block',display:{Name:'{\"italic\":false,\"translate\":\"anc.block.magnet_block.name\"}',Lore:['{\"italic\":false,\"translate\":\"anc.block.magnet_block.lore\"}']},BlockEntityTag:{Lock:'276082751CF95F35648CB2F47928AB2B'}}"
                         }
                     ]
                 }

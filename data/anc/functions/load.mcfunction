@@ -19,6 +19,7 @@ scoreboard players set $max ancRandom 0
 scoreboard players set $min ancRandom 0
 scoreboard players set $output ancRandom 0
 
+scoreboard objectives add ancSuccess dummy
 scoreboard objectives add ancRepairSuccess dummy
 scoreboard objectives add ancAbsorbSuccess dummy
 scoreboard objectives add ancPlacementSuccess dummy
@@ -30,8 +31,6 @@ scoreboard objectives add ancDispenserSuccess dummy
 scoreboard objectives add ancExpValue dummy
 
 scoreboard objectives add ancConfig dummy
-
-function anc:config
 
 # scoreboard objectives add testX dummy
 # scoreboard objectives add testY dummy
@@ -46,5 +45,7 @@ scoreboard players set $4 ancValue 4
 scoreboard players set $9 ancValue 9
 scoreboard players set $64 ancValue 64
 scoreboard objectives add ancItemCount dummy
+
+function anc:config
 
 advancement revoke @a only anc:welcome/join

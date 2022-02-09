@@ -70,6 +70,13 @@
 			"predicate": {
 				"nbt": "{Item:{tag:{id:\"anc:flour\"}}}"
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:seed_of_the_sea\"}}}"
+			}
 		}
     ]
 }
