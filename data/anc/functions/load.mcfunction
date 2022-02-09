@@ -45,6 +45,7 @@ scoreboard players set $4 ancValue 4
 scoreboard players set $9 ancValue 9
 scoreboard players set $64 ancValue 64
 scoreboard objectives add ancItemCount dummy
+scoreboard objectives add ancTempStrong dummy
 
 function anc:config
 

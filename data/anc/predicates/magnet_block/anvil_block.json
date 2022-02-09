@@ -1,0 +1,57 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "offsetY": -1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "anvil",
+                        "chipped_anvil",
+                        "damaged_anvil"
+                    ]
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetY": -2,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "anvil",
+                        "chipped_anvil",
+                        "damaged_anvil"
+                    ]
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetY": -3,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "anvil",
+                        "chipped_anvil",
+                        "damaged_anvil"
+                    ]
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetY": -4,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "anvil",
+                        "chipped_anvil",
+                        "damaged_anvil"
+                    ]
+                }
+            }
+        }
+    ]
+}

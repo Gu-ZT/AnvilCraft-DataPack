@@ -1,0 +1,3 @@
+execute store success score #check ancValue if entity @e[type=falling_block,dx=0,dz=0,dy=-4]
+execute if score #check ancValue matches 0 positioned ~.5 ~ ~.5 if predicate anc:magnet_block/anvil_block run function anc:machines/magnet_block/start
+execute if score #check ancValue matches 1 as @e[type=falling_block,dx=0,dz=0,dy=-4,sort=nearest,limit=1] unless data entity @s {NoGravity:1b} positioned ~.5 ~ ~.5 run function anc:machines/magnet_block/keep
