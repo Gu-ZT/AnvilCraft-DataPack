@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "eat_utusan": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": ["dried_kelp"],
+                    "nbt": "{id:'anc:utusan'}"
+                }
+            }
+        }
+    },
+    "requirements": [["eat_utusan"]],
+    "rewards":{
+        "function": "anc:items/foods/utusan"
+    }
+}

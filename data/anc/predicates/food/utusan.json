@@ -1,0 +1,135 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "poison": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "wither": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "nausea": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "blindness": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "mining_fatigue": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "instant_damage": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "slowness": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "weakness": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "unluck": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "hunger": {
+                        "duration": {
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
