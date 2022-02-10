@@ -344,4 +344,4 @@ execute if score #make ancValue matches 1.. store result storage temp input[-1].
 execute as @e[type=minecraft:item,nbt={Item:{tag:{id:"anc:fruit_of_the_sea"}}},distance=..1] run data modify entity @s Item.tag set value {CustomModelData:11140012,id:'anc:kernel_of_the_sea',display:{Name:'{"italic":false,"translate":"anc.item.kernel_of_the_sea.name"}'}}
 
 
-function anc:funcloot/loot
+function anc:handle/funcloot/loot

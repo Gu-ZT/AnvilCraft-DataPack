@@ -2,8 +2,8 @@ execute as @a at @s run function anc:tick/player
 execute as @e[type=villager] store result score @s ancLastRestock run data get entity @s LastRestock
 
 
-execute as @e[type=minecraft:falling_block,predicate=anc:anvil,tag=!anc_marked] run function anc:mark
-execute as @e[type=minecraft:area_effect_cloud,tag=anc_aec_mark] run function anc:aec
+execute as @e[type=minecraft:falling_block,predicate=anc:anvil,tag=!anc_marked] run function anc:handle/mark
+execute as @e[type=minecraft:area_effect_cloud,tag=anc_aec_mark] run function anc:tick/aec
 execute as @e[type=falling_block] store result score @s ancDistance run data get entity @s FallDistance
 
 execute as @e[tag=anc_craft_machine] at @s run function anc:machines/craft_machine/tick

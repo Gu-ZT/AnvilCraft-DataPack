@@ -34,4 +34,4 @@ execute if score #left_honeyCount ancValue matches 1.. run scoreboard players op
 execute if score #honeyCount ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:honey_bottle"}
 execute if score #honeyCount ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #honeyCount ancValue
 
-execute positioned ~ ~-1 ~ run function anc:funcloot/loot
+execute positioned ~ ~-1 ~ run function anc:handle/funcloot/loot

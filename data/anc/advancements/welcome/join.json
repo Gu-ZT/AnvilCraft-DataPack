@@ -6,6 +6,6 @@
     },
     "requirements": [["join"]],
     "rewards": {
-        "function": "anc:join"
+        "function": "anc:handle/join"
     }
 }

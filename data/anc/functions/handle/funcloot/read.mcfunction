@@ -7,6 +7,7 @@ scoreboard players operation #64x ancValue /= $64 ancValue
 scoreboard players operation #left ancValue %= $64 ancValue
 
 scoreboard players operation #Count ancValue = #left ancValue
-execute if score #Count ancValue matches 1.. run function anc:funcloot/spawn
+execute if score #Count ancValue matches 1.. run function anc:handle/funcloot/spawn
 
-execute if score #64x ancValue matches 1.. run function anc:funcloot/read/loop
+execute if score #64x ancValue matches 1.. run function anc:handle/funcloot/read/loop
+

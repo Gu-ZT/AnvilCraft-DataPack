@@ -144,4 +144,4 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:porkchop"}},distance=
 execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140037,id:'anc:meat_stuffing',display:{Name:'{"italic":false,"translate":"anc.item.meat_stuffing.name"}'}}}
 execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 2 run scoreboard players get #Count ancValue
 
-execute positioned ~ ~-1 ~ run function anc:funcloot/loot
+execute positioned ~ ~-1 ~ run function anc:handle/funcloot/loot

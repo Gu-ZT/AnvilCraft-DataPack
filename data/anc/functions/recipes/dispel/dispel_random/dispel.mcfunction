@@ -1,6 +1,6 @@
 execute store result score $max ancRandom run data get entity @s Item.tag.Enchantments
 scoreboard players set $min ancRandom 1
-function anc:random
+function anc:handle/random
 execute if score $output ancRandom matches 1 run data remove entity @s Item.tag.Enchantments.[0]
 execute if score $output ancRandom matches 2 run data remove entity @s Item.tag.Enchantments.[1]
 execute if score $output ancRandom matches 3 run data remove entity @s Item.tag.Enchantments.[2]

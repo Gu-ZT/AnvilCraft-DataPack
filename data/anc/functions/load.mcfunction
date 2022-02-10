@@ -32,10 +32,6 @@ scoreboard objectives add ancExpValue dummy
 
 scoreboard objectives add ancConfig dummy
 
-# scoreboard objectives add testX dummy
-# scoreboard objectives add testY dummy
-# scoreboard objectives add testZ dummy
-
 scoreboard players set $25 ancHealth 25
 scoreboard players set $7 ancExpValue 7
 

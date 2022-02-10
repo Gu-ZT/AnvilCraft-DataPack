@@ -1,6 +1,6 @@
 scoreboard players operation #t ancAnvil = @s ancAnvil
 tag @s add anc_temp_aec
-execute as @e[type=minecraft:falling_block,tag=anc_marked] if score @s ancAnvil = #t ancAnvil run function anc:compare
+execute as @e[type=minecraft:falling_block,tag=anc_marked] if score @s ancAnvil = #t ancAnvil run function anc:handle/compare
 
 # 实体掉落 attack
 execute at @s[tag=anc_temp_aec,scores={ancDistance=2..}] run function anc:more/attack/main
