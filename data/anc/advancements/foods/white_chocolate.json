@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "eat_chocolate": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": ["dried_kelp"],
+                    "nbt": "{id:'anc:white_chocolate'}"
+                }
+            }
+        }
+    },
+    "requirements": [["eat_chocolate"]],
+    "rewards":{
+        "function": "anc:items/foods/white_chocolate"
+    }
+}

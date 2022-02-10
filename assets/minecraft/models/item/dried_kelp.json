@@ -9,6 +9,24 @@
         "custom_model_data": 11140039
       },
       "model": "anc:item/chocolate"
+    },
+    {
+        "predicate": {
+            "custom_model_data": 11140047
+        },
+        "model": "anc:item/black_chocolate"
+    },
+    {
+        "predicate": {
+            "custom_model_data": 11140048
+        },
+        "model": "anc:item/white_chocolate"
+    },
+    {
+        "predicate": {
+            "custom_model_data": 11140050
+        },
+        "model": "anc:item/utusan"
     }
   ]
 }

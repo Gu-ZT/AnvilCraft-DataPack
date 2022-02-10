@@ -44,6 +44,15 @@
 						"nbt": "{Items:[{tag:{id:\"anc:flour\"}},{tag:{id:\"anc:meat_stuffing\"}},{tag:{id:\"anc:grease\"}}]}"
 					}
 				}
+			},
+			{
+				"_comment": "可可液块",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:cocoa_powder\"}},{tag:{id:\"anc:cocoa_powder\"}},{tag:{id:\"anc:cocoa_butter\"}}]}"
+					}
+				}
 			}
 		]
 	}

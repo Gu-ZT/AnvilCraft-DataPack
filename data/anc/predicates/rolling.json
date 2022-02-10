@@ -54,14 +54,21 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{tag:{id:\"anc:dough\"}}}"
+				"nbt": "{Item:{id:\"minecraft:cooked_porkchop\"}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:cooked_porkchop\"}}"
+				"nbt": "{Item:{id:\"minecraft:cocoa_beans\"}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:dough\"}}}"
 			}
 		}
     ]

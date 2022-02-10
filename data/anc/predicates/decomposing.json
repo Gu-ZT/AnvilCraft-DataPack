@@ -280,7 +280,21 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{tag:{id:\"anc:kernel_of_the_sea\"},Count:1b}}"
+				"nbt": "{Item:{tag:{id:\"anc:ancient_debris\"},Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:elytra\"},Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:kernel_of_the_sea\"}}}"
 			}
 		}
     ]

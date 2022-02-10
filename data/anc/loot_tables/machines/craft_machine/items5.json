@@ -35,6 +35,21 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:magnet"
+						},
+						{
+							"_comment": "五毒散（生）",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:pufferfish\"},{id:\"minecraft:lily_of_the_valley\"},{id:\"minecraft:spider_eye\"},{id:\"minecraft:poisonous_potato\"},{id:\"minecraft:wither_rose\"}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:utusan_raw"
 						}
 					]
 				}

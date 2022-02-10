@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140049,id:'anc:utusan_raw',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.utusan_raw.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

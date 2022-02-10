@@ -65,6 +65,21 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:loots/2_meatballs_raw"
+						},
+						{
+							"_comment": "可可液块",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{tag:{id:\"anc:cocoa_powder\"}},{tag:{id:\"anc:cocoa_powder\"}},{tag:{id:\"anc:cocoa_butter\"}}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:cocoa_liquor"
 						}
 					]
 				}

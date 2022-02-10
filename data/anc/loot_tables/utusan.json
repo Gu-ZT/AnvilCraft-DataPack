@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:dried_kelp",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140050,id:'anc:utusan',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.utusan.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -26,6 +26,15 @@
 						"nbt": "{Items:[{Slot:2b,id:\"minecraft:ender_pearl\"},{Slot:10b,tag:{id:\"anc:magnet_ingot\"}},{Slot:11b,id:\"minecraft:redstone\"},{Slot:12b,tag:{id:\"anc:magnet_ingot\"}},{Slot:20b,id:\"minecraft:ender_pearl\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "五毒散（生）",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:pufferfish\"},{id:\"minecraft:lily_of_the_valley\"},{id:\"minecraft:spider_eye\"},{id:\"minecraft:poisonous_potato\"},{id:\"minecraft:wither_rose\"}]}"
+					}
+				}
 			}
 		]
 	}

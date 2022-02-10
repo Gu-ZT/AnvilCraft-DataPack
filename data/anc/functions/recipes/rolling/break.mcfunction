@@ -1,2 +1,4 @@
-execute align xyz positioned ~.5 ~ ~.5 if entity @e[type=minecraft:item,predicate=anc:rolling,distance=..1] run function anc:recipes/rolling/loot
+scoreboard players operation $ancTemp ancItemCount = $ancProcessingCount ancConfig
+execute if score $ancTemp ancItemCount matches 1.. as @e[type=minecraft:item,predicate=anc:rolling,distance=..1] at @s if block ~ ~ ~ #minecraft:cauldrons run function anc:recipes/rolling/rolling
+scoreboard players reset $ancTemp ancItemCount
 kill @s

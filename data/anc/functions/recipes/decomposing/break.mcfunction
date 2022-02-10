@@ -1,4 +1,4 @@
-execute as @e[type=minecraft:item,predicate=anc:decomposing,distance=..1] at @s run function anc:recipes/decomposing/loot
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:ancient_debris"}},distance=..1] at @s run loot spawn ~ ~ ~ loot anc:debris_scrap
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",tag:{Damage:0}}},distance=..1] at @s run function anc:recipes/decomposing/elytra_loot
+scoreboard players operation $ancTemp ancItemCount = $ancProcessingCount ancConfig
+execute if score $ancTemp ancItemCount matches 1.. as @e[type=minecraft:item,predicate=anc:puffing,distance=..1] at @s if block ~ ~ ~ #minecraft:cauldrons run function anc:recipes/decomposing/decomposing
+scoreboard players reset $ancTemp ancItemCount
 kill @s
