@@ -205,6 +205,30 @@
         },
         {
             "predicate": {
+                "custom_model_data": 11140044
+            },
+            "model": "anc:item/cocoa_butter"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140045
+            },
+            "model": "anc:item/cocoa_powder"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140046
+            },
+            "model": "anc:item/cocoa_liquor"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140049
+            },
+            "model": "anc:item/utusan_raw"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 11141000
             },
             "model": "anc:gui/empty"
@@ -286,30 +310,6 @@
                 "custom_model_data": 11141013
             },
             "model": "anc:gui/interact_back"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 11140044
-            },
-            "model": "anc:item/cocoa_butter"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 11140045
-            },
-            "model": "anc:item/cocoa_powder"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 11140046
-            },
-            "model": "anc:item/cocoa_liquor"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 11140049
-            },
-            "model": "anc:item/utusan_raw"
         }
     ]
 }
