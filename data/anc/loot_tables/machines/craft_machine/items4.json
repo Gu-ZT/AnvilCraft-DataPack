@@ -13,7 +13,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{tag:{id:\"anc:elytra_frame\"}},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"}]}"
+											"nbt": "{Items:[{tag:{id:\"anc:elytra_frame\"},Slot:1b},{id:\"minecraft:phantom_membrane\",Slot:2b},{id:\"minecraft:phantom_membrane\",Slot:10b},{id:\"minecraft:phantom_membrane\",Slot:11b}]}"
 										}
 									}
 								}
@@ -50,51 +50,6 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:beef_mushroom_stew_raw"
-						},
-						{
-							"_comment": "巧克力",
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:\"anc:cream\"}},{tag:{id:\"anc:cocoa_liquor\"}},{tag:{id:\"anc:cocoa_butter\"}},{id:\"minecraft:sugar\"}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "anc:chocolate"
-						},
-						{
-							"_comment": "黑巧克力",
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:\"anc:cocoa_butter\"}},{tag:{id:\"anc:cocoa_liquor\"}},{tag:{id:\"anc:cocoa_liquor\"}},{id:\"minecraft:sugar\"}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "anc:black_chocolate"
-						},
-						{
-							"_comment": "白巧克力",
-							"conditions": [
-								{
-									"condition": "minecraft:location_check",
-									"predicate": {
-										"block": {
-											"nbt": "{Items:[{tag:{id:\"anc:cream\"}},{tag:{id:\"anc:cocoa_butter\"}},{tag:{id:\"anc:cocoa_butter\"}},{id:\"minecraft:sugar\"}]}"
-										}
-									}
-								}
-							],
-							"type": "minecraft:loot_table",
-							"name": "anc:white_chocolate"
 						}
 					]
 				}

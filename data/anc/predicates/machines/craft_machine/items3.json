@@ -50,7 +50,7 @@
 				"condition": "minecraft:location_check",
 				"predicate": {
 					"block": {
-						"nbt": "{Items:[{tag:{id:\"anc:cocoa_powder\"}},{tag:{id:\"anc:cocoa_powder\"}},{tag:{id:\"anc:cocoa_butter\"}}]}"
+						"nbt": "{Items:[{tag:{id:\"anc:cocoa_powder\"},Slot:1b},{tag:{id:\"anc:cocoa_powder\",Slot:10b}},{tag:{id:\"anc:cocoa_butter\",Slot:2b}}]}"
 					}
 				}
 			}
