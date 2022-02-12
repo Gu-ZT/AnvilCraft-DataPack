@@ -41,11 +41,14 @@
 
 ### 制作名单
 
-+ 数据包&资源包：[古镇天Gugle](https://space.bilibili.com/19822751)、[sch246](https://space.bilibili.com/172818145)
-+ 策划&纹理：[XeKr](https://space.bilibili.com/5930630)
++ 数据包&资源包：
+    + [古镇天Gugle](https://space.bilibili.com/19822751)
+    + [sch246](https://space.bilibili.com/172818145)
++ 策划&纹理：
+    + [XeKr](https://space.bilibili.com/5930630)
 + 特别鸣谢：
-+ [ruhuasiyu](https://www.mcbbs.net/home.php?mod=space&uid=975525)数据包作品[《铁砧砸石头》](https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/other_datapacks/%E9%93%81%E7%A0%A7%E7%A0%B8%E7%9F%B3%E5%A4%B4)的基础判断函数
-+ [ph-苯](https://www.mcbbs.net/home.php?mod=space&uid=588878)在数据包Debug时所提供的帮助
-+ [SPGoding](https://www.mcbbs.net/home.php?mod=space&uid=2444378)所制作的全宇宙最好用的VSCode插件[大憨批（Data-pack Helper Plus）](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server)
-+ [sch233](https://www.mcbbs.net/home.php?mod=space&uid=740479)性能优化，大量合成
-+ 赞助名单：[塔壳take](https://space.bilibili.com/13029727)
+    + [ruhuasiyu](https://www.mcbbs.net/home.php?mod=space&uid=975525)数据包作品[《铁砧砸石头》](https://github.com/ruhuasiyu/CraftingPlusPlus/tree/master/other_datapacks/%E9%93%81%E7%A0%A7%E7%A0%B8%E7%9F%B3%E5%A4%B4)的基础判断函数
+    + [ph-苯](https://www.mcbbs.net/home.php?mod=space&uid=588878)在数据包Debug时所提供的帮助
+    + [SPGoding](https://www.mcbbs.net/home.php?mod=space&uid=2444378)所制作的全宇宙最好用的VSCode插件[大憨批（Data-pack Helper Plus）](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server)
+    + [sch233](https://www.mcbbs.net/home.php?mod=space&uid=740479)性能优化，大量合成
+    + 赞助名单：[塔壳take](https://space.bilibili.com/13029727)
