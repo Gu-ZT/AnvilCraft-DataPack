@@ -21,6 +21,13 @@
 			"predicate": {
 				"nbt": "{Item:{tag:{id:\"anc:meatballs_raw\"}}}"
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:utusan_raw\"}}}"
+			}
 		}
     ]
 }
