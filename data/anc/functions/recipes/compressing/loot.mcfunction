@@ -419,7 +419,7 @@ scoreboard players set #Count ancValue 0
 scoreboard players set #left ancValue 0
 scoreboard players set #make ancValue 0
 execute if score #exe_count ancValue matches 1.. as @e[type=minecraft:item,nbt={Item:{tag:{id:"anc:fruit_of_the_sea"}}},distance=..1] run function anc:recipes/compressing/add_count
-scoreboard players set #multi ancValue 4
+scoreboard players set #multi ancValue 1
 execute if score #exe_count ancValue matches 1.. run function anc:recipes/compressing/get_count
 execute if score #left ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140011,id:'anc:fruit_of_the_sea',display:{Name:'{"italic":false,"translate":"anc.item.fruit_of_the_sea.name"}'}}}
 execute if score #left ancValue matches 1.. store result storage temp input[-1].Count int 1 run scoreboard players get #left ancValue
