@@ -7,6 +7,7 @@ scoreboard players set #left ancValue 0
 scoreboard players set #make ancValue 0
 # 计数该种物品的全部数量赋给#Count
 execute if score #exe_count ancValue matches 1.. as @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_nugget"}},distance=..1] run function anc:recipes/compressing/add_count
+# 设置其中一个输入并调用get_count函数
 scoreboard players set #multi ancValue 9
 execute if score #exe_count ancValue matches 1.. run function anc:recipes/compressing/get_count
 execute if score #left ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:iron_nugget"}

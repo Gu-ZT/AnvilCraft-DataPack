@@ -11,6 +11,7 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:glass_bottle"}},dista
 
 # 瓶子数量与蜂蜜块呈4:1消耗
 # 每次合成检索数量
+scoreboard players set #Count ancValue 0
 execute if score #honeyCount ancValue matches 1.. if score #bottleCount ancValue matches 4.. run function anc:recipes/cutting/honey/loop
 
 # 蜂蜜块
