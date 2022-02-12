@@ -1,3 +1,4 @@
+# 读取执行上限
 scoreboard players operation #exe_count ancValue = $ancProcessingCount ancConfig
 
 execute unless block ~ ~-1 ~ minecraft:iron_trapdoor if predicate anc:random/1_5 run setblock ~ ~-1 ~ air
