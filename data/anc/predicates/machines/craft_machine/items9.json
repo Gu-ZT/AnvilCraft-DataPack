@@ -107,6 +107,33 @@
 						"nbt": "{Items:[{id:\"minecraft:iron_ingot\"},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}},{tag:{id:\"anc:magnet_ingot\"}}]}"
 					}
 				}
+			},
+			{
+				"_comment": "巧克力",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:cocoa_liquor\"},Slot:1b},{tag:{id:\"anc:cocoa_butter\"},Slot:2b},{tag:{id:\"anc:cocoa_liquor\"},Slot:3b},{tag:{id:\"anc:cream\"},Slot:10b},{id:\"minecraft:sugar\",Slot:11b},{tag:{id:\"anc:cream\"},Slot:12b},{tag:{id:\"anc:cocoa_liquor\"},Slot:19b},{tag:{id:\"anc:cocoa_butter\"},Slot:20b},{tag:{id:\"anc:cocoa_liquor\"},Slot:21b}]}"
+					}
+				}
+			},
+			{
+				"_comment": "黑巧克力",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:cocoa_liquor\"},Slot:1b},{tag:{id:\"anc:cocoa_liquor\"},Slot:2b},{tag:{id:\"anc:cocoa_liquor\"},Slot:3b},{tag:{id:\"anc:cocoa_butter\"},Slot:10b},{id:\"minecraft:sugar\",Slot:11b},{tag:{id:\"anc:cocoa_butter\"},Slot:12b},{tag:{id:\"anc:cocoa_liquor\"},Slot:19b},{tag:{id:\"anc:cocoa_liquor\"},Slot:20b},{tag:{id:\"anc:cocoa_liquor\"},Slot:21b}]}"
+					}
+				}
+			},
+			{
+				"_comment": "白巧克力",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{tag:{id:\"anc:cocoa_butter\"},Slot:1b},{tag:{id:\"anc:cocoa_butter\"},Slot:2b},{tag:{id:\"anc:cocoa_butter\"},Slot:3b},{tag:{id:\"anc:cream\"},Slot:10b},{id:\"minecraft:sugar\",Slot:11b},{tag:{id:\"anc:cream\"},Slot:12b},{tag:{id:\"anc:cocoa_butter\"},Slot:19b},{tag:{id:\"anc:cocoa_butter\"},Slot:20b},{tag:{id:\"anc:cocoa_butter\"},Slot:21b}]}"
+					}
+				}
 			}
 		]
 	}

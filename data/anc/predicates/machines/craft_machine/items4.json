@@ -14,7 +14,7 @@
 				"condition": "minecraft:location_check",
 				"predicate": {
 					"block": {
-						"nbt": "{Items:[{tag:{id:\"anc:elytra_frame\"}},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"},{id:\"minecraft:phantom_membrane\"}]}"
+						"nbt": "{Items:[{tag:{id:\"anc:elytra_frame\"},Slot:1b},{id:\"minecraft:phantom_membrane\",Slot:2b},{id:\"minecraft:phantom_membrane\",Slot:10b},{id:\"minecraft:phantom_membrane\",Slot:11b}]}"
 					}
 				}
 			},
@@ -33,33 +33,6 @@
 				"predicate": {
 					"block": {
 						"nbt": "{Items:[{id:\"minecraft:beef\"},{id:\"minecraft:red_mushroom\"},{id:\"minecraft:brown_mushroom\"},{id:\"minecraft:bowl\"}]}"
-					}
-				}
-			},
-			{
-				"_comment": "巧克力",
-				"condition": "minecraft:location_check",
-				"predicate": {
-					"block": {
-						"nbt": "{Items:[{tag:{id:\"anc:cream\"}},{tag:{id:\"anc:cocoa_liquor\"}},{tag:{id:\"anc:cocoa_butter\"}},{id:\"minecraft:sugar\"}]}"
-					}
-				}
-			},
-			{
-				"_comment": "黑巧克力",
-				"condition": "minecraft:location_check",
-				"predicate": {
-					"block": {
-						"nbt": "{Items:[{tag:{id:\"anc:cocoa_butter\"}},{tag:{id:\"anc:cocoa_liquor\"}},{tag:{id:\"anc:cocoa_liquor\"}},{id:\"minecraft:sugar\"}]}"
-					}
-				}
-			},
-			{
-				"_comment": "白巧克力",
-				"condition": "minecraft:location_check",
-				"predicate": {
-					"block": {
-						"nbt": "{Items:[{tag:{id:\"anc:cream\"}},{tag:{id:\"anc:cocoa_butter\"}},{tag:{id:\"anc:cocoa_butter\"}},{id:\"minecraft:sugar\"}]}"
 					}
 				}
 			}
