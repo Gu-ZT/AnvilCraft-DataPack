@@ -5,5 +5,6 @@ execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:i
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:pumpkin_seeds"}},distance=..1] run function anc:recipes/rolling/loot/grease
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:melon_seeds"}},distance=..1] run function anc:recipes/rolling/loot/grease
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:milk_bucket"}},distance=..1] run function anc:recipes/rolling/loot/milk
-execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:cooked_porkchop"}},distance=..1] run function anc:recipes/rolling/add_count
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:cooked_porkchop"}},distance=..1] run function anc:recipes/rolling/loot/grease_8
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:cocoa_beans"}},distance=..1] run function anc:recipes/rolling/loot/cocoa
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{tag:{id:"anc:dough"}}},distance=..1] run function anc:recipes/rolling/loot/flatdough
