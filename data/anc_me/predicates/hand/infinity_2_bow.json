@@ -1,93 +1,72 @@
-{
-	"condition": "alternative",
-	"terms": [
-		{
-			"condition": "entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"mainhand": {
-						"items": ["bow"],
-						"enchantments": [
-							{
-								"enchantment": "infinity",
-								"levels": {
-									"min": 2
+[
+	{
+		"condition": "alternative",
+		"terms": [
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"equipment": {
+						"mainhand": {
+							"items": [
+								"bow"
+							],
+							"enchantments": [
+								{
+									"enchantment": "infinity",
+									"levels": {
+										"min": 2
+									}
 								}
-							}
-						]
+							]
+						}
 					}
-				},
-				"player": {
-					"gamemode": "survival"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"equipment": {
+						"offhand": {
+							"items": [
+								"bow"
+							],
+							"enchantments": [
+								{
+									"enchantment": "infinity",
+									"levels": {
+										"min": 2
+									}
+								}
+							]
+						}
+					}
 				}
 			}
-		},
-		{
-			"condition": "entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"offhand": {
-						"items": ["bow"],
-						"enchantments": [
-							{
-								"enchantment": "infinity",
-								"levels": {
-									"min": 2
-								}
-							}
-						]
+		]
+	},
+	{
+		"condition": "alternative",
+		"terms": [
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"player": {
+						"gamemode": "survival"
 					}
-				},
-				"player": {
-					"gamemode": "survival"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"player": {
+						"gamemode": "adventure"
+					}
 				}
 			}
-		},
-		{
-			"condition": "entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"mainhand": {
-						"items": ["bow"],
-						"enchantments": [
-							{
-								"enchantment": "infinity",
-								"levels": {
-									"min": 2
-								}
-							}
-						]
-					}
-				},
-				"player": {
-					"gamemode": "adventure"
-				}
-			}
-		},
-		{
-			"condition": "entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"offhand": {
-						"items": ["bow"],
-						"enchantments": [
-							{
-								"enchantment": "infinity",
-								"levels": {
-									"min": 2
-								}
-							}
-						]
-					}
-				},
-				"player": {
-					"gamemode": "adventure"
-				}
-			}
-		}
-	]
-}
+		]
+	}
+]
