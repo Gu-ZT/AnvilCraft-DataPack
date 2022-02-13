@@ -3,7 +3,6 @@
 scoreboard players operation #t ancAnvil = @s ancAnvil
 tag @s add anc_temp_aec
     scoreboard players set #ifAnvil ancValue 0
-    scoreboard players set #fallDistance ancValue 0
     execute as @e[type=minecraft:falling_block,tag=anc_marked] if score @s ancAnvil = #t ancAnvil run function anc:handle/compare
 
     # 若检测不到铁砧

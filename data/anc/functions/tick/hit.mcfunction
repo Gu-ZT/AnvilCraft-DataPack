@@ -1,6 +1,6 @@
 
 # 实体掉落 attack
-execute if score #fallDistance ancValue matches 2.. positioned ~-0.5 ~ ~-0.5 as @e[type=!#anc:not_kill,dx=0] positioned ~ ~-0.99 ~ if entity @s[dx=0] positioned ~0.5 ~0.99 ~0.5 run loot spawn ~ ~ ~ kill @s
+execute if score @s ancDistance matches 2.. positioned ~-0.5 ~ ~-0.5 as @e[type=!#anc:not_kill,dx=0] positioned ~ ~-0.99 ~ if entity @s[dx=0] positioned ~0.5 ~0.99 ~0.5 run loot spawn ~ ~ ~ kill @s
 
 # 测试
 # execute run function anc:test
