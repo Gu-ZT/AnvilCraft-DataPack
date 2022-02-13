@@ -5,7 +5,7 @@ execute if data block ~ ~ ~ Items[{id:"minecraft:cod_bucket"}] run function anc:
 execute if data block ~ ~ ~ Items[{id:"minecraft:salmon_bucket"}] run function anc:machines/craft_machine/clear/salmon_bucket
 execute if data block ~ ~ ~ Items[{id:"minecraft:tropical_fish_bucket"}] run function anc:machines/craft_machine/clear/tropical_fish_bucket
 execute if data block ~ ~ ~ Items[{id:"minecraft:pufferfish_bucket"}] run function anc:machines/craft_machine/clear/pufferfish_bucket
-execute if data block ~ ~ ~ Items[{id:"minecraft:axolot_bucket"}] run function anc:machines/craft_machine/clear/axolot_bucket
+execute if data block ~ ~ ~ Items[{id:"minecraft:axolotl_bucket"}] run function anc:machines/craft_machine/clear/axolotl_bucket
 execute if data block ~ ~ ~ Items[{id:"minecraft:potion"}] run function anc:machines/craft_machine/clear/potion
 execute if data block ~ ~ ~ Items[{id:"minecraft:honey_bottle"}] run function anc:machines/craft_machine/clear/honey_bottle
 execute if data block ~ ~ ~ Items[{Slot:1b}] unless data block ~ ~ ~ Items.[{Slot:1b,id:"minecraft:wheat_seeds"}] run item modify block ~ ~ ~ container.1 anc:reduce1

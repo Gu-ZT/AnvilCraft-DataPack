@@ -3,7 +3,7 @@ tag @s add anc_temp_aec
 execute as @e[type=minecraft:falling_block,tag=anc_marked] if score @s ancAnvil = #t ancAnvil run function anc:handle/compare
 
 # 实体掉落 attack
-execute at @s[tag=anc_temp_aec,scores={ancDistance=2..}] run function anc:more/attack/main
+execute at @s[tag=anc_temp_aec,scores={ancDistance=2..}] positioned ~-0.5 ~ ~-0.5 as @e[type=!#anc:not_kill,dx=0] positioned ~ ~-0.99 ~ if entity @s[dx=0] positioned ~0.5 ~0.99 ~0.5 run loot spawn ~ ~ ~ kill @s
 
 # 测试
 # execute at @s[tag=anc_temp_aec] run function anc:test
