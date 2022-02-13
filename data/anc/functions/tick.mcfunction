@@ -8,8 +8,6 @@ execute as @e[type=villager] store result score @s ancLastRestock run data get e
 execute as @e[type=minecraft:falling_block,predicate=anc:anvil,tag=!anc_marked] run function anc:handle/mark
 # as专属药水云
 execute as @e[type=minecraft:area_effect_cloud,tag=anc_aec_mark] run function anc:tick/aec
-# as铁砧保存FallDistance
-execute as @e[type=falling_block,predicate=anc:anvil] store result score @s ancDistance run data get entity @s FallDistance
 
 # 合成机和交互机和磁铁的运行，功能实现
 execute as @e[tag=anc_craft_machine] at @s run function anc:machines/craft_machine/tick
