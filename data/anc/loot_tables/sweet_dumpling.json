@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cooked_chicken",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140053,id:'anc:sweet_dumpling',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.sweet_dumpling.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

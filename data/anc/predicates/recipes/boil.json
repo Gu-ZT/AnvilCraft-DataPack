@@ -14,6 +14,13 @@
 			"predicate": {
 				"nbt": "{Item:{tag:{id:\"anc:beef_mushroom_stew_raw\"}}}"
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:sweet_dumpling_raw\"}}}"
+			}
 		}
     ]
 }

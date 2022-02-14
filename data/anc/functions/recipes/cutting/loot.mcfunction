@@ -438,4 +438,19 @@ execute if score #left ancValue matches 1.. store result storage temp input[-1].
 execute if score #cost ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140037,id:'anc:meat_stuffing',display:{Name:'{"italic":false,"translate":"anc.item.meat_stuffing.name"}'}}}
 execute if score #cost ancValue matches 1.. store result storage temp input[-1].Count int 2 run scoreboard players get #cost ancValue
 
+# 设置Count为0, 设置剩余材料count为0
+scoreboard players set #Count ancValue 0
+scoreboard players set #cost ancValue 0
+scoreboard players set #left ancValue 0
+# 计数物品
+execute if score #exe_count ancValue matches 1.. as @e[type=minecraft:item,nbt={Item:{id:"minecraft:wet_sponge"}},distance=..1] run function anc:recipes/cutting/add_count
+# 计算生成数和剩余
+execute if score #exe_count ancValue matches 1.. run function anc:recipes/cutting/get_count
+# 如果有剩余材料，进行生成
+execute if score #left ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:wet_sponge"}
+execute if score #left ancValue matches 1.. store result storage temp input[-1].Count int 1 run scoreboard players get #left ancValue
+# 按照Count进行生成
+execute if score #cost ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:firework_star",tag:{CustomModelData:11140051,id:'anc:sponge_gemmule',display:{Name:'{"italic":false,"translate":"anc.item.sponge_gemmule.name"}'}}}
+execute if score #cost ancValue matches 1.. store result storage temp input[-1].Count int 2 run scoreboard players get #cost ancValue
+
 execute positioned ~ ~-1 ~ run function anc:handle/funcloot/loot

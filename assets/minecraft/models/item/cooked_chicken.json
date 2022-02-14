@@ -9,6 +9,12 @@
         "custom_model_data": 11140038
       },
       "model": "anc:item/creamy_bread_roll"
+    },
+    {
+        "predicate": {
+            "custom_model_data": 11140053
+        },
+        "model": "anc:item/sweet_dumpling"
     }
   ]
 }

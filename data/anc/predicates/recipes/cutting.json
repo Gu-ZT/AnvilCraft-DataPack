@@ -203,6 +203,13 @@
 			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:porkchop\"}}"
 			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:wet_sponge\"}}"
+			}
 		}
 	]
 }

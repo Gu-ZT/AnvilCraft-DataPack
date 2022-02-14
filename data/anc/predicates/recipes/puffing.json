@@ -77,6 +77,13 @@
 			"predicate": {
 				"nbt": "{Item:{tag:{id:\"anc:seed_of_the_sea\"}}}"
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{id:\"anc:sponge_gemmule\"}}}"
+			}
 		}
     ]
 }

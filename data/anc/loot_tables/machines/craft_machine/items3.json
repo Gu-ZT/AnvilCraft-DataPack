@@ -73,13 +73,28 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{tag:{id:\"anc:cocoa_powder\"},Slot:1b},{tag:{id:\"anc:cocoa_powder\",Slot:10b}},{tag:{id:\"anc:cocoa_butter\",Slot:2b}}]}"
+											"nbt": "{Items:[{tag:{id:\"anc:cocoa_powder\"},Slot:1b},{tag:{id:\"anc:cocoa_powder\"},Slot:10b},{tag:{id:\"anc:cocoa_butter\"},Slot:2b}]}"
 										}
 									}
 								}
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:cocoa_liquor"
+						},
+						{
+							"_comment": "汤圆（生）",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:cocoa_beans\",Slot:1b},{tag:{id:\"anc:flatdough\"},Slot:2b},{id:\"minecraft:sugar\",Slot:3b}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:sweet_dumpling_raw"
 						}
 					]
 				}

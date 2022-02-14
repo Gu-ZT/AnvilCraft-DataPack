@@ -229,6 +229,18 @@
         },
         {
             "predicate": {
+                "custom_model_data": 11140051
+            },
+            "model": "anc:item/sponge_gemmule"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140052
+            },
+            "model": "anc:item/sweet_dumpling_raw"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 11141000
             },
             "model": "anc:gui/empty"
