@@ -1,10 +1,8 @@
-
 # 实体掉落 attack
 execute if score @s ancDistance matches 2.. positioned ~-0.5 ~ ~-0.5 as @e[type=!#anc:not_kill,dx=0] positioned ~ ~-0.99 ~ if entity @s[dx=0] positioned ~0.5 ~0.99 ~0.5 run loot spawn ~ ~ ~ kill @s
 
-# 测试
-# execute run function anc:test
-
+# 破坏 destroying
+execute unless block ~ ~-1 ~ #anc:not_destroy if block ~ ~-2 ~ stonecutter run function anc:more/broken/main
 # 物品压缩 compressing
 execute positioned ~ ~-1 ~ unless predicate anc:multi_blocks/cooker if block ~ ~ ~ minecraft:cauldron run function anc:recipes/compressing/break
 # 膨发 puffing
@@ -33,8 +31,6 @@ execute positioned ~ ~-1 ~ if predicate anc:multi_blocks/cooker if block ~ ~ ~ m
 # 蒸煮 boil
 execute positioned ~ ~-1 ~ if predicate anc:multi_blocks/cooker if block ~ ~ ~ minecraft:water_cauldron run function anc:recipes/boil/cooking
 
-# 破坏 destroying
-execute unless block ~ ~-1 ~ #anc:not_destroy if block ~ ~-2 ~ stonecutter run function anc:more/broken/main
 # 准确的投掷器 accurate_dropper
 execute if block ~ ~-1 ~ minecraft:dropper[facing=down] run function anc:more/accurate_dropper/main
 # 更好的发射器 better_dispenser

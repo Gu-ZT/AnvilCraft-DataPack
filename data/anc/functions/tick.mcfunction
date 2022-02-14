@@ -4,8 +4,8 @@ execute as @a at @s run function anc:tick/player
 # 村民计分ancLastRestock 以在选择器中使用
 execute as @e[type=villager] store result score @s ancLastRestock run data get entity @s LastRestock
 
-# 铁砧编号并召唤专属药水云
-execute as @e[type=minecraft:falling_block,predicate=anc:anvil,tag=!anc_marked] run function anc:handle/mark
+# 铁砧tick
+execute as @e[type=minecraft:falling_block,predicate=anc:anvil] run function anc:tick/anvil
 # as专属药水云
 execute as @e[type=minecraft:area_effect_cloud,tag=anc_aec_mark] run function anc:tick/aec
 
