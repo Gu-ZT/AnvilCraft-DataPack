@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding:0;
+ 
+}
+ 
+body{
+	width: 100%;
+	min-width: 1200px;
+	font-family: "微软雅黑";
+}
+ 
+.header-list{
+	list-style: none;  /*去掉列表前面的标记*/
+	width: 100%;
+	overflow: hidden;
+}
+ 
+.header-list li{
+	float: left;
+	line-height: 62px;
+	margin:0 50px;
+}
+ 
+.header-list li:hover{
+	background: #fff;
+}
+ 
+.header-list li a:hover{
+	color: #000;
+}
+ 
+.header-list li a{
+	text-decoration: none; /*清楚超链接的下划线*/
+	color: #fff;
+	padding: 0 10px;
+	display:block;    /*使整体变成可点击区域 使a和li成为一个整体*/
+ 
+}
+ 
+header{
+	width: 100%;
+	height: 62px;
+	background: #333;
+	min-width: 1200px;
+	font-size: 14px;
+}
+ 
+.w1200{
+	width: 1200px;
+	height: 100%;
+	padding:0 100px;
+	margin:0 auto;
+	box-sizing:border-box;
+	position: relative;
+}
+ 
+ 
+ 
+ 
+ 
