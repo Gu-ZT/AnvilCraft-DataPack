@@ -1,0 +1,157 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:dandelion\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:poppy\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:blue_orchid\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:allium\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:azure_bluet\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:red_tulip\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:pink_tulip\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:white_tulip\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:orange_tulip\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:oxeye_daisy\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:cornflower\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:lily_of_the_valley\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:wither_rose\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:sunflower\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:lilac\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:rose_bush\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:peony\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:flowering_azalea\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:flowering_azalea_leaves\"}]}"
+                }
+            }
+        }
+    ]
+}

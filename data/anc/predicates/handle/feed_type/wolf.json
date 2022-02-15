@@ -1,0 +1,109 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:porkchop\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:beef\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:cooked_beef\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:cooked_porkchop\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:chicken\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:cooked_chicken\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:mutton\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:cooked_mutton\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:rabbit\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:cooked_rabbit\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:cod\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:cooked_cod\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:rotten_flesh\"}]}"
+                }
+            }
+        }
+    ]
+}

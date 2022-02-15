@@ -1,0 +1,21 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:sweet_berries\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:glow_berries\"}]}"
+                }
+            }
+        }
+    ]
+}

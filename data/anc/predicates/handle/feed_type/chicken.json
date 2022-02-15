@@ -1,0 +1,37 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:melon_seeds\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:wheat_seeds\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:pumpkin_seeds\"}]}"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "nbt": "{Items:[{Slot:0b,id:\"minecraft:beetroot_seeds\"}]}"
+                }
+            }
+        }
+    ]
+}

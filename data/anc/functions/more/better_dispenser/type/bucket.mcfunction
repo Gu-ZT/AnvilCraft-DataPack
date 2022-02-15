@@ -10,6 +10,10 @@ execute unless block ~ ~ ~ dispenser{Items:[{Slot:0b,Count:1b}]} as @e[tag=anc_c
 execute unless block ~ ~ ~ dispenser{Items:[{Slot:0b,Count:1b}]} as @e[tag=anc_cauldron,limit=1,distance=..1.5] at @s if block ~ ~ ~ lava_cauldron run execute at @e[tag=anc_dispenser,limit=1,sort=nearest] run item modify block ~ ~ ~ container.0 anc:reduce1
 execute if block ~ ~ ~ dispenser{Items:[{Slot:0b,Count:1b}]} as @e[tag=anc_cauldron,limit=1,distance=..1.5] at @s if block ~ ~ ~ lava_cauldron run execute at @e[tag=anc_dispenser,limit=1,sort=nearest] run item replace block ~ ~ ~ container.0 with lava_bucket
 
+execute unless block ~ ~ ~ dispenser{Items:[{Slot:0b,Count:1b}]} as @e[tag=anc_cauldron,limit=1,distance=..1.5] at @s align xyz if entity @e[type=#anc:cow,dx=1,dy=1,dz=1] run execute at @e[tag=anc_dispenser,limit=1,sort=nearest] run execute at @e[tag=anc_cauldron,limit=1,distance=..1.5] run summon item ~ ~ ~ {Item:{id:"minecraft:milk_bucket",Count:1b}}
+execute unless block ~ ~ ~ dispenser{Items:[{Slot:0b,Count:1b}]} as @e[tag=anc_cauldron,limit=1,distance=..1.5] at @s align xyz if entity @e[type=#anc:cow,dx=1,dy=1,dz=1] run execute at @e[tag=anc_dispenser,limit=1,sort=nearest] run item modify block ~ ~ ~ container.0 anc:reduce1
+execute if block ~ ~ ~ dispenser{Items:[{Slot:0b,Count:1b}]} as @e[tag=anc_cauldron,limit=1,distance=..1.5] at @s align xyz if entity @e[type=#anc:cow,dx=1,dy=1,dz=1] run execute at @e[tag=anc_dispenser,limit=1,sort=nearest] run item replace block ~ ~ ~ container.0 with milk_bucket
+
 execute as @e[tag=anc_cauldron,limit=1,sort=nearest] at @s if block ~ ~ ~ lava_cauldron run function anc:more/better_dispenser/level/empty
 execute as @e[tag=anc_cauldron,limit=1,sort=nearest] at @s if block ~ ~ ~ water_cauldron run function anc:more/better_dispenser/level/empty
 execute as @e[tag=anc_cauldron,limit=1,sort=nearest] at @s if block ~ ~ ~ powder_snow_cauldron run function anc:more/better_dispenser/level/empty
