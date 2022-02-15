@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": 2
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "anc:sweet_dumpling_raw"
+                }
+            ]
+        }
+    ]
+}

@@ -94,7 +94,7 @@
 								}
 							],
 							"type": "minecraft:loot_table",
-							"name": "anc:sweet_dumpling_raw"
+							"name": "anc:loots/2_sweet_dumpling_raw"
 						}
 					]
 				}
