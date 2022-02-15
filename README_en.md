@@ -1,4 +1,4 @@
-# [铁砧工艺|AnvilCraft](https://anc.polaris-mc.tech/)
+# [铁砧工艺|AnvilCraft](https://anc.dubhe.dev/)
 ## Minecraft Vanilla Mod by 古镇天Gugle@bilibili & XeKr@bilibili
 
 * Welcome to the page of the Vanilla Mod anvil technology! The module is the vanilla survival expansion with anvil as the core. The main contents include:
