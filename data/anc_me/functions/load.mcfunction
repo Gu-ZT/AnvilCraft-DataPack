@@ -11,6 +11,5 @@ scoreboard objectives add amValue dummy
 
 scoreboard objectives add amMerge dummy
 
-scoreboard players set $448 ancValue 448
 scoreboard players set $2 ancValue 2
 scoreboard players set $1 ancValue 1
