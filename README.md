@@ -1,4 +1,4 @@
-# [铁砧工艺|AnvilCraft](https://anc.polaris-mc.tech/)
+# [铁砧工艺|AnvilCraft](https://gu-zt.github.io/AnvilCraft/)
 ## Minecraft原版模组 by 古镇天Gugle@bilibili & XeKr@bilibili
 
 欢迎来到原版模组《铁砧工艺》的页面！模组是以铁砧为核心的原版生存拓展，主要内容有：
