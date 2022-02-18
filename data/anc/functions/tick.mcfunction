@@ -4,6 +4,10 @@ execute as @a at @s run function anc:tick/player
 # 精英怪
 execute as @e[type=#anc:mobs,tag=!ancMob] at @s run function anc:tick/mobs
 
+# 刷怪笼
+execute as @e[type=item,nbt={Item:{id:"minecraft:spawner"}}] unless data entity @s Item.tag.haveLore run data modify entity @s Item.tag.haveLore set value 0b
+execute as @e[predicate=anc:items/spawner] run function anc:handle/spawner
+
 # 村民计分ancLastRestock 以在选择器中使用
 execute as @e[type=villager] store result score @s ancLastRestock run data get entity @s LastRestock
 
