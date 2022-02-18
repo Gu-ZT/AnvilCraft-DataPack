@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "phe": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"sticky\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [["phe"]],
+    "rewards":{
+        "function": "anc:infernal_mobs/sticky"
+    }
+}

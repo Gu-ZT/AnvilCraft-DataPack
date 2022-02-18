@@ -1,5 +1,5 @@
 {
-    "Please install the correct resource pack": "§f§l============================§r\n§b§lWelcome to use AnvilCraft，Datapack Version：§r%s§b§l，Resourcepack Version：§6§l0.5.5§r\n§b§lDatapack author：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§lResourcepack author：§r§6§lXe_Kr§r\n§f§l============================§r",
+    "Please install the correct resource pack": "§f§l============================§r\n§b§lWelcome to use AnvilCraft，Datapack Version：§r%s§b§l，Resourcepack Version：§6§l0.6.0§r\n§b§lDatapack author：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§lResourcepack author：§r§6§lXe_Kr§r\n§f§l============================§r",
     "anc.block.magnet_block.name": "Magnet Block",
     "anc.block.magnet_block.lore": "When activated by redstone, it can suck up the anvil directly below it (within 4 blocks)",
     "anc.item.empty_protocol.name": "Empty Protocol",
@@ -37,7 +37,7 @@
     "anc.item.warning_protocol.name": "Warning Protocol",
     "anc.item.craft_back.name": "GUI",
     "anc.item.interact_back.name": "GUI",
-    "item.anc.output_slot.name": "Output",
+    "anc.item.output_slot.name": "Output",
     "anc.item.placement_protocol.name": "Placement Protocol",
     "anc.item.protect_protocol.name": "Protect Protocol",
     "anc.item.restock_protocol.name": "Restock Protocol",
@@ -68,5 +68,16 @@
     "anc.item.utusan.name": "Utusan",
     "anc.item.sponge_gemmule.name": "Sponge Gemmule",
     "anc.item.sweet_dumpling_raw.name": "Sweet Dumpling Raw",
-    "anc.item.sweet_dumpling.name": "Sweet Dumpling"
+    "anc.item.sweet_dumpling.name": "Sweet Dumpling",
+    "anc.item.anc.item.command_book.name.name": "Command Book",
+    "anc.item.command_book.magnet_useful": "Enable magnet: %s\n",
+    "anc.item.command_book.attracting_falling": "Enable the magnet can be used to suck up the falling anvil:%s\n",
+    "anc.item.command_book.rookie_mode": "Enable rookie mode:%s\n",
+    "anc.item.command_book.experience_repair": "In experience repair 2, the durability value of each experience bottle that can be repaired:%s\n",
+    "anc.item.command_book.processing_count": "Processing efficiency (items / time):%s\n",
+
+    "anc.infernal.dark":"Dark",
+    "anc.infernal.rust":"Rust",
+    "anc.infernal.sticky":"Sticky",
+    "anc.infernal.weaving_net":"WeavingNet"
 }

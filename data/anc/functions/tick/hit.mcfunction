@@ -42,3 +42,5 @@ execute if block ~ ~-1 ~ #anvil run function #anc:recipes/enchantments_merge
 execute if block ~ ~-1 ~ crying_obsidian run function anc_me:crafting/main
 # 红石EMP
 execute if block ~ ~-1 ~ redstone_block positioned ~ ~-1 ~ run function anc:emp/main
+
+kill @s

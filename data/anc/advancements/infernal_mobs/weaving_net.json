@@ -1,0 +1,40 @@
+{
+    "criteria": {
+        "ehp": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"weaving_net\"]}"
+                    }
+                },
+                "player": {
+                    "location": {
+                        "block": {
+                            "blocks": ["air","cave_air","void_air"]
+                        }
+                    }
+                }
+            }
+        },
+        "phe": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"weaving_net\"]}"
+                },
+                "player": {
+                    "location": {
+                        "block": {
+                            "blocks": ["air","cave_air","void_air"]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [["ehp"],["phe"]],
+    "rewards":{
+        "function": "anc:infernal_mobs/weaving_net"
+    }
+}

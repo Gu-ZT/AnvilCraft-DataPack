@@ -1,5 +1,5 @@
 {
-    "Please install the correct resource pack": "§f§l============================§r\n§b§l歡迎使用鐵砧工藝，資料包版本：§r%s§b§l，資源包版本：§6§l0.5.5§r\n§b§l資料包作者：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l資源包作者：§r§6§lXe_Kr§r\n§f§l============================§r",
+    "Please install the correct resource pack": "§f§l============================§r\n§b§l歡迎使用鐵砧工藝，資料包版本：§r%s§b§l，資源包版本：§6§l0.6.0§r\n§b§l資料包作者：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l資源包作者：§r§6§lXe_Kr§r\n§f§l============================§r",
     "anc.block.magnet_block.name": "磁鐵",
     "anc.block.magnet_block.lore": "被紅石啟動時可以吸起其正下方（4個方塊內）的鐵砧",
     "anc.item.empty_protocol.name": "空協定",
@@ -37,7 +37,7 @@
     "anc.item.warning_protocol.name": "警告：協定缺失",
     "anc.item.craft_back.name": "GUI",
     "anc.item.interact_back.name": "GUI",
-    "item.anc.output_slot.name": "輸出",
+    "anc.item.output_slot.name": "輸出",
     "anc.item.placement_protocol.name": "放置協定",
     "anc.item.protect_protocol.name": "保護協定",
     "anc.item.restock_protocol.name": "補貨協定",
@@ -68,5 +68,16 @@
     "anc.item.utusan.name": "五毒散",
     "anc.item.sponge_gemmule.name": "海綿芽球",
     "anc.item.sweet_dumpling_raw.name": "湯圓（生）",
-    "anc.item.sweet_dumpling.name": "湯圓"
+    "anc.item.sweet_dumpling.name": "湯圓",
+    "anc.item.anc.item.command_book.name.name": "指令書",
+    "anc.item.command_book.magnet_useful": "是否啟用磁鐵：%s\n",
+    "anc.item.command_book.attracting_falling": "是否啟用磁鐵可以吸起掉落中的鐵砧：%s\n",
+    "anc.item.command_book.rookie_mode": "是否啟用菜鳥模式：%s\n",
+    "anc.item.command_book.experience_repair": "在經驗修補2中每個經驗瓶可以修補的耐久值：%s\n",
+    "anc.item.command_book.processing_count": "處理效率（個物品/次）：%s\n",
+
+    "anc.infernal.dark":"黑暗",
+    "anc.infernal.rust":"生鏽",
+    "anc.infernal.sticky":"黏性",
+    "anc.infernal.weaving_net":"織網"
 }

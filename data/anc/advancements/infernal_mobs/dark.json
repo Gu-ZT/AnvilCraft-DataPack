@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "ehp": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"dark\"]}"
+                    }
+                }
+            }
+        },
+        "phe": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"dark\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [["ehp"],["phe"]],
+    "rewards":{
+        "function": "anc:infernal_mobs/dark"
+    }
+}

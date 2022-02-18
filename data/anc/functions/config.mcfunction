@@ -6,3 +6,8 @@ scoreboard players set $ancProcessingCount ancConfig 4
 scoreboard players set $ancAttractingFalling ancConfig 1
 # 在经验修补2中每个经验瓶可以修补的耐久值
 scoreboard players set $ancExperienceRepair ancConfig 14
+# 是否启用菜鸟模式
+scoreboard players set $ancRookieMode ancConfig 1
+
+
+function anc:items/command_book/reload

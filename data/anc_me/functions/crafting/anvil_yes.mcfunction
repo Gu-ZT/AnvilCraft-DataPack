@@ -3,3 +3,4 @@ data modify entity @s Item.tag.Enchantments append from entity @e[type=item,limi
 scoreboard players operation #amRepairCost ancValue *= $2 ancValue
 scoreboard players operation #amRepairCost ancValue += $1 ancValue
 execute store result entity @s Item.tag.RepairCost int 1 run scoreboard players get #amRepairCost ancValue
+scoreboard players add $ancHatred ancValue 1

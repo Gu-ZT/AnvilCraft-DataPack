@@ -58,7 +58,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:\"minecraft:glass_bottle\",Slot:1b},{id:\"minecraft:glass_bottle\",Slot:2b},{id:\"minecraft:glass_bottle\",Slot:3b},{id:\"minecraft:glass_bottle\",Slot:10b},{tag:{id:\"anc:empty_protocol\",Slot:11b}},{id:\"minecraft:glass_bottle\",Slot:12b},{id:\"minecraft:glass_bottle\",Slot:19b},{id:\"minecraft:glass_bottle\",Slot:20b},{id:\"minecraft:glass_bottle\",Slot:21b}]}"
+											"nbt": "{Items:[{id:\"minecraft:glass_bottle\",Slot:1b},{id:\"minecraft:glass_bottle\",Slot:2b},{id:\"minecraft:glass_bottle\",Slot:3b},{id:\"minecraft:glass_bottle\",Slot:10b},{tag:{id:\"anc:empty_protocol\"},Slot:11b},{id:\"minecraft:glass_bottle\",Slot:12b},{id:\"minecraft:glass_bottle\",Slot:19b},{id:\"minecraft:glass_bottle\",Slot:20b},{id:\"minecraft:glass_bottle\",Slot:21b}]}"
 										}
 									}
 								}
@@ -73,7 +73,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:\"minecraft:glowstone\",Slot:1b},{id:\"minecraft:glowstone\",Slot:2b},{id:\"minecraft:glowstone\",Slot:3b},{id:\"minecraft:glowstone\",Slot:10b},{tag:{id:\"anc:dispel_protocol_random\",Slot:11b}},{id:\"minecraft:glowstone\",Slot:12b},{id:\"minecraft:glowstone\",Slot:19b},{id:\"minecraft:glowstone\",Slot:20b},{id:\"minecraft:glowstone\",Slot:21b}]}"
+											"nbt": "{Items:[{id:\"minecraft:glowstone\",Slot:1b},{id:\"minecraft:glowstone\",Slot:2b},{id:\"minecraft:glowstone\",Slot:3b},{id:\"minecraft:glowstone\",Slot:10b},{tag:{id:\"anc:dispel_protocol_random\"},Slot:11b},{id:\"minecraft:glowstone\",Slot:12b},{id:\"minecraft:glowstone\",Slot:19b},{id:\"minecraft:glowstone\",Slot:20b},{id:\"minecraft:glowstone\",Slot:21b}]}"
 										}
 									}
 								}
@@ -88,7 +88,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:\"minecraft:obsidian\",Slot:1b},{id:\"minecraft:obsidian\",Slot:2b},{id:\"minecraft:obsidian\",Slot:3b},{id:\"minecraft:obsidian\",Slot:10b},{tag:{id:\"anc:dispel_protocol_random\",Slot:11b}},{id:\"minecraft:obsidian\",Slot:12b},{id:\"minecraft:obsidian\",Slot:19b},{id:\"minecraft:obsidian\",Slot:20b},{id:\"minecraft:obsidian\",Slot:21b}]}"
+											"nbt": "{Items:[{id:\"minecraft:obsidian\",Slot:1b},{id:\"minecraft:obsidian\",Slot:2b},{id:\"minecraft:obsidian\",Slot:3b},{id:\"minecraft:obsidian\",Slot:10b},{tag:{id:\"anc:dispel_protocol_random\"},Slot:11b},{id:\"minecraft:obsidian\",Slot:12b},{id:\"minecraft:obsidian\",Slot:19b},{id:\"minecraft:obsidian\",Slot:20b},{id:\"minecraft:obsidian\",Slot:21b}]}"
 										}
 									}
 								}
@@ -103,7 +103,7 @@
 									"condition": "minecraft:location_check",
 									"predicate": {
 										"block": {
-											"nbt": "{Items:[{id:\"minecraft:rabbit_foot\",Slot:1b},{id:\"minecraft:rabbit_foot\",Slot:2b},{id:\"minecraft:rabbit_foot\",Slot:3b},{id:\"minecraft:rabbit_foot\",Slot:10b},{tag:{id:\"anc:dispel_protocol_random\",Slot:11b}},{id:\"minecraft:rabbit_foot\",Slot:12b},{id:\"minecraft:rabbit_foot\",Slot:19b},{id:\"minecraft:rabbit_foot\",Slot:20b},{id:\"minecraft:rabbit_foot\",Slot:21b}]}"
+											"nbt": "{Items:[{id:\"minecraft:rabbit_foot\",Slot:1b},{id:\"minecraft:rabbit_foot\",Slot:2b},{id:\"minecraft:rabbit_foot\",Slot:3b},{id:\"minecraft:rabbit_foot\",Slot:10b},{tag:{id:\"anc:dispel_protocol_random\"},Slot:11b},{id:\"minecraft:rabbit_foot\",Slot:12b},{id:\"minecraft:rabbit_foot\",Slot:19b},{id:\"minecraft:rabbit_foot\",Slot:20b},{id:\"minecraft:rabbit_foot\",Slot:21b}]}"
 										}
 									}
 								}

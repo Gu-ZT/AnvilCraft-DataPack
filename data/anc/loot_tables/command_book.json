@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{id:'anc:command_book',title:\"Command Book\",author:\"Gugle\",pages:[\"[{'translate':'anc.item.command_book.magnet_useful','bold':false,'with':[{'nbt':'MagnetUseful','storage':'anc:command_book','interpret':true}]},{'translate':'anc.item.command_book.attracting_falling','bold':false,'with':[{'nbt':'AttractingFalling','storage':'anc:command_book','interpret':true}]},{'translate':'anc.item.command_book.rookie_mode','bold':false,'with':[{'nbt':'RookieMode','storage':'anc:command_book','interpret':true}]},{'translate':'anc.item.command_book.experience_repair','bold':false,'with':[{'nbt':'ExperienceRepair','storage':'anc:command_book','interpret':true}]},{'translate':'anc.item.command_book.processing_count','bold':false,'with':[{'nbt':'ProcessingCount','storage':'anc:command_book','interpret':true}]}]\"]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

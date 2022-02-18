@@ -1,7 +1,19 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "nbt": "{Item:{tag:{ancClear:1b}}}"
-    }
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{tag:{ancClear:1b}}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"ancClear\"],inGround:true}"
+            }
+        }
+    ]
 }

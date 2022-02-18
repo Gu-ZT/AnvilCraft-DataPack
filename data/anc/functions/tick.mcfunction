@@ -1,6 +1,9 @@
 # 玩家tick
 execute as @a at @s run function anc:tick/player
 
+# 精英怪
+execute as @e[type=#anc:mobs,tag=!ancMob] at @s run function anc:tick/mobs
+
 # 村民计分ancLastRestock 以在选择器中使用
 execute as @e[type=villager] store result score @s ancLastRestock run data get entity @s LastRestock
 
