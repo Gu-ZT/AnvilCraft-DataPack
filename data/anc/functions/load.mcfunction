@@ -12,6 +12,9 @@ scoreboard objectives add ancInfernalLevel dummy
 scoreboard objectives add ancLevel level
 scoreboard objectives add ancBrokenSpawner minecraft.mined:spawner
 
+scoreboard objectives add ancUid dummy
+scoreboard objectives setdisplay list ancUid
+
 scoreboard objectives add ancCarrotStickUse minecraft.used:carrot_on_a_stick
 
 scoreboard objectives add ancRandom dummy

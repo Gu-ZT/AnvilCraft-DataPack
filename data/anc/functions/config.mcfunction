@@ -9,5 +9,7 @@ scoreboard players set $ancExperienceRepair ancConfig 14
 # 是否启用菜鸟模式
 scoreboard players set $ancRookieMode ancConfig 1
 
+#s3_io循环读取指针上限
+scoreboard players set $ancMaxLoop ancConfig 65535
 
 function anc:items/command_book/reload
