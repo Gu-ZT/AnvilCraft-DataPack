@@ -41,5 +41,6 @@ scoreboard objectives add ancItemCount dummy
 scoreboard objectives add ancTempStrong dummy
 
 function anc:config
+function anc:handle/constant
 
 advancement revoke @a only anc:welcome/join
