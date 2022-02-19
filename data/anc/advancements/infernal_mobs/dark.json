@@ -5,7 +5,7 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "nbt": "{Tags:[\"dark\"]}"
+                        "nbt": "{Tags:[\"inf_dark\"]}"
                     }
                 }
             }
@@ -14,7 +14,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"dark\"]}"
+                    "nbt": "{Tags:[\"inf_dark\"]}"
                 }
             }
         }

@@ -5,7 +5,7 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "nbt": "{Tags:[\"rust\"]}"
+                        "nbt": "{Tags:[\"inf_rust\"]}"
                     }
                 }
             }
@@ -14,7 +14,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"rust\"]}"
+                    "nbt": "{Tags:[\"inf_rust\"]}"
                 }
             }
         }

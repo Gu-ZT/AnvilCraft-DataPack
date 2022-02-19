@@ -5,7 +5,7 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "nbt": "{Tags:[\"weaving_net\"]}"
+                        "nbt": "{Tags:[\"inf_weaving_net\"]}"
                     }
                 },
                 "player": {
@@ -21,7 +21,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"weaving_net\"]}"
+                    "nbt": "{Tags:[\"inf_weaving_net\"]}"
                 },
                 "player": {
                     "location": {

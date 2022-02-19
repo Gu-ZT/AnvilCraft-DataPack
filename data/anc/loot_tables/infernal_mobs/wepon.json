@@ -1,0 +1,127 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "air",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "golden_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancInf:1b,Level:5}"
+                        }
+                    ],
+                    "weight": 7
+                },
+                {
+                    "type": "item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancInf:1b,Level:7}"
+                        }
+                    ],
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "diamond_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancInf:1b,Level:9}"
+                        }
+                    ],
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "netherite_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancInf:1b,Level:11}"
+                        }
+                    ],
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "golden_axe",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancInf:1b,Level:5}"
+                        }
+                    ],
+                    "weight": 7
+                },
+                {
+                    "type": "item",
+                    "name": "iron_axe",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancInf:1b,Level:7}"
+                        }
+                    ],
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "diamond_axe",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancInf:1b,Level:9}"
+                        }
+                    ],
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "netherite_axe",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancInf:1b,Level:11}"
+                        }
+                    ],
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

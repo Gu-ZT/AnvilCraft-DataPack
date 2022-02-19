@@ -8,7 +8,7 @@ scoreboard objectives add ancInteract dummy
 scoreboard objectives add ancSuccess dummy
 scoreboard objectives add ancHealth dummy
 scoreboard objectives add ancLastRestock dummy
-
+scoreboard objectives add ancInfernalLevel dummy
 scoreboard objectives add ancLevel level
 scoreboard objectives add ancBrokenSpawner minecraft.mined:spawner
 
@@ -19,7 +19,6 @@ scoreboard players set $max ancRandom 0
 scoreboard players set $min ancRandom 0
 scoreboard players set $output ancRandom 0
 
-scoreboard objectives add ancSuccess dummy
 scoreboard objectives add ancRepairSuccess dummy
 scoreboard objectives add ancAbsorbSuccess dummy
 scoreboard objectives add ancPlacementSuccess dummy
