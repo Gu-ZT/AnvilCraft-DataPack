@@ -1,6 +1,7 @@
 {
 	"values": [
 		"anc:load",
-		"anc_me:load"
+		"anc_me:load",
+		"anc_is:load"
 	]
 }

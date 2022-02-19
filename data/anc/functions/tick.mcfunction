@@ -1,6 +1,9 @@
 # 玩家tick
 execute as @a at @s run function anc:tick/player
 
+# 闪电tick
+execute as @e[type=lightning_bolt] at @s run function anc:tick/lightning_bolt
+
 # 精英怪
 execute as @e[type=#anc:mobs,tag=!ancMob] at @s run function anc:tick/mobs
 
@@ -20,6 +23,9 @@ execute as @e[type=minecraft:area_effect_cloud,tag=anc_aec_mark] run function an
 execute as @e[tag=anc_craft_machine] at @s run function anc:machines/craft_machine/tick
 execute as @e[tag=anc_interact_machine] at @s run function anc:machines/interact_machine/tick
 execute if score $ancMagnetUseful ancConfig matches 1 as @e[type=glow_item_frame,tag=anc_magnet_block] at @s run function anc:machines/magnet_block/tick
+
+# 末地传送门方块
+execute unless score $ancSkylandMode ancConfig matches 0 as @e[type=#anc:item_frame,nbt={Item:{id:"minecraft:ender_eye"},Facing:1b}] if block ~ ~-1 ~ tinted_glass run function anc:handle/set_end_portal
 
 # 合成机，交互机，磁铁的放置和拆除
 function #anc:blocks
