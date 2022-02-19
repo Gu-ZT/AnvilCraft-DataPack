@@ -45,5 +45,10 @@ scoreboard players set @s ancInfernalLevel 0
     execute if entity @s[type=#anc:mobs_canwepon] run loot replace entity @s weapon.mainhand loot anc:infernal_mobs/wepon
     execute if entity @s[type=#anc:mobs_canwepon] if data entity @s HandItems[0] store result score $temp ancInfernalLevel run data get entity @s HandItems[0].tag.Level 
     execute if entity @s[type=#anc:mobs_canwepon] run scoreboard players operation @s ancInfernalLevel += $temp ancInfernalLevel
-
+scoreboard players operation $temp ancInfernalLevel = @s ancInfernalLevel
+setblock ~ 319 ~ oak_sign
+data modify block ~ 319 ~ Text1 set value '[{"text":"Lv.","color":"red"},{"score":{"name":"$temp","objective":"ancInfernalLevel"},"color":"red"}]'
+data modify entity @s CustomName set from block ~ 319 ~ Text1
+setblock ~ 319 ~ air
+data modify entity @s CustomNameVisible set value true
 tag @s add ancInfernal

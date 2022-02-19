@@ -74,7 +74,7 @@
     "anc.item.command_book.name": "命令书",
     "anc.item.command_book.magnet_useful": "是否启用磁铁：%s\n",
     "anc.item.command_book.attracting_falling": "是否启用磁铁可以吸起掉落中的铁砧：%s\n",
-    "anc.item.command_book.rookie_mode": "是否启用菜鸟模式：%s\n",
+    "anc.item.command_book.rookie_mode": "是否启用阳间模式：%s\n",
     "anc.item.command_book.experience_repair": "在经验修补2中每个经验瓶可以修补的耐久值：%s\n",
     "anc.item.command_book.processing_count": "处理效率（个物品/次）：%s\n",
 
