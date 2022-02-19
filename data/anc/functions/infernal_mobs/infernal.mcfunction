@@ -43,7 +43,7 @@ scoreboard players set @s ancInfernalLevel 0
     # 武器
     scoreboard players reset $temp ancInfernalLevel
     execute if entity @s[type=#anc:mobs_canwepon] run loot replace entity @s weapon.mainhand loot anc:infernal_mobs/wepon
-    execute if entity @s[type=#anc:mobs_canwepon] if data entity @s SelectedItem store result score $temp ancInfernalLevel run data get entity @s SelectedItem.tag.Level 
+    execute if entity @s[type=#anc:mobs_canwepon] if data entity @s HandItems[0] store result score $temp ancInfernalLevel run data get entity @s HandItems[0].tag.Level 
     execute if entity @s[type=#anc:mobs_canwepon] run scoreboard players operation @s ancInfernalLevel += $temp ancInfernalLevel
 
 tag @s add ancInfernal
