@@ -8,6 +8,12 @@ execute store result entity @s Pos[2] double 1 run scoreboard players get $real_
 
 execute at @s run tp @s ~0.5 ~ ~0.5
 
+# 存入储存空间
+data modify storage anc:s3_io obj set value {}
+scoreboard players operation addr tmp = @a[tag=non_is,limit=1] ancUid
+data modify storage anc:s3_io obj.skyland.Pos set from entity @s Pos
+function anc:s3_io/set
+
 # 生成岛屿
 execute at @s run function anc_is:land/spawn_land
 

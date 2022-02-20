@@ -1,7 +1,7 @@
 # input: scb(addr tmp)
 # output: scb(succ tmp)
-#         storage anc:temp obj
-# 把storage anc:temp 256x.(addr tmp) 读取到storage anc:temp obj
+#         storage anc:s3_io obj
+# 把storage anc:s3_io 256x.(addr tmp) 读取到storage anc:s3_io obj
 scoreboard players set #oper tmp 0
-data remove storage anc:temp obj
+data remove storage anc:s3_io obj
 function anc:s3_io/256x/4/0

@@ -82,6 +82,7 @@
 
     "anc.item.command_book.skyland_mode": "是否启用空岛模式：%s\n",
     "anc.item.command_book.single_land": "是否启用单独岛屿：%s\n",
+    "anc.skyland.help":"§6/trigger skyland §a打开此页面\n§6/trigger skyland.visit set <uid> §a访问其他玩家的岛屿\n§6/trigger skyland.home §a从其他玩家的岛屿返回",
 
     "anc.infernal.dark":"黑暗",
     "anc.infernal.rust":"生锈",

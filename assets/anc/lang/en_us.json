@@ -78,6 +78,9 @@
     "anc.item.command_book.experience_repair": "In experience repair 2, the durability value of each experience bottle that can be repaired:%s\n",
     "anc.item.command_book.processing_count": "Processing efficiency (items / time):%s\n",
 
+    "anc.item.command_book.skyland_mode": "Enable SkylandMode:%s\n",
+    "anc.item.command_book.single_land": "Enable SingleLands:%s\n",
+    "anc.skyland.help":"§6/trigger skyland §aOpen this page\n§6/trigger skyland.visit set <uid> §aVisit other players' islands\n§6/trigger skyland.home §aReturn of players from other islands",
     "anc.infernal.dark":"Dark",
     "anc.infernal.rust":"Rust",
     "anc.infernal.sticky":"Sticky",

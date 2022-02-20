@@ -6,4 +6,7 @@ execute if score $ancSingleLand ancConfig matches 0 run execute as @e[type=armor
 execute unless score $ancSingleLand ancConfig matches 0 run tp @s 0 64 0 ~ ~
 execute unless score $ancSingleLand ancConfig matches 0 run spreadplayers ~ ~ 0 20 false @s
 
+scoreboard players enable @s skyland.visit
+scoreboard players enable @s skyland
+
 tag @s add ancIs
