@@ -1,5 +1,5 @@
-data remove storage temp input
-data modify storage temp input set value []
+data remove storage anc:temp input
+data modify storage anc:temp input set value []
 
 # 数清楚有多少蜂蜜块
 scoreboard players set #honeyCount ancValue 0
@@ -15,15 +15,15 @@ scoreboard players set #Count ancValue 0
 execute if score #honeyCount ancValue matches 1.. if score #bottleCount ancValue matches 4.. run function anc:recipes/cutting/honey/loop
 
 # 蜂蜜块
-execute if score #honeyCount ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:honey_block"}
-execute if score #honeyCount ancValue matches 1.. store result storage temp input[-1].Count int 1 run scoreboard players get #honeyCount ancValue
+execute if score #honeyCount ancValue matches 1.. run data modify storage anc:temp input append value {id:"minecraft:honey_block"}
+execute if score #honeyCount ancValue matches 1.. store result storage anc:temp input[-1].Count int 1 run scoreboard players get #honeyCount ancValue
 
 # 空瓶子
-execute if score #bottleCount ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:glass_bottle"}
-execute if score #bottleCount ancValue matches 1.. store result storage temp input[-1].Count int 1 run scoreboard players get #bottleCount ancValue
+execute if score #bottleCount ancValue matches 1.. run data modify storage anc:temp input append value {id:"minecraft:glass_bottle"}
+execute if score #bottleCount ancValue matches 1.. store result storage anc:temp input[-1].Count int 1 run scoreboard players get #bottleCount ancValue
 
 # 蜂蜜瓶
-execute if score #Count ancValue matches 1.. run data modify storage temp input append value {id:"minecraft:honey_bottle"}
-execute if score #Count ancValue matches 1.. store result storage temp input[-1].Count int 4 run scoreboard players get #Count ancValue
+execute if score #Count ancValue matches 1.. run data modify storage anc:temp input append value {id:"minecraft:honey_bottle"}
+execute if score #Count ancValue matches 1.. store result storage anc:temp input[-1].Count int 4 run scoreboard players get #Count ancValue
 
 execute positioned ~ ~-1 ~ run function anc:handle/funcloot/loot

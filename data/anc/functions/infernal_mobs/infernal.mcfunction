@@ -3,8 +3,8 @@ scoreboard players set $min ancRandom 0
 scoreboard players set @s ancInfernalLevel 0
 
 # 清除storage
-data remove storage temp list
-data modify storage temp list set value []
+data remove storage anc:temp list
+data modify storage anc:temp list set value []
 
 # 词条
     execute unless score $ancRookieMode ancConfig matches 1 run function anc:infernal_mobs/entry

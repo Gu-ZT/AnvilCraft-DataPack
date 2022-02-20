@@ -1,2 +1,2 @@
-execute if score #oper tmp matches 0 store success score succ tmp run data modify storage temp obj set from storage temp 256x.205
-execute if score #oper tmp matches 1 store success score succ tmp run data modify storage temp 256x.205 set from storage temp obj
+execute if score #oper tmp matches 0 store success score succ tmp run data modify storage anc:temp obj set from storage anc:temp 256x.205
+execute if score #oper tmp matches 1 store success score succ tmp run data modify storage anc:temp 256x.205 set from storage anc:temp obj

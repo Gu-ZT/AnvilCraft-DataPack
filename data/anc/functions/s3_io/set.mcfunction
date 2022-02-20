@@ -1,7 +1,7 @@
 # input: scb(#addr tmp)
-#       storage temp obj
+#       storage anc:temp obj
 # output: scb(succ tmp)
-# 把 storage temp obj 存入到 storage temp 256x4.(#addr tmp)，并返回data set 是否成功到(succ tmp)
+# 把 storage anc:temp obj 存入到 storage anc:temp 256x4.(#addr tmp)，并返回data set 是否成功到(succ tmp)
 
 # 获取各分位的值
 scoreboard players operation #addr tmp = addr tmp
@@ -27,36 +27,36 @@ execute if score #addr tmp matches ..-1 run scoreboard players add addr/// tmp 1
 
 # 暂存一下obj
 # obj_tmp = obj
-data modify storage temp obj_tmp set from storage temp obj
+data modify storage anc:temp obj_tmp set from storage anc:temp obj
 
 # 存进去
 # 256x.(i%) = obj
 scoreboard players operation addr tmp = addr% tmp
-data remove storage temp 256x
+data remove storage anc:temp 256x
 function anc:s3_io/256x/set
 # obj = 256x.(i%)
-data modify storage temp obj set from storage temp 256x
+data modify storage anc:temp obj set from storage anc:temp 256x
 
 # 再存
 scoreboard players operation addr tmp = addr/% tmp
-data remove storage temp 256x
+data remove storage anc:temp 256x
 function anc:s3_io/256x/set
 # obj = 256x.(i/%)
-data modify storage temp obj set from storage temp 256x
+data modify storage anc:temp obj set from storage anc:temp 256x
 
 # 再存
 scoreboard players operation addr tmp = addr//% tmp
-data remove storage temp 256x
+data remove storage anc:temp 256x
 function anc:s3_io/256x/set
 # obj = 256x.(i//%)
-data modify storage temp obj set from storage temp 256x
+data modify storage anc:temp obj set from storage anc:temp 256x
 
 # 再存
 scoreboard players operation addr tmp = addr/// tmp
-data remove storage temp 256x
+data remove storage anc:temp 256x
 function anc:s3_io/256x/set
 # obj = 256x.(i///)
-data modify storage temp io merge from storage temp 256x
+data modify storage anc:temp io merge from storage anc:temp 256x
 
 scoreboard players operation addr tmp = #addr tmp
-data modify storage temp obj set from storage temp obj_tmp
+data modify storage anc:temp obj set from storage anc:temp obj_tmp

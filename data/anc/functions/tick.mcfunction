@@ -24,12 +24,15 @@ execute as @e[tag=anc_craft_machine] at @s run function anc:machines/craft_machi
 execute as @e[tag=anc_interact_machine] at @s run function anc:machines/interact_machine/tick
 execute if score $ancMagnetUseful ancConfig matches 1 as @e[type=glow_item_frame,tag=anc_magnet_block] at @s run function anc:machines/magnet_block/tick
 
-# 末地传送门方块
-execute unless score $ancSkylandMode ancConfig matches 0 as @e[type=#anc:item_frame,nbt={Item:{id:"minecraft:ender_eye"},Facing:1b}] at @s if block ~ ~-1 ~ tinted_glass run function anc:handle/set_end_portal
-
 # 合成机，交互机，磁铁的放置和拆除
 function #anc:blocks
 
 # 清理物品
 kill @e[predicate=anc:items/needkill]
 execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] if predicate anc:blocks/needclear run function anc:tick/block_clear
+
+# 空岛模式
+execute unless score $ancSkylandMode ancConfig matches 0 run function anc_is:tick
+execute unless score $ancSkylandMode ancSuccess matches 1 unless score $ancSkylandMode ancConfig matches 0 run function anc_is:load
+    # 末地传送门方块
+    execute unless score $ancSkylandMode ancConfig matches 0 as @e[type=#anc:item_frame,nbt={Item:{id:"minecraft:ender_eye"},Facing:1b}] at @s if block ~ ~-1 ~ tinted_glass run function anc:handle/set_end_portal
