@@ -1,2 +1,2 @@
-scoreboard players set $SingleLand ancConfig 0
+scoreboard players set $ancSingleLand ancConfig 0
 function anc:items/command_book/reload

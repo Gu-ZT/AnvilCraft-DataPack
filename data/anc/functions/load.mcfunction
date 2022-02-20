@@ -34,12 +34,9 @@ scoreboard objectives add ancExpValue dummy
 
 scoreboard objectives add ancConfig dummy
 
-scoreboard players set $25 ancHealth 25
-scoreboard players set $7 ancExpValue 7
 
 gamerule commandBlockOutput false
 
-scoreboard players set $64 ancValue 64
 scoreboard objectives add ancItemCount dummy
 scoreboard objectives add ancTempStrong dummy
 

@@ -19,8 +19,8 @@
             }
         }
     },
-    "requirements": [["ehp"],["phe"]],
+    "requirements": [["ehp","phe"]],
     "rewards":{
-        "function": "anc:infernal_mobs/dark"
+        "function": "anc:infernal_mobs/entry/dark"
     }
 }

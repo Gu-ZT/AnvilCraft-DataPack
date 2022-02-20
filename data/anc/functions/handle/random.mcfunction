@@ -19,4 +19,4 @@ scoreboard players add #range ancValue 1
 # 取值
 scoreboard players operation $output ancRandom = #output ancValue
 scoreboard players operation $output ancRandom %= #range ancValue
-scoreboard players operation $output ancRandom += $max ancRandom
+scoreboard players operation $output ancRandom += $min ancRandom

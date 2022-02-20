@@ -11,6 +11,6 @@
     },
     "requirements": [["phe"]],
     "rewards":{
-        "function": "anc:infernal_mobs/sticky"
+        "function": "anc:infernal_mobs/entry/sticky"
     }
 }

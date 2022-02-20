@@ -25,7 +25,7 @@ execute as @e[tag=anc_interact_machine] at @s run function anc:machines/interact
 execute if score $ancMagnetUseful ancConfig matches 1 as @e[type=glow_item_frame,tag=anc_magnet_block] at @s run function anc:machines/magnet_block/tick
 
 # 末地传送门方块
-execute unless score $ancSkylandMode ancConfig matches 0 as @e[type=#anc:item_frame,nbt={Item:{id:"minecraft:ender_eye"},Facing:1b}] if block ~ ~-1 ~ tinted_glass run function anc:handle/set_end_portal
+execute unless score $ancSkylandMode ancConfig matches 0 as @e[type=#anc:item_frame,nbt={Item:{id:"minecraft:ender_eye"},Facing:1b}] at @s if block ~ ~-1 ~ tinted_glass run function anc:handle/set_end_portal
 
 # 合成机，交互机，磁铁的放置和拆除
 function #anc:blocks
