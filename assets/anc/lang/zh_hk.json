@@ -80,7 +80,8 @@
 
     "anc.item.command_book.skyland_mode": "是否啟用空島模式：%s\n",
     "anc.item.command_book.single_land": "是否啟用單獨島嶼：%s\n",
-    "anc.skyland.help":"§6/trigger skyland §a打開此頁面\n§6/trigger skyland.visit set <uid> §a訪問其他玩家的島嶼\n§6/trigger skyland.home §a從其他玩家的島嶼返回",
+    "anc.skyland.help":"§f§l============================§r\n§6/trigger skyland §a打開此頁面\n§6/trigger skyland.visit set <uid> §a訪問其他玩家的島嶼\n§6/trigger skyland.home §a從其他玩家的島嶼返回\n§f§l============================§r",
+    "anc.skyland.visit.warning":"§6<傳送系統> §c§l給定的uid超出範圍",
 
     "anc.infernal.dark":"黑暗",
     "anc.infernal.rust":"生鏽",
