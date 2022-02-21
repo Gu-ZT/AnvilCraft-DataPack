@@ -1,6 +1,5 @@
 {
     "block.minecraft.petrified_oak_slab": "Bamboo Slab",
-    
     "Please install the correct resource pack": "§f§l============================§r\n§b§lWelcome to use AnvilCraft，Datapack Version：§r%s§b§l，Resourcepack Version：§6§l0.6.0§r\n§b§lDatapack author：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§lResourcepack author：§r§6§lXe_Kr§r\n§f§l============================§r",
     "anc.block.magnet_block.name": "Magnet Block",
     "anc.block.magnet_block.lore": "When activated by redstone, it can suck up the anvil directly below it (within 4 blocks)",
@@ -77,14 +76,13 @@
     "anc.item.command_book.rookie_mode": "Enable rookie mode:%s\n",
     "anc.item.command_book.experience_repair": "In experience repair 2, the durability value of each experience bottle that can be repaired:%s\n",
     "anc.item.command_book.processing_count": "Processing efficiency (items / time):%s\n",
-
     "anc.item.command_book.skyland_mode": "Enable SkylandMode:%s\n",
     "anc.item.command_book.single_land": "Enable SingleLands:%s\n",
-    "anc.skyland.help":"§f§l============================§r\n§6/trigger skyland §aOpen this page\n§6/trigger skyland.visit set <uid> §aVisit other players' islands\n§6/trigger skyland.home §aReturn of players from other islands\n§f§l============================§r",
-    "anc.skyland.visit.warning":"§6<Teleport System> §c§lThe given uid is out of range!",
-
-    "anc.infernal.dark":"Dark",
-    "anc.infernal.rust":"Rust",
-    "anc.infernal.sticky":"Sticky",
-    "anc.infernal.weaving_net":"WeavingNet"
+    "anc.skyland.help": "§f§l============================§r\n§6/trigger skyland §aOpen this page\n§6/trigger skyland.visit set <uid> §aVisit other players' islands\n§6/trigger skyland.home §aReturn of players from other islands\n§f§l============================§r",
+    "anc.skyland.visit.warning": "§6<Teleport System> §c§lThe given uid is out of range!",
+    "anc.infernal.dark": "Dark",
+    "anc.infernal.rust": "Rust",
+    "anc.infernal.sticky": "Sticky",
+    "anc.infernal.weaving_net": "WeavingNet",
+    "anc.block.altar.name": "Altar"
 }

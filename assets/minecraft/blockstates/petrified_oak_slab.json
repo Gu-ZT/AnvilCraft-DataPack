@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "minecraft:block/petrified_oak_slab"
+      "model": "anc:block/bamboo_slab"
     },
     "type=double": {
-      "model": "minecraft:block/petrified_oak_slab_double"
+      "model": "anc:block/bamboo_slab_double"
     },
     "type=top": {
-      "model": "minecraft:block/petrified_oak_slab_top"
+      "model": "anc:block/bamboo_slab_top"
     }
   }
 }

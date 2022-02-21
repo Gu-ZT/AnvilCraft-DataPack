@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:barrel",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140054,id:'anc:altar',display:{Name:'{\"italic\":false,\"translate\":\"anc.block.altar.name\"}'},BlockEntityTag:{Lock:'276082751CF95F35648CB2F47928AB2B'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

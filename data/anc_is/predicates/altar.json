@@ -1,0 +1,253 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 2,
+                "offsetY": 0,
+                "offsetZ": 1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["anvil"]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 2,
+                "offsetY": 0,
+                "offsetZ": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["anvil"]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": -2,
+                "offsetY": 0,
+                "offsetZ": 1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["anvil"]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": -2,
+                "offsetY": 0,
+                "offsetZ": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["anvil"]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 1,
+                "offsetY": 0,
+                "offsetZ": 2,
+                "predicate": {
+                    "block": {
+                        "blocks": ["anvil"]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": -1,
+                "offsetY": 0,
+                "offsetZ": 2,
+                "predicate": {
+                    "block": {
+                        "blocks": ["anvil"]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 1,
+                "offsetY": 0,
+                "offsetZ": -2,
+                "predicate": {
+                    "block": {
+                        "blocks": ["anvil"]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": -1,
+                "offsetY": 0,
+                "offsetZ": -2,
+                "predicate": {
+                    "block": {
+                        "blocks": ["anvil"]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "state": {
+                            "lit": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 1,
+                "offsetY": 0,
+                "offsetZ": 1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "state": {
+                            "lit": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 1,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "predicate": {
+                    "block": {
+                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "state": {
+                            "lit": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 1,
+                "offsetY": 0,
+                "offsetZ": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "state": {
+                            "lit": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "state": {
+                            "lit": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": -1,
+                "offsetY": 0,
+                "offsetZ": -1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "state": {
+                            "lit": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": -1,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "predicate": {
+                    "block": {
+                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "state": {
+                            "lit": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetX": -1,
+                "offsetY": 0,
+                "offsetZ": 1,
+                "predicate": {
+                    "block": {
+                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "state": {
+                            "lit": true
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

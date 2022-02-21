@@ -322,6 +322,36 @@
                 "custom_model_data": 11141013
             },
             "model": "anc:gui/interact_back"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11142001
+            },
+            "model": "anc:block/magnet_block"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11142021
+            },
+            "model": "anc:block/craft_machine"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11142022
+            },
+            "model": "anc:block/interact_machine"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11142054
+            },
+            "model": "anc:block/altar"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11142055
+            },
+            "model": "anc:block/altar_ready"
         }
     ]
 }

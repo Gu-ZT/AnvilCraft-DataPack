@@ -5,19 +5,25 @@
             "predicate": {
                 "custom_model_data": 11140001
             },
-            "model": "anc:block/magnet_block"
+            "model": "anc:item/magnet_block"
         },
         {
             "predicate": {
                 "custom_model_data": 11140021
             },
-            "model": "anc:block/craft_machine"
+            "model": "anc:item/craft_machine"
         },
         {
             "predicate": {
                 "custom_model_data": 11140022
             },
-            "model": "anc:block/interact_machine"
+            "model": "anc:item/interact_machine"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140054
+            },
+            "model": "anc:item/altar"
         }
     ]
 }
