@@ -15,13 +15,15 @@ data modify storage anc:s3_io obj.skyland.Pos set from entity @s Pos
 function anc:s3_io/set
 
 # 生成岛屿
+execute at @s run forceload add ~1 ~1 ~-1 ~-1
 execute at @s run function anc_is:land/spawn_land
+execute at @s run forceload remove ~1 ~1 ~-1 ~-1
 
 # 传送玩家
 tp @a[tag=non_is,limit=1] @s
-spawnpoint @a[tag=non_is,limit=1] ~ ~ ~
+execute as @s at @s run spawnpoint @a[tag=non_is,limit=1] ~ ~ ~
 tag @a[tag=non_is,limit=1] remove non_is
 
-#清除aec
-kill @s
+# 清除as
+#kill @s
 

@@ -4,7 +4,7 @@ execute if score @s skyland.visit > $usedUid ancUid run tellraw @s [{"translate"
 execute unless score @s skyland.visit > $usedUid ancUid run tag @s add aiTpPlayer
 execute unless score @s skyland.visit > $usedUid ancUid run gamemode spectator @s
 # 生成as
-execute unless score @s skyland.visit > $usedUid ancUid run summon armor_stand ~ ~ ~ {Tags:["aiTpVisit"]}
+execute unless score @s skyland.visit > $usedUid ancUid run summon armor_stand ~ ~ ~ {Tags:["aiTpVisit"],NoGravity:1b}
 # 寻找传送点
 execute unless score @s skyland.visit > $usedUid ancUid run data modify storage anc:s3_io obj set value {}
 execute unless score @s skyland.visit > $usedUid ancUid run scoreboard players operation addr tmp = @s skyland.visit
