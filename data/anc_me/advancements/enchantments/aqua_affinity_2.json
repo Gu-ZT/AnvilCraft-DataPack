@@ -1,0 +1,51 @@
+{
+    "criteria": {
+        "aa2": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "head": {
+                                    "items": [
+                                        "iron_helmet",
+                                        "golden_helmet",
+                                        "turtle_helmet",
+                                        "diamond_helmet",
+                                        "leather_helmet",
+                                        "chainmail_helmet",
+                                        "netherite_helmet"
+                                    ],
+                                    "enchantments": [
+                                        {
+                                            "enchantment": "aqua_affinity",
+                                            "levels": {
+                                                "min": 2
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "location_check",
+                        "offsetY": 1,
+                        "predicate": {
+                            "fluid": {
+                                "tag": "water"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [["aa2"]],
+    "rewards": {
+        "function": "anc_me:handle/aqua_affinity_2"
+    }
+}

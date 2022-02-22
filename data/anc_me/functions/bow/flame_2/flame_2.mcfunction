@@ -1,6 +1,9 @@
-scoreboard players operation $amVar amSelfUUID0 = @s amSelfUUID0
-scoreboard players operation $amVar amSelfUUID1 = @s amSelfUUID1
-scoreboard players operation $amVar amSelfUUID2 = @s amSelfUUID2
-scoreboard players operation $amVar amSelfUUID3 = @s amSelfUUID3
+scoreboard players operation $amVar amUUID0 = @s amUUID0
+scoreboard players operation $amVar amUUID1 = @s amUUID1
+scoreboard players operation $amVar amUUID2 = @s amUUID2
+scoreboard players operation $amVar amUUID3 = @s amUUID3
 
-execute as @e[type=#arrows,distance=..3,tag=!am_arrow] at @s if score @s amOwnerUUID0 = $amVar amSelfUUID0 if score @s amOwnerUUID1 = $amVar amSelfUUID1 if score @s amOwnerUUID2 = $amVar amSelfUUID2 if score @s amOwnerUUID3 = $amVar amSelfUUID3 run function anc_me:bow/flame_2/arrow
+execute as @e[type=#arrows,distance=..3,tag=!am_arrow] run function anc_me:handle/arrow_get_uuid
+
+execute as @e[type=#arrows,distance=..3,tag=!am_arrow] at @s if score @s amUUID0 = $amVar amUUID0 if score @s amUUID1 = $amVar amUUID1 if score @s amUUID2 = $amVar amUUID2 if score @s amUUID3 = $amVar amUUID3 run function anc_me:bow/flame_2/arrow
+advancement revoke @s only anc_me:bow/flame_2

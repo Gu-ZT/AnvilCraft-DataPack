@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "using":{
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": ["bow"],
+                    "enchantments": [
+                        {
+                            "enchantment": "infinity",
+                            "levels": 2
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [["using"]],
+    "rewards": {
+        "function": "anc_me:bow/infinity_2/infinity_2"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "using":{
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": ["bow"],
+                    "enchantments": [
+                        {
+                            "enchantment": "flame",
+                            "levels": 2
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [["using"]],
+    "rewards": {
+        "function": "anc_me:bow/flame_2/flame_2"
+    }
+}
