@@ -25,5 +25,5 @@ execute as @s at @s run spawnpoint @a[tag=non_is,limit=1] ~ ~ ~
 tag @a[tag=non_is,limit=1] remove non_is
 
 # 清除as
-#kill @s
+kill @s
 

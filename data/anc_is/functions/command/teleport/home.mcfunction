@@ -1,7 +1,7 @@
 # 标记玩家
 tag @s add aiTpPlayer
 # 生成as
-summon armor_stand ~ ~ ~ {Tags:["aiTpHome"],NoGravity:1b}
+summon marker ~ ~ ~ {Tags:["aiTpHome"],NoGravity:1b}
 # 寻找传送点
 execute if data entity @s SpawnX run data modify storage anc:temp skyland.Pos[0] set from entity @s SpawnX
 execute if data entity @s SpawnY run data modify storage anc:temp skyland.Pos[1] set from entity @s SpawnY
