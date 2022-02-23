@@ -4,6 +4,3 @@ numpy~=1.21.4
 imageio~=2.13.3
 matplotlib~=3.5.0
 zipfile39~=0.0.4.2
-
-
-'[{,'with':[{'nbt':'MagnetUseful','storage':'anc:command_book','interpret':true}]},{'translate':'anc.item.command_book.attracting_falling','with':[{'nbt':'AttractingFalling','storage':'anc:command_book','interpret':true}]},{'translate':'anc.item.command_book.rookie_mode','with':[{'nbt':'RookieMode','storage':'anc:command_book','interpret':true}]}]'
