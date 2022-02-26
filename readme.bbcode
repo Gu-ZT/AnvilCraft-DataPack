@@ -2,6 +2,7 @@
 [#1]开始页
 [#2]更新日志
 [#3]基本教程
+[#4]开发思路
 [/index]
 [postbg]bg8.png[/postbg][align=center][attachimg]1980433[/attachimg][/align]
 [align=center][size=32px][b][url=https://gu-zt.github.io/AnvilCraft/]铁砧工艺|AnvilCraft[/url][/b][/size][/align]
@@ -684,3 +685,49 @@
 - 水下速掘II——在水下可以获得一个急迫II效果；[/size]
 [size=20px][b]红石EMP[/b][/size]
 [size=16px]用下落的铁砧砸红石块，可以使与红石块所处同一平面、且曼哈顿距离7格以内的红石火把熄灭1tick，而后恢复为点亮状态。紧贴红石块放置的打开的铁活扳门可以阻止该效果。[/size]
+
+
+[page]
+[size=24px][b]铁砧砸[/b][/size]
+[size=16px]1.基于下落的铁砧生成AEC并标记铁砧
+2.每tick将AECtp至铁砧的位置
+3.检测不到铁砧时，基于AEC执行相关函数[/size]
+[size=24px][b]更好的发射器[/b][/size]
+[size=16px]1.铁砧砸到发射器时，枚举发射器朝向并生成两个AEC分别标记发射器位置和发射器所指向的位置
+2.基于发射器第一格物品判定所要执行的函数[/size]
+[size=24px][b]【WIP】空岛生成[/b][/size]
+[size=16px]基本运算函数[/size]
+[code]# 步数减1
+scoreboard players remove $step aiValue 1
+# 如果步数小于等于0，则层步减1
+execute if score $step aiValue matches ..0 run scoreboard players remove $layerStep aiValue 1
+# 如果步数小于等于0，更换方向
+execute if score $step aiValue matches ..0 if score $direction aiValue matches 1..4 run scoreboard players add $direction aiValue 1
+execute unless score $direction aiValue matches 1..4 run scoreboard players set $direction aiValue 1
+# 如果层步小于等于0，层数加1
+execute if score $layerStep aiValue matches ..0 run scoreboard players add $layer aiValue 1
+# 如果层步小于等于0，重置层步为2
+execute if score $layerStep aiValue matches ..0 run scoreboard players set $layerStep aiValue 2
+# 如果步数小于等于0，重置步数为层数
+execute if score $step aiValue matches ..0 run scoreboard players operation $step aiValue = $layer aiValue
+
+# 步进
+execute if score $direction aiValue matches 1 run scoreboard players add $x aiValue 1
+execute if score $direction aiValue matches 2 run scoreboard players remove $z aiValue 1
+execute if score $direction aiValue matches 3 run scoreboard players remove $x aiValue 1
+execute if score $direction aiValue matches 4 run scoreboard players add $z aiValue 1
+
+# 坐标扩大1000倍
+scoreboard players operation $real_x aiValue = 1000 int
+scoreboard players operation $real_x aiValue *= $x aiValue
+scoreboard players operation $real_z aiValue = 1000 int
+scoreboard players operation $real_z aiValue *= $z aiValue
+[/code]
+[size=16px]层步与层数为什么相等？
+如图所示
+[attachimg]1986527[/attachimg]
+等效Python代码与其执行效果
+[attachimg]1986530[/attachimg]
+[attachimg]1986531[/attachimg][/size]
+[size=24px][b][/b][/size]
+[size=16px][/size]
