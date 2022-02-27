@@ -17,7 +17,7 @@ execute if block 0 -64 0 air run scoreboard players set $ancSkylandMode ancConfi
 scoreboard players set $ancSingleLand ancConfig 0
 
 # 初始世界仇恨
-scoreboard players set loadConfig ancConfig 0
+scoreboard players set $ancHatred ancValue 0
 
 # s3_io循环读取指针上限
 scoreboard players set $ancMaxLoop ancConfig 65535
