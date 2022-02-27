@@ -1,0 +1,21 @@
+{
+    "parent": "anc:anc/root",
+    "display": {
+        "icon": {
+            "item": "minecraft:suspicious_stew",
+            "nbt": "{CustomModelData:11140042}"
+        },
+        "title": {"translate":"anc.advancements.cook.title"},
+        "description": {"translate":"anc.advancements.cook.description"}
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "criteria": {
+        "command":{
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [["command"]]
+}

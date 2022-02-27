@@ -1,0 +1,93 @@
+{
+    "parent": "anc:anc/cook",
+    "display": {
+        "icon": {
+            "item": "minecraft:cooked_salmon",
+            "nbt": "{CustomModelData:11140043}"
+        },
+        "title": {"translate":"anc.advancements.epicure.title"},
+        "description": {"translate":"anc.advancements.epicure.description"}
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "criteria": {
+        "creamy_bread_roll":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:creamy_bread_roll'}"
+                }
+            }
+        },
+        "chocolate":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:chocolate'}"
+                }
+            }
+        },
+        "shengjian":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:shengjian'}"
+                }
+            }
+        },
+        "meatballs":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:meatballs'}"
+                }
+            }
+        },
+        "beef_mushroom_stew":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:beef_mushroom_stew'}"
+                }
+            }
+        },
+        "dumpling":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:dumpling'}"
+                }
+            }
+        },
+        "black_chocolate":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:black_chocolate'}"
+                }
+            }
+        },
+        "white_chocolate":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:white_chocolate'}"
+                }
+            }
+        },
+        "sweet_dumpling":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{id:'anc:sweet_dumpling'}"
+                }
+            }
+        }
+    },
+    "requirements": [["creamy_bread_roll"],["chocolate"],["shengjian"],["meatballs"],["beef_mushroom_stew"],["dumpling"],["black_chocolate"],["white_chocolate"],["sweet_dumpling"]],
+    "rewards": {
+        "experience": 100
+    }
+}

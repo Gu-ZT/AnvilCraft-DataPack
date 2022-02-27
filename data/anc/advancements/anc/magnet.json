@@ -1,0 +1,21 @@
+{
+    "parent": "anc:anc/root",
+    "display": {
+        "icon": {
+            "item": "minecraft:barrel",
+            "nbt": "{CustomModelData:11140001}"
+        },
+        "title": {"translate":"anc.advancements.magnet.title"},
+        "description": {"translate":"anc.advancements.magnet.description"}
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "criteria": {
+        "command":{
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [["command"]]
+}

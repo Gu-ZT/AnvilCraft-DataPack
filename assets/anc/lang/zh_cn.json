@@ -86,5 +86,15 @@
     "anc.infernal.rust": "生锈",
     "anc.infernal.sticky": "粘性",
     "anc.infernal.weaving_net": "织网",
-    "anc.block.altar.name": "祭坛"
+    "anc.block.altar.name": "祭坛",
+    "anc.advancements.root.title":"铁砧工艺",
+    "anc.advancements.root.description":"欢迎使用铁砧工艺",
+    "anc.advancements.magnet.title":"磁化",
+    "anc.advancements.magnet.description":"引雷霆之力！",
+    "anc.advancements.enchantments.title":"超级附魔师",
+    "anc.advancements.enchantments.description":"比附魔师更加强大！",
+    "anc.advancements.cook.title":"烹饪家",
+    "anc.advancements.cook.description":"烹饪使我快乐",
+    "anc.advancements.epicure.title":"美食家",
+    "anc.advancements.epicure.description":"尝遍天下美食"
 }

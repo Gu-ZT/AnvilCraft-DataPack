@@ -84,5 +84,15 @@
     "anc.infernal.rust": "Rust",
     "anc.infernal.sticky": "Sticky",
     "anc.infernal.weaving_net": "WeavingNet",
-    "anc.block.altar.name": "Altar"
+    "anc.block.altar.name": "Altar",
+    "anc.advancements.root.title":"AnvilCraft",
+    "anc.advancements.root.description":"Welcome to play AnvilCraft",
+    "anc.advancements.magnet.title":"Magnetization",
+    "anc.advancements.magnet.description":"The power of thunder!",
+    "anc.advancements.enchantments.title":"Super Enchanter",
+    "anc.advancements.enchantments.description":"More powerful than the attached magician!",
+    "anc.advancements.cook.title":"Cooks",
+    "anc.advancements.cook.description":"Cooking makes me happy.",
+    "anc.advancements.epicure.title":"Epicure",
+    "anc.advancements.epicure.description":"Taste delicious food all over the world."
 }

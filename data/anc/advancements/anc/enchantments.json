@@ -1,0 +1,20 @@
+{
+    "parent": "anc:anc/root",
+    "display": {
+        "icon": {
+            "item": "minecraft:enchanted_book"
+        },
+        "title": {"translate":"anc.advancements.enchantments.title"},
+        "description": {"translate":"anc.advancements.enchantments.description"}
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "criteria": {
+        "command":{
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [["command"]]
+}

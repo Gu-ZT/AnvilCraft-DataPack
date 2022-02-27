@@ -4,3 +4,4 @@ scoreboard players operation #amRepairCost ancValue *= 2 int
 scoreboard players operation #amRepairCost ancValue += 1 int
 execute store result entity @s Item.tag.RepairCost int 1 run scoreboard players get #amRepairCost ancValue
 scoreboard players add $ancHatred ancValue 1
+advancement grant @a[advancements={anc:anc/enchantments=false},limit=1,sort=nearest] only anc:anc/enchantments
