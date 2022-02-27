@@ -690,12 +690,12 @@
 
 [page]
 [size=24px][b]铁砧砸[/b][/size]
-[size=16px]1.基于下落的铁砧生成AEC并标记铁砧
-2.每tick将AECtp至铁砧的位置
-3.检测不到铁砧时，基于AEC执行相关函数[/size]
+[size=16px][list=1][*]基于下落的铁砧生成AEC并标记铁砧
+[*]每tick将AECtp至铁砧的位置
+[*]检测不到铁砧时，基于AEC执行相关函数[/list][/size]
 [size=24px][b]更好的发射器[/b][/size]
-[size=16px]1.铁砧砸到发射器时，枚举发射器朝向并生成两个AEC分别标记发射器位置和发射器所指向的位置
-2.基于发射器第一格物品判定所要执行的函数[/size]
+[size=16px][list=1][*]铁砧砸到发射器时，枚举发射器朝向并生成两个AEC分别标记发射器位置和发射器所指向的位置
+[*]基于发射器第一格物品判定所要执行的函数[/list][/size]
 [size=24px][b]【WIP】空岛生成[/b][/size]
 [size=16px]基本运算函数[/size]
 [code]# 步数减1
@@ -730,5 +730,11 @@ scoreboard players operation $real_z aiValue *= $z aiValue
 等效Python代码与其执行效果
 [attachimg]1986530[/attachimg]
 [attachimg]1986531[/attachimg][/size]
+[size=24px][b]【WIP】空岛模式传送系统[/b][/size]
+[size=16px][list=1][*]在玩家加入游戏时用进度触发为玩家分配uid
+[*]岛屿生成时，将玩家岛屿坐标以uid为索引存入storage
+[*]当玩家尝试访问他人岛屿时，从该玩家对应的储存空间中取出对应坐标值并赋值给标记实体
+[*]以标记实体为定点传送玩家至岛屿并将玩家设置为旁观者模式
+[*]当玩家尝试返回自己岛屿时，优先读取玩家SpawnX/Y/Z标签，当其不存在时，从storage中读取岛屿坐标并执行传送[/list][/size]
 [size=24px][b][/b][/size]
 [size=16px][/size]
