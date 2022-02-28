@@ -6,4 +6,4 @@ scoreboard players operation $amVar amUUID3 = @s amUUID3
 execute as @e[type=#arrows,distance=..3,tag=!am_arrow] run function anc_me:handle/arrow_get_uuid
 
 execute as @e[type=#arrows,distance=..3,tag=!am_arrow] at @s if score @s amUUID0 = $amVar amUUID0 if score @s amUUID1 = $amVar amUUID1 if score @s amUUID2 = $amVar amUUID2 if score @s amUUID3 = $amVar amUUID3 run function anc_me:bow/flame_2/arrow
-advancement revoke @s only anc_me:bow/flame_2
+advancement revoke @s only anc_me:enchantments/flame_2
