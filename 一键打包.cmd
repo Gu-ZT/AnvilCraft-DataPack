@@ -1,8 +1,8 @@
 echo off
 color 0a
-title è‡ªåŠ¨æ‰“åŒ…
-echo æ‰“åŒ…ä¸­.....
+title ×Ô¶¯´ò°ü
+echo ´ò°üÖĞ.....
 pip install zipfile39
 python .\Tools.py pack
-echo æ‰“åŒ…æˆåŠŸ
+echo ´ò°ü³É¹¦
 pause

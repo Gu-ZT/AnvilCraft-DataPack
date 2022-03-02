@@ -3,7 +3,9 @@ execute if score $ancSingleLand ancConfig matches 0 run tag @s add non_is
 execute if score $ancSingleLand ancConfig matches 0 run summon marker ~ ~ ~ {Tags:["isTemp"]}
 execute if score $ancSingleLand ancConfig matches 0 run execute as @e[type=marker,tag=isTemp] at @s run function anc_is:land/marker
 
+execute unless score $ancSingleLand ancConfig matches 0 if score @s ancUid matches 1 positioned 1000.5 64 0.5 run forceload add ~1 ~1 ~-1 ~-1
 execute unless score $ancSingleLand ancConfig matches 0 if score @s ancUid matches 1 positioned 1000.5 64 0.5 run function anc_is:land/spawn_land
+execute unless score $ancSingleLand ancConfig matches 0 if score @s ancUid matches 1 positioned 1000.5 64 0.5 run forceload remove ~1 ~1 ~-1 ~-1
 execute unless score $ancSingleLand ancConfig matches 0 run tp @s 1000.5 64 0.5 ~ ~
 execute unless score $ancSingleLand ancConfig matches 0 run spreadplayers 1000.5 0.5 0 3 false @s
 
