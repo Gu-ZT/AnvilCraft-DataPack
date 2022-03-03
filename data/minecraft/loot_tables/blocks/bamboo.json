@@ -20,6 +20,14 @@
       "rolls": 1,
       "entries":[
         {
+          "conditions": [
+            {"condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"ancIs\"]}"
+              }
+            }
+          ],
           "type": "item",
           "name": "bone_meal",
           "functions": [
