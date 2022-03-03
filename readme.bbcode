@@ -390,6 +390,7 @@
 [*]四个竹台阶可以合成工作台
 [*]添加了开裂的铁砧和损坏的铁砧的合成方式[/list][/size]
 [*]空岛模式[size=16px][list]
+[*]推荐搭配[url=https://github.com/Dubhe-Studio/AnvilCraft-SkyLandMod]专用空岛模组[/url]食用
 [*]修改data/anc/functions/config.mcfunction将$ancSkylandMode的ancConfig计分板可以开关空岛模式
 [*]修改data/anc/functions/config.mcfunction将$ancSingleLand的ancConfig计分板可以开关单独岛屿
 [*]岛屿
@@ -417,6 +418,7 @@
 [*]命令书
   OP可以使用[font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#f6f8fa]/loot give @s loot anc:command_book[/backcolor][/font]获取命令书来修改配置项[/list][/size]
 [*]杂项[size=16px][list]
+[*]空岛模式下，竹子有几率掉落骨粉
 [*]新增进度系统，具体请自行体验
 [*]无限II掉落的箭只有本人能拾取
 [*]被玩家杀死的僵尸村民有几率掉落绿宝石
@@ -700,7 +702,7 @@
 [size=24px][b]更好的发射器[/b][/size]
 [size=16px][list=1][*]铁砧砸到发射器时，枚举发射器朝向并生成两个AEC分别标记发射器位置和发射器所指向的位置
 [*]基于发射器第一格物品判定所要执行的函数[/list][/size]
-[size=24px][b]【WIP】空岛生成[/b][/size]
+[size=24px][b]空岛生成[/b][/size]
 [size=16px]基本运算函数[/size]
 [code]# 步数减1
 scoreboard players remove $step aiValue 1
@@ -734,7 +736,7 @@ scoreboard players operation $real_z aiValue *= $z aiValue
 等效Python代码与其执行效果
 [attachimg]1986530[/attachimg]
 [attachimg]1986531[/attachimg][/size]
-[size=24px][b]【WIP】空岛模式传送系统[/b][/size]
+[size=24px][b]空岛模式传送系统[/b][/size]
 [size=16px][list=1][*]在玩家加入游戏时用进度触发为玩家分配uid
 [*]岛屿生成时，将玩家岛屿坐标以uid为索引存入storage
 [*]当玩家尝试访问他人岛屿时，从该玩家对应的储存空间中取出对应坐标值并赋值给标记实体
