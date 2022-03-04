@@ -3,7 +3,7 @@ function anc_is:land/step
 
 # 传送
 execute store result entity @s Pos[0] double 1 run scoreboard players get $real_x aiValue
-data modify entity @s Pos[1] set value 64d
+data modify entity @s Pos[1] set value 0d
 execute store result entity @s Pos[2] double 1 run scoreboard players get $real_z aiValue
 
 execute at @s run tp @s ~0.5 ~ ~0.5

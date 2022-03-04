@@ -1,0 +1,8 @@
+execute if block ~ ~ ~ composter[level=7] run setblock ~ ~ ~ composter[level=8]
+execute if block ~ ~ ~ composter[level=6] run setblock ~ ~ ~ composter[level=7]
+execute if block ~ ~ ~ composter[level=5] run setblock ~ ~ ~ composter[level=6]
+execute if block ~ ~ ~ composter[level=4] run setblock ~ ~ ~ composter[level=5]
+execute if block ~ ~ ~ composter[level=3] run setblock ~ ~ ~ composter[level=4]
+execute if block ~ ~ ~ composter[level=2] run setblock ~ ~ ~ composter[level=3]
+execute if block ~ ~ ~ composter[level=1] run setblock ~ ~ ~ composter[level=2]
+execute if block ~ ~ ~ composter[level=0] run setblock ~ ~ ~ composter[level=1]

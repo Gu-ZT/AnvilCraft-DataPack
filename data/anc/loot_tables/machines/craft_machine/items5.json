@@ -50,6 +50,51 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:utusan_raw"
+						},
+						{
+							"_comment": "紫水晶镐",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:1b},{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:3b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:amethyst_pickaxe"
+						},
+						{
+							"_comment": "紫水晶斧",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:1b},{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:10b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:amethyst_axe"
+						},
+						{
+							"_comment": "紫水晶斧",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:3b},{id:\"minecraft:amethyst_shard\",Slot:12b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:amethyst_axe"
 						}
 					]
 				}

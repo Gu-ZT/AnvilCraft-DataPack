@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_shovel",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140057,id:'anc:amethyst_shovel',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.amethyst_shovel.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

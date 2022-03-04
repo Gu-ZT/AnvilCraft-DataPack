@@ -10,11 +10,11 @@ scoreboard players set $ancExperienceRepair ancConfig 14
 scoreboard players set $ancRookieMode ancConfig 1
 
 # 是否启用空岛模式
-scoreboard players set $ancSkylandMode ancConfig 0
+scoreboard players set $ancSkylandMode ancConfig 1
 # 当0 -64 0为虚空时自动启用空岛模式
 execute if block 0 -64 0 air run scoreboard players set $ancSkylandMode ancConfig 1
 # 是否启用单独岛屿
-scoreboard players set $ancSingleLand ancConfig 0
+scoreboard players set $ancSingleLand ancConfig 1
 
 # 初始世界仇恨
 scoreboard players set $ancHatred ancValue 0

@@ -62,6 +62,24 @@
 						"nbt": "{Items:[{id:\"minecraft:cocoa_beans\",Slot:1b},{tag:{id:\"anc:flatdough\"},Slot:2b},{id:\"minecraft:sugar\",Slot:3b}]}"
 					}
 				}
+			},
+			{
+				"_comment": "紫水晶剑",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+					}
+				}
+			},
+			{
+				"_comment": "紫水晶锹",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+					}
+				}
 			}
 		]
 	}

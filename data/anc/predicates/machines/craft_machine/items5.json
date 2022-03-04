@@ -35,6 +35,33 @@
 						"nbt": "{Items:[{id:\"minecraft:pufferfish\"},{id:\"minecraft:lily_of_the_valley\"},{id:\"minecraft:spider_eye\"},{id:\"minecraft:poisonous_potato\"},{id:\"minecraft:wither_rose\"}]}"
 					}
 				}
+			},
+			{
+				"_comment": "紫水晶镐",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:1b},{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:3b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+					}
+				}
+			},
+			{
+				"_comment": "紫水晶斧",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:1b},{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:10b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+					}
+				}
+			},
+			{
+				"_comment": "紫水晶斧",
+				"condition": "minecraft:location_check",
+				"predicate": {
+					"block": {
+						"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:3b},{id:\"minecraft:amethyst_shard\",Slot:12b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+					}
+				}
 			}
 		]
 	}

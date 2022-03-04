@@ -95,6 +95,36 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:loots/2_sweet_dumpling_raw"
+						},
+						{
+							"_comment": "紫水晶剑",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:amethyst_sword"
+						},
+						{
+							"_comment": "紫水晶锹",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:amethyst_shovel"
 						}
 					]
 				}

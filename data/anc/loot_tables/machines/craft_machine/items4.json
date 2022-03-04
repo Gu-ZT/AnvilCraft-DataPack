@@ -50,6 +50,36 @@
 							],
 							"type": "minecraft:loot_table",
 							"name": "anc:beef_mushroom_stew_raw"
+						},
+						{
+							"_comment": "紫水晶锄",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:1b},{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:amethyst_hoe"
+						},
+						{
+							"_comment": "紫水晶锄",
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"block": {
+											"nbt": "{Items:[{id:\"minecraft:amethyst_shard\",Slot:2b},{id:\"minecraft:amethyst_shard\",Slot:3b},{id:\"minecraft:bamboo\",Slot:11b},{id:\"minecraft:bamboo\",Slot:20b}]}"
+										}
+									}
+								}
+							],
+							"type": "minecraft:loot_table",
+							"name": "anc:amethyst_hoe"
 						}
 					]
 				}

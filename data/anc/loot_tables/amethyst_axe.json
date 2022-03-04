@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_axe",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140054,id:'anc:amethyst_axe',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.amethyst_axe.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "trader.coming":{
+        "replace": "false",
+        "subtitle": "anc.trader.coming.sound",
+        "sounds": [
+            "trader_coming"
+        ]
+    }
+}

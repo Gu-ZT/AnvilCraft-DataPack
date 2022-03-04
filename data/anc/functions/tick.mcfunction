@@ -32,6 +32,9 @@ execute unless score $ancSkylandMode ancConfig matches 0 run function #anc_is:bl
 kill @e[predicate=anc:items/needkill]
 execute as @e[type=glow_item_frame,tag=anc_block] at @s positioned ~ ~-1 ~ unless entity @e[type=glow_item_frame,tag=anc_block,distance=..0.5] if predicate anc:blocks/needclear run function anc:tick/block_clear
 
+# 游商来喽
+execute as @e[type=wandering_trader,tag=!ancWanderingTrader] run function anc:handle/wandering_trader
+
 # 空岛模式
 execute unless score $ancSkylandMode ancSuccess matches 1 unless score $ancSkylandMode ancConfig matches 0 run function anc_is:load
 execute unless score $ancSkylandMode ancConfig matches 0 run function anc_is:tick

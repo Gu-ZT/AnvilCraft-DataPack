@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_hoe",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140055,id:'anc:amethyst_hoe',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.amethyst_hoe.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "parent": "anc:anc/root",
+    "display": {
+        "icon": {
+            "item": "minecraft:slime_ball"
+        },
+        "title": {"translate":"anc.advancements.viscousbond.title"},
+        "description": {"translate":"anc.advancements.viscousbond.description"}
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "criteria": {
+        "viscousbond":{
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags:[\"ancViscousBond\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [["viscousbond"]]
+}

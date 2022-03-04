@@ -15,33 +15,6 @@
           "condition": "minecraft:survives_explosion"
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries":[
-        {
-          "conditions": [
-            {"condition": "entity_properties",
-              "entity": "this",
-              "predicate": {
-                "nbt": "{Tags:[\"ancIs\"]}"
-              }
-            }
-          ],
-          "type": "item",
-          "name": "bone_meal",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "max": 1,
-                "min": 0,
-                "type": "uniform"
-              }
-            }
-          ]
-        }
-      ]
     }
   ]
 }
