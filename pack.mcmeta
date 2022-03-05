@@ -1,13 +1,13 @@
 {
 	"pack": {
-		"pack_format": 9,
+		"pack_format": 8,
 		"description": [
 			{
 				"text": "铁砧工艺",
 				"color": "gold"
 			},
 			{
-				"text": " v0.6.1",
+				"text": " v0.6.2",
 				"color": "gold"
 			},
 			{
