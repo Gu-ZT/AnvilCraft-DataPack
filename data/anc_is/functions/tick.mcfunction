@@ -9,3 +9,5 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:petrified_oak_slab",Count:1b}}]
 execute as @a[scores={skyland=1..}] run function anc_is:command/skyland
 execute as @a[scores={skyland.home=1..}] run function anc_is:command/teleport/home
 execute as @a[scores={skyland.visit=1..}] run function anc_is:command/teleport/visit
+
+execute as @e[type=endermite] at @s if block ~ ~-1 ~ purpur_block run function anc_is:handle/shulker

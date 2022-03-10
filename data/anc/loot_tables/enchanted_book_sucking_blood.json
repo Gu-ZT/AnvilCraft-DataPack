@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancCustomEnchantments:[{id:\"anc:sucking_blood\",lvl:1b}],display:{Lore:['{\"italic\":false,\"translate\":\"anc.item.enchant.sucking_blood\",\"color\":\"gray\"}']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

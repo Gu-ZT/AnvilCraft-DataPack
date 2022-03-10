@@ -2,4 +2,4 @@ execute store success score $magnet ancSuccess run fill ~-1 ~-2 ~-1 ~1 ~1 ~1 min
 execute if score $magnet ancSuccess matches 1 run advancement grant @a[distance=..5] only anc:anc/magnet
 execute if score $magnet ancSuccess matches 1 run scoreboard players reset $magnet ancSuccess
 
-execute as @e[type=slime,distance=..2] at @s run function anc:handle/summon_magma_cube
+execute as @e[type=slime,distance=..4] at @s run function anc:handle/summon_magma_cube

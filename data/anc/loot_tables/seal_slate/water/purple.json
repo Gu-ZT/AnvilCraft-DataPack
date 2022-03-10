@@ -1,0 +1,58 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "turtle_helmet"
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "lure":4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "frost_walker":3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "depth_strider":4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "anc:seed_of_the_sea"
+                },
+                {
+                    "type": "loot_table",
+                    "name": "anc:sponge_gemmule"
+                }
+            ]
+        }
+    ]
+}

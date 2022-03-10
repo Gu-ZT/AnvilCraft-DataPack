@@ -1,0 +1,46 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wither_rose",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 7,
+                                "min": 5,
+                                "type": "uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "anc:utusan",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 3,
+                                "min": 1,
+                                "type": "uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "anc:enchanted_book_beheading"
+                },
+                {
+                    "type": "loot_table",
+                    "name": "anc:enchanted_book_sucking_blood"
+                }
+            ]
+        }
+    ]
+}

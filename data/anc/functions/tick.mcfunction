@@ -14,6 +14,9 @@ execute as @e[predicate=anc:items/spawner] run function anc:handle/spawner
 # 村民计分ancLastRestock 以在选择器中使用
 execute as @e[type=villager] store result score @s ancLastRestock run data get entity @s LastRestock
 
+# 空间胶囊
+execute as @e[type=item,nbt={Item:{tag:{id:"anc:space_capsule"}},OnGround:1b}] at @s run function anc:items/space_capsule/tick
+
 # 铁砧tick
 execute as @e[type=minecraft:falling_block,predicate=anc:anvil] run function anc:tick/anvil
 # as专属药水云

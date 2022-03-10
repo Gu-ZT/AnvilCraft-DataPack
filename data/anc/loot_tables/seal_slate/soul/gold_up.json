@@ -1,0 +1,14 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "anc:space_capsule"
+                }
+            ]
+        }
+    ]
+}

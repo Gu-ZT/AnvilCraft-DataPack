@@ -2,6 +2,25 @@
   "type": "minecraft:entity",
   "pools": [
     {
+      "rolls":1.0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"ancInfernal\"]}"
+          }
+        }
+      ],
+      "entries":[
+        {
+          "weight":1,
+          "type": "loot_table",
+          "name": "anc:seal_slate_soul"
+        }
+      ]
+    },
+    {
       "rolls": 1.0,
       "bonus_rolls": 1.0,
       "conditions":[

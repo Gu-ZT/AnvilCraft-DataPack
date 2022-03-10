@@ -1,6 +1,6 @@
 {
     "block.minecraft.petrified_oak_slab": "Bamboo Slab",
-    "Please install the correct resource pack": "§f§l============================§r\n§b§lWelcome to use AnvilCraft，Datapack Version：§r%s§b§l，Resourcepack Version：§6§l0.6.2§r\n§b§lDatapack author：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§lResourcepack author：§r§6§lXe_Kr§r\n§f§l============================§r",
+    "Please install the correct resource pack": "§f§l============================§r\n§b§lWelcome to use AnvilCraft，Datapack Version：§r%s§b§l，Resourcepack Version：§6§l0.6.3§r\n§b§lDatapack author：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§lResourcepack author：§r§6§lXe_Kr§r\n§f§l============================§r",
     "anc.block.magnet_block.name": "Magnet Block",
     "anc.block.magnet_block.lore": "When activated by redstone, it can suck up the anvil directly below it (within 4 blocks)",
     "anc.item.empty_protocol.name": "Empty Protocol",
@@ -103,5 +103,13 @@
     "anc.advancements.viscousbond.title": "Viscous Bond",
     "anc.advancements.viscousbond.description": "Do you want to enable the Viscous Bond?",
     "anc.trader.coming": "Wandering trader coming, at: %s",
-    "anc.trader.coming.sound": "Wandering trader coming"
+    "anc.trader.coming.sound": "Wandering trader coming",
+    "anc.item.space_capsule.name": "Space Capsule",
+    "anc.item.seal_slate_fire.name": "Seal Slate Fire",
+    "anc.item.seal_slate_poison.name": "Seal Slate Poison",
+    "anc.item.seal_slate_shadow.name": "Seal Slate Shadow",
+    "anc.item.seal_slate_soul.name": "Seal Slate Soul",
+    "anc.item.seal_slate_water.name": "Seal Slate Water",
+    "anc.item.enchant.beheading":"Beheading",
+    "anc.item.enchant.sucking_blood":"Sucking Blood"
 }

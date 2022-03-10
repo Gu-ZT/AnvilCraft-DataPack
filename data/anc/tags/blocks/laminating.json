@@ -4,6 +4,10 @@
         "packed_ice",
         "moss_block",
         "nether_wart_block",
-        "warped_wart_block"
+        "warped_wart_block",
+        "dirt",
+        "sand",
+        "soul_sand",
+        "soul_soil"
     ]
 }

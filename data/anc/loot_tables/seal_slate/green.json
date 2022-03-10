@@ -1,0 +1,95 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealFire]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/fire/green"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealPoison]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/poison/green"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealShadow]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/shadow/green"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealSoul]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/soul/green"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealWater]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/water/green"
+                }
+            ]
+        }
+    ]
+}

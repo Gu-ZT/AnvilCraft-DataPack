@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140061,dict:[\"seal_slate\"],id:'anc:seal_slate_fire',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.seal_slate_fire.name\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

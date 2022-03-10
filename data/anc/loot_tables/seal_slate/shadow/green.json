@@ -1,0 +1,52 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "chorus_fruit",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 7,
+                                "min": 5,
+                                "type": "uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "ender_pearl",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 5,
+                                "min": 2,
+                                "type": "uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "phantom_membrane",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 6,
+                                "min": 2,
+                                "type": "uniform"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,4 +1,6 @@
 data modify entity @s Item.tag.Enchantments append from entity @e[type=item,limit=1,tag=amCrafting,nbt={Item:{id:"minecraft:enchanted_book"}},distance=..1] Item.tag.StoredEnchantments.[]
+data modify entity @s Item.tag.ancCustomEnchantments append from entity @e[type=item,limit=1,tag=amCrafting,nbt={Item:{id:"minecraft:enchanted_book"}},distance=..1] Item.tag.ancCustomEnchantments.[]
+data modify entity @s Item.tag.display.Lore append from entity @e[type=item,limit=1,tag=amCrafting,nbt={Item:{id:"minecraft:enchanted_book"}},distance=..1] Item.tag.display.Lore.[]
 
 scoreboard players operation #amRepairCost ancValue *= 2 int
 scoreboard players operation #amRepairCost ancValue += 1 int

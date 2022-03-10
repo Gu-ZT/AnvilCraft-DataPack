@@ -30,4 +30,5 @@ gamerule commandBlockOutput false
 execute unless score loadConfig ancConfig matches 1 run function anc:config
 function anc:handle/constant
 
+function anc:items/seal_slate/tick3
 advancement revoke @a only anc:welcome/join

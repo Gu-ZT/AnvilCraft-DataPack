@@ -296,6 +296,13 @@
 			"predicate": {
 				"nbt": "{Item:{tag:{id:\"anc:kernel_of_the_sea\"}}}"
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{tag:{dict:[\"seal_slate\"]}}}"
+			}
 		}
     ]
 }

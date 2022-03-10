@@ -40,6 +40,7 @@ execute if block ~ ~-1 ~ minecraft:dispenser unless block ~ ~-1 ~ minecraft:disp
 execute if block ~ ~-1 ~ #anvil run function #anc:recipes/enchantments_merge
 # 超限附魔
 execute if block ~ ~-1 ~ crying_obsidian run function anc_me:crafting/main
+execute if score $ancSkylandMode ancConfig matches 1 if block ~ ~-1 ~ bookshelf run function anc_me:crafting/main
 # 红石EMP
 execute if block ~ ~-1 ~ redstone_block positioned ~ ~-1 ~ run function anc:emp/main
 

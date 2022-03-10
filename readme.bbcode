@@ -1,10 +1,10 @@
-[index]
+[postbg]bg8.png[/postbg][index]
 [#1]开始页
 [#2]更新日志
 [#3]基本教程
 [#4]开发思路
 [/index]
-[postbg]bg8.png[/postbg][align=center][attachimg]1980433[/attachimg][/align]
+[align=center][img]https://s2.loli.net/2022/03/08/sD3U81rAhSXVNTt.png[/img][/align]
 [align=center][size=32px][b][url=https://gu-zt.github.io/AnvilCraft/]铁砧工艺|AnvilCraft[/url][/b][/size][/align]
 [size=24px][align=center][b]Minecraft原版模组 by 古镇天Gugle@bilibili & XeKr@bilibili[/b][/align][/size]
 [size=16px]欢迎来到原版模组《铁砧工艺》的页面！模组是以铁砧为核心的原版生存拓展，主要内容有：[/size]
@@ -375,7 +375,7 @@
 [*]ANC-000060 v0.5.4 将磁铁可以吸起掉落中的铁砧设置为否时，被充能的磁铁不能一直吸住铁砧
 [*]ANC-000061 v0.5.4 磁铁会将任何下落中的重力方块吸起来
 [*]ANC-000062 v0.5.4 合成器中合成协议时，若物品摆放错误，则物品会被吞掉[/list][/size][/list][/size]
-[size=24px][b]2022/02/17 0.6.2[/b][/size]
+[size=24px][b]2022/03/03 0.6.0[/b][/size]
 
 [size=16px][list]
 [*]Changes[size=16px][list]
@@ -390,7 +390,6 @@
 [*]四个竹台阶可以合成工作台
 [*]添加了开裂的铁砧和损坏的铁砧的合成方式[/list][/size]
 [*]空岛模式[size=16px][list]
-[*]推荐搭配[url=https://github.com/Dubhe-Studio/AnvilCraft-SkyLandMod]专用空岛模组[/url]食用
 [*]修改data/anc/functions/config.mcfunction将$ancSkylandMode的ancConfig计分板可以开关空岛模式
 [*]修改data/anc/functions/config.mcfunction将$ancSingleLand的ancConfig计分板可以开关单独岛屿
 [*]岛屿
@@ -430,6 +429,38 @@
 [*]ANC-000064 v0.5.5 无限II、火矢Ⅱ失效
 [*]ANC-000066 v0.5.5 更好的发射器不能给山羊挤奶
 [*]ANC-000067 v0.5.5 吸收协议无法合成[/list][/size][/list][/size]
+[size=24px][b]2022/03/04 0.6.1[/b][/size]
+
+[size=16px][list]
+[*]Changes[size=16px][list]
+[*]合成[size=16px][list]
+[*]竹台阶合成更改为2合2和6合8[/list][/size]
+[*]空岛模式[size=16px][list]
+[*]岛屿位置由y64改为y0
+[*]僵尸掉铁锭几率增加
+[*]僵尸村民掉绿宝石几率增加[/list][/size][/list][/size]
+[*]Additives[size=16px][list]
+[*]物品（合成方式查看官网）[size=16px][list]
+[*]紫水晶剑
+[*]紫水晶锄
+[*]紫水晶锹
+[*]紫水晶镐
+[*]紫水晶斧[/list][/size]
+[*]空岛模式[size=16px][list]
+[*]在堆肥桶里潜行可以增加堆肥桶层数[/list][/size]
+[*]杂项[size=16px][list]
+[*]现在紫水晶芽也会掉落了[/list][/size][/list][/size]
+[*]Removes[size=16px][list]
+[*]竹子掉落骨粉[/list][/size][/list][/size]
+[size=24px][b]2022/03/05 0.6.2[/b][/size]
+
+[size=16px][list]
+[*]Fixed Bugs[size=16px][list]
+[*]ANC-000068 v6.0.1 游商音效未正确播放
+[*]ANC-000069 v0.6.1 物品合成与物品粉碎会出现65个产物
+[*]ANC-000070 v0.6.1 砸远古残骸无法获得远古残骸碎片
+[*]ANC-000071 v0.6.1 炖煮配方不消耗炼药锅里的水[/list][/size][/list][/size]
+
 
 
 [page]
@@ -438,270 +469,78 @@
 本数据包/资源包均在最新纯净版Minecraft环境（包含快照）下进行测试，一切第三方服务端/客户端及模组环境下产生的无法在纯净的客户端得以复现的问题均不会得到支持。
 *OptiFine有时也会引起问题。
 
-[size=24px][b]新增物品和方块[/b][/size]
-[size=20px][b]物品[/b][/size]
-[spoiler][list][size=16px]
-[*]空协议
-[*]吸收协议
-[*]维修协议
-[*]祛魔协议（随机）
-[*]祛魔协议（去首）
-[*]祛魔协议（去尾）
-[*]祛魔协议（诅咒）
-[*]祛魔协议（惩罚）
-[*]海洋种子
-[*]海洋之果
-[*]海洋之核
-[*]海洋之泪
-[*]海洋之刃
-[*]翅骨
-[*]翅膜
-[*]下界之星碎片
-[*]远古残骸碎片
-[*]下界核心
-[*]下界合金卷材
-[*]放置协议
-[*]保护协议
-[*]补货协议
-[*]磁铁锭
-[*]手持磁铁
-[*]奶油
-[*]油脂
-[*]面粉
-[*]面团
-[*]面皮
-[*]水饺（生）
-[*]生煎（生）
-[*]肉丸（生）
-[*]牛肉炖蘑菇（生）
-[*]肉馅
-[*]奶油面包卷
-[*]巧克力
-[*]生煎
-[*]炸肉丸
-[*]牛肉炖蘑菇
-[*]水饺
-[*]可可脂
-[*]可可粉
-[*]可可液块
-[*]黑巧克力
-[*]白巧克力
-[*]五毒散（生）
-[*]五毒散
-[*]海绵芽球
-[*]汤圆（生）
-[*]汤圆[/size][/list][/spoiler]
-[size=20px][b]方块[/b][/size]
-[list][size=16px]
-[*]合成器
-[*]交互机
-[*]磁铁[/size][/list]
-
 [size=24px][b]功能[/b][/size]
-[size=20px][b]粉碎[/b][/size]
-[size=16px]下落的铁砧砸中某些方块时，可以将其砸碎[/size]
-[table=50%]
-[tr][td]被砸的方块[/td][td]产物[/td][/tr]
-[tr][td]圆石[/td][td]沙砾[/td][/tr]
-[tr][td]沙砾[/td][td]沙子[/td][/tr]
-[tr][td]磨制花岗岩[/td][td]花岗岩[/td][/tr]
-[tr][td]磨制闪长岩[/td][td]闪长岩[/td][/tr]
-[tr][td]磨制安山岩[/td][td]安山岩[/td][/tr]
-[tr][td]花岗岩[/td][td]红沙[/td][/tr]
-[tr][td]闪长岩[/td][td]方解石[/td][/tr]
-[tr][td]安山岩[/td][td]凝灰岩[/td][/tr]
-[tr][td]石砖[/td][td]裂纹石砖[/td][/tr]
-[tr][td]深板岩砖[/td][td]裂纹深板岩砖[/td][/tr]
-[tr][td]深板岩瓦[/td][td]裂纹深板岩瓦[/td][/tr]
-[tr][td]下界砖块[/td][td]裂纹下界砖块[/td][/tr]
-[tr][td]磨制黑石砖[/td][td]裂纹磨制黑石砖[/td][/tr]
-[/table]
-[size=20px][b]压榨[/b][/size]
-[size=16px]在炼药锅上方放置某些“富含液体”的方块，当用铁砧砸炼药锅上方的方块时，可以将方块压榨成其对应的“干燥状态”，同时“方块内的液体”也会被挤到下方的炼药锅中[/size]
-[table]
-[tr][td]被砸的方块[/td][td]产物[/td][td]炼药锅中的副产物[/td][td]产生副产物的概率[/td][/tr]
-[tr][td]湿海绵[/td][td]海绵[/td][td]1/3水[/td][td]100%[/td][/tr]
-[tr][td]岩浆块[/td][td]下界岩[/td][td]熔岩[/td][td]25%[/td][/tr]
-[tr][td]雪块[/td][td]浮冰[/td][td]1/3细雪[/td][td]100%[/td][/tr]
-[/table]
-[size=20px][b]物品压缩[/b][/size]
-[size=16px]向炼药锅内投掷特定的物品，当下落的铁砧砸中炼药锅时，会将炼药锅内的物品压缩成其对应的压缩形态[/size]
-[table=50%]
-[tr][td]原料[/td][td]原料数量[/td][td]产物[/td][td]产物数量
-[tr][td]铁粒[/td][td]9[/td][td]铁锭[/td][td]1[/td][/tr]
-[tr][td]金粒[/td][td]9[/td][td]金锭[/td][td]1[/td][/tr]
-[tr][td]红石粉[/td][td]9[/td][td]红石块[/td][td]1[/td][/tr]
-[tr][td]下界石英[/td][td]4[/td][td]石英块[/td][td]1[/td][/tr]
-[tr][td]铁锭[/td][td]9[/td][td]铁块[/td][td]1[/td][/tr]
-[tr][td]铜锭[/td][td]9[/td][td]铜块[/td][td]1[/td][/tr]
-[tr][td]金锭[/td][td]9[/td][td]金块[/td][td]1[/td][/tr]
-[tr][td]钻石[/td][td]9[/td][td]钻石块[/td][td]1[/td][/tr]
-[tr][td]绿宝石[/td][td]9[/td][td]绿宝石块[/td][td]1[/td][/tr]
-[tr][td]青金石[/td][td]9[/td][td]青金石块[/td][td]1[/td][/tr]
-[tr][td]下界合金锭[/td][td]9[/td][td]下界合金块[/td][td]1[/td][/tr]
-[tr][td]煤炭[/td][td]9[/td][td]煤炭块[/td][td]1[/td][/tr]
-[tr][td]荧石粉[/td][td]4[/td][td]荧石[/td][td]1[/td][/tr]
-[tr][td]下界疣[/td][td]9[/td][td]下界疣块[/td][td]1[/td][/tr]
-[tr][td]粗铁[/td][td]9[/td][td]粗铁块[/td][td]1[/td][/tr]
-[tr][td]粗铜[/td][td]9[/td][td]粗铜块[/td][td]1[/td][/tr]
-[tr][td]粗金[/td][td]9[/td][td]粗金块[/td][td]1[/td][/tr]
-[tr][td]粘液球[/td][td]9[/td][td]粘液块[/td][td]1[/td][/tr]
-[tr][td]西瓜片[/td][td]9[/td][td]西瓜[/td][td]1[/td][/tr]
-[tr][td]小麦[/td][td]9[/td][td]干草块[/td][td]1[/td][/tr]
-[tr][td]骨粉[/td][td]9[/td][td]骨块[/td][td]1[/td][/tr]
-[tr][td]骨头[/td][td]3[/td][td]骨块[/td][td]1[/td][/tr]
-[tr][td]雪球[/td][td]4[/td][td]雪块[/td][td]1[/td][/tr]
-[tr][td]黏土球[/td][td]4[/td][td]黏土块[/td][td]1[/td][/tr]
-[tr][td]红砖[/td][td]4[/td][td]砖块[/td][td]1[/td][/tr]
-[tr][td]下界砖[/td][td]4[/td][td]下界砖块[/td][td]1[/td][/tr]
-[tr][td]沙子[/td][td]4[/td][td]砂岩[/td][td]1[/td][/tr]
-[tr][td]红沙[/td][td]4[/td][td]红砂岩[/td][td]1[/td][/tr]
-[tr][td]海晶碎片[/td][td]4[/td][td]海晶石[/td][td]1[/td][/tr]
-[tr][td]海晶碎片[/td][td]9[/td][td]海晶石砖[/td][td]1[/td][/tr]
-[tr][td]滴水石锥[/td][td]4[/td][td]滴水石块[/td][td]1[/td][/tr]
-[tr][td]紫水晶碎片[/td][td]4[/td][td]紫水晶块[/td][td]1[/td][/tr]
-[tr][td]岩浆膏[/td][td]4[/td][td]岩浆块[/td][td]1[/td][/tr]
-[tr][td]蜜脾[/td][td]4[/td][td]蜜脾块[/td][td]1[/td][/tr]
-[tr][td]蜂蜜瓶[/td][td]4[/td][td]蜂蜜块[/td][td]1[/td][/tr]
-[tr][td][/td][td][/td][td]玻璃瓶[/td][td]4[/td][/tr]
-[tr][td]线[/td][td]4[/td][td]羊毛[/td][td]1[/td][/tr]
-[tr][td]干海带[/td][td]9[/td][td]干海带块[/td][td]1[/td][/tr]
-[/table]
-[size=20px][b]物品切割[/b][/size]
-[size=16px]向任意的上活扳门上投掷物品，当下落的铁砧砸中物品时，该物品会被分解为其对应的分解形态[/size]
-[table=50%]
-[tr][td]原料[/td][td]原料数量[/td][td]产物[/td][td]产物数量[/td][/tr]
-[tr][td]铁锭[/td][td]1[/td][td]铁粒[/td][td]9[/td][/tr]
-[tr][td]金锭[/td][td]1[/td][td]金粒[/td][td]9[/td][/tr]
-[tr][td]红石块[/td][td]1[/td][td]红石粉[/td][td]9[/td][/tr]
-[tr][td]石英块[/td][td]1[/td][td]下界石英[/td][td]4[/td][/tr]
-[tr][td]铁块[/td][td]1[/td][td]铁锭[/td][td]9[/td][/tr]
-[tr][td]铜块[/td][td]1[/td][td]铜锭[/td][td]9[/td][/tr]
-[tr][td]金块[/td][td]1[/td][td]金锭[/td][td]9[/td][/tr]
-[tr][td]钻石块[/td][td]1[/td][td]钻石[/td][td]9[/td][/tr]
-[tr][td]绿宝石块[/td][td]1[/td][td]绿宝石[/td][td]9[/td][/tr]
-[tr][td]青金石块[/td][td]1[/td][td]青金石[/td][td]9[/td][/tr]
-[tr][td]下界合金块[/td][td]1[/td][td]下界合金锭[/td][td]9[/td][/tr]
-[tr][td]煤炭块[/td][td]1[/td][td]煤炭[/td][td]9[/td][/tr]
-[tr][td]荧石[/td][td]1[/td][td]荧石粉[/td][td]4[/td][/tr]
-[tr][td]粗铁块[/td][td]1[/td][td]粗铁[/td][td]9[/td][/tr]
-[tr][td]粗铜块[/td][td]1[/td][td]粗铜[/td][td]9[/td][/tr]
-[tr][td]粗金块[/td][td]1[/td][td]粗金[/td][td]9[/td][/tr]
-[tr][td]粘液块[/td][td]1[/td][td]粘液球[/td][td]9[/td][/tr]
-[tr][td]西瓜[/td][td]1[/td][td]西瓜片[/td][td]9[/td][/tr]
-[tr][td]干草块[/td][td]1[/td][td]小麦[/td][td]9[/td][/tr]
-[tr][td]骨块[/td][td]1[/td][td]骨粉[/td][td]9[/td][/tr]
-[tr][td]雪块[/td][td]1[/td][td]雪球[/td][td]4[/td][/tr]
-[tr][td]黏土块[/td][td]1[/td][td]黏土球[/td][td]4[/td][/tr]
-[tr][td]蜂蜜块[/td][td]1[/td][td]蜂蜜瓶[/td][td]4[/td][/tr]
-[tr][td]玻璃瓶[/td][td]4[/td][td][/td][td][/td][/tr]
-[tr][td]干海带块[/td][td]1[/td][td]干海带[/td][td]9[/td][/tr]
-[tr][td]小麦[/td][td]1[/td][td]面粉[/td][td]1[/td][/tr]
-[tr][td]生猪肉或生牛肉[/td][td]1[/td][td]肉馅[/td][td]2[/td][/tr]
-[/table]
-[size=20px][b]装备分解[/b][/size]
-[size=16px]可以把任意锁链等级及以上的装备和工具分解并返还一定数量的原材料，将装备扔在锻造台上，让下落的铁砧砸向锻造台，即可分解装备，返还的原材料[/size]
-[table=50%]
-[tr][td]装备/工具材料[/td][td]返还的原材料[/td][td]返还数量[/td][/tr]
-[tr][td]锁链[/td][td]铁栏杆[/td][td]2~3个[/td][/tr]
-[tr][td]铁[/td][td]铁锭[/td][td]1~2个[/td][/tr]
-[tr][td]金[/td][td]金锭[/td][td]1~2个[/td][/tr]
-[tr][td]钻石[/td][td]钻石[/td][td]0~1个[/td][/tr]
-[tr][td]下界合金[/td][td]下界合金碎片[/td][td]0~2个[/td][/tr]
-[/table]
-[size=20px][b]辊压[/b][/size]
-[size=16px]可以把某些物品压成薄片，向一个活塞头朝上的活塞上面丢一个物品，当下落的铁砧砸中活塞时，物品会被压成薄片，使用此方法合成可以节省原材料[/size]
-[table=50%]
-[tr][td]原料[/td][td]原料数量[/td][td]产物[/td][td]产物数量[/td][/tr]
-[tr][td]铁锭[/td][td]1[/td][td]铁片 重质测重压力板[/td][td]1[/td][/tr]
-[tr][td]金锭[/td][td]1[/td][td]金片 轻质测重压力板[/td][td]1[/td][/tr]
-[tr][td]甘蔗[/td][td]1[/td][td]甘蔗片 纸[/td][td]1[/td][/tr]
-[tr][td]雪球[/td][td]1[/td][td]雪片[/td][td]1[/td][/tr]
-[tr][td]种子[/td][td]1[/td][td]油脂[/td][td]1[/td][/tr]
-[tr][td]熟猪排[/td][td]1[/td][td]油脂[/td][td]8[/td][/tr]
-[tr][td]可可豆[/td][td]1[/td][td]可可粉[/td][td]1[/td][/tr]
-[tr][td][/td][td][/td][td]可可脂[/td][td]1[/td][/tr]
-[tr][td]牛奶[/td][td]1[/td][td]奶油[/td][td]1[/td][/tr]
-[tr][td]面团[/td][td]1[/td][td]面皮[/td][td]1[/td][/tr]
-[/table]
-[size=20px][b]膨发[/b][/size]
-[size=16px]可以将某些物品在炼药锅中膨发，向装有水的炼药锅内投掷特定物品，当下落的铁砧砸中炼药锅时，里面的物品会被膨发，并且会消耗掉1/3格水[/size]
-[table=50%]
-[tr][td]原料[/td][td]产物[/td][/tr]
-[tr][td]泥土[/td][td]黏土块[/td][/tr]
-[tr][td]绯红菌[/td][td]下界疣块[/td][/tr]
-[tr][td]诡异菌[/td][td]诡异疣块[/td][/tr]
-[tr][td]蜘蛛眼[/td][td]发酵蛛眼[/td][/tr]
-[tr][td]各种珊瑚[/td][td]对应的珊瑚块[/td][/tr]
-[tr][td]面粉[/td][td]面团[/td][/tr]
-[/table]
-[size=20px][b]晶化[/b][/size]
-[size=16px]可以将某些物品在炼药锅中晶化，向装有细雪的炼药锅内投掷特定物品，当下落的铁砧砸中炼药锅时，里面的物品会被晶化，并且会消耗掉全部细雪[/size]
-[table=50%]
-[tr][td]原料[/td][td]产物[/td][/tr]
-[tr][td]海洋种子[/td][td]海洋之泪[/td][/tr]
-[/table]
-[size=20px][b]煎炒[/b][/size]
-[size=16px]当空炼药锅下方存在热源，下落的铁砧砸中炼药锅时，其中的物品会经过煎炒得到对应的产物[/size]
-[table=50%]
-[tr][td]原料[/td][td]产物[/td][/tr]
-[tr][td]面团（生）[/td][td]面包[/td][/tr]
-[tr][td]生煎（生）[/td][td]生煎[/td][/tr]
-[tr][td]炸肉丸（生）[/td][td]炸肉丸[/td][/tr]
-[tr][td]五毒散（生）[/td][td]五毒散[/td][/tr]
-[/table]
-[size=20px][b]蒸煮[/b][/size]
-[size=16px]当装水的炼药锅下方存在热源，下落的铁砧砸中炼药锅时，其中的物品会经过蒸煮得到对应的产物[/size]
-[table=50%]
-[tr][td]原料[/td][td]产物[/td][/tr]
-[tr][td]水饺（生）[/td][td]水饺[/td][/tr]
-[tr][td]汤圆（生）[/td][td]汤圆[/td][/tr]
-[tr][td]牛肉炖蘑菇（生）[/td][td]牛肉炖蘑菇[/td][/tr]
-[/table]
-[size=20px][b]方块压合[/b][/size]
-[size=16px]下落的铁砧可以将其下方两个方块压合成另一个方块[/size]
-[table=50%]
-[tr][td]上层方块[/td][td]下层方块[/td][td]产物（方块形态）[/td][/tr]
-[tr][td]苔藓块[/td][td]泥土[/td][td]草方块[/td][/tr]
-[tr][td]苔藓块[/td][td]圆石[/td][td]苔石[/td][/tr]
-[tr][td]苔藓块[/td][td]石砖[/td][td]苔石砖[/td][/tr]
-[tr][td]浮冰[/td][td]浮冰[/td][td]蓝冰[/td][/tr]
-[tr][td]下界疣块[/td][td]下界岩[/td][td]绯红菌岩[/td][/tr]
-[tr][td]诡异疣块[/td][td]下界岩[/td][td]诡异菌岩[/td][/tr]
-[tr][td]石头[/td][td]石头[/td][td]深板岩[/td][/tr]
-[/table]
-[size=20px][b]方块破坏[/b][/size]
-[size=16px]在切石机上方1格放置一个方块，当下落的铁砧砸中这个方块时，方块会被破坏掉并按照战利品表掉落物品，破坏过程相当于使用普通镐子进行挖掘[/size]
-[size=20px][b]更好的发射器与投掷器[/b][/size]
-[size=16px]原版发射器无法使用炼药锅，安装本模组之后，让发射器对准一个炼药锅，用下落的铁砧砸发射器，如果发射器的1号格子（即左上角的格子）里有水瓶、水桶、熔岩桶，细雪桶，则发射器会将容器内的液体装入炼药锅，同时发射器内会返还一个空容器。如果炼药锅里已经有液体，并且发射器的1号格子内有可以盛装该液体的空容器，则发射器会把炼药锅内的液体装入容器，并将成品返还到发射器的1号格子内，如果发射器内有不止一个空容器，则成品会以物品形式出现在炼药锅里。如果发射器的一号格子中有食物，则可以喂食对应的生物[/size]
-[size=16px]原版投掷器投出的物品位置比较随机，有些时候想用投掷器实现完美自动化比较麻烦，可以用铁砧砸一个出口朝下的投掷器，投掷器内的物品会被精准投出，并且投掷器内有多少个格子被填充，就会一次性投出多少个物品，小麦种子不会被投出，可以使用小麦种子作为空格子的占位符，配合以上功能可以实现简单的自动化[/size]
-[size=20px][b]合金重生[/b][/size]
-[size=16px]在灵魂土上方使用铁砧砸向合金卷材，即可消耗合金卷材使得灵魂土转化为远古残骸[/size]
-[size=20px][b]砸生物[/b][/size]
-[size=16px]用下落的铁砧砸生物（不一定要砸死），会根据战利品表掉落生物的掉落物[/size]
-[size=20px][b]附魔[/b][/size]
-[size=16px]· 强制附魔：将待附魔的物品与附魔书丢在铁砧上，用另一个下落的铁砧进行压合，成功概率与修复惩罚有关，修复惩罚越高成功概率越低，无视附魔限制，但只能新增条目而无法在现有条目上升级（例如给一把已经附魔耐久1的镐子再强制附魔一个耐久1，则只会出现两条耐久1而不是一条耐久2，附魔效果是否会叠加取决于原版附魔机制），同一件物品最多只能叠加8条附魔。强制附魔同样会累计修复惩罚。
-· 附魔增强：将两本拥有相同附魔的原版最高等级的附魔书在哭泣的黑曜石上压合成比原版高一级的附魔书（例如两本锋利5压合成一本锋利6），但两本书必须都是原版最高等级的，并且只能拥有单条附魔，非最高等级的附魔书无法压合，拥有多条附魔的书只能升级第一条附魔。
-· 附魔增强支持大多数附魔书（目前只有 多重射击 / 消失诅咒 / 绑定诅咒 不支持）。
-· 将以下附魔对应的一级附魔书在哭泣的黑曜石上（0.3.3版及以前是在炼药锅内）压合成二级附魔，二级附魔仅能使用强制附魔的方式附魔：
-- 精准采集II——可以采集刷怪笼与紫水晶母岩；
-- 火矢II——击中的生物会持续燃烧200tick;
-- 无限II——药水箭和光灵箭也可以无限了；
-- 经验修补II——使得装备可以在炼药锅内和附魔之瓶（32个）压合来恢复耐久（每次修复固定恢复448点耐久值）；
-- 引雷II——晴天也能引雷了；
-- 水下速掘II——在水下可以获得一个急迫II效果；[/size]
-[size=20px][b]红石EMP[/b][/size]
-[size=16px]用下落的铁砧砸红石块，可以使与红石块所处同一平面、且曼哈顿距离7格以内的红石火把熄灭1tick，而后恢复为点亮状态。紧贴红石块放置的打开的铁活扳门可以阻止该效果。[/size]
+[size=20px][b]方块粉碎
+[attachimg]1991126[/attachimg]
+方块压榨
+[attachimg]1991127[/attachimg]
+物品压缩
+[attachimg]1991128[/attachimg]
+物品粉碎
+[attachimg]1991129[/attachimg]
+装备回收
+[attachimg]1991130[/attachimg]
+物品冲压
+[attachimg]1991131[/attachimg]
+物品膨发
+[attachimg]1991132[/attachimg]
+方块压实
+[img]https://s2.loli.net/2022/03/08/Kq4ROcszd1ZA3DG.png[/img]
+方块破坏
+[img]https://s2.loli.net/2022/03/08/qyO5eHzgPhlQWT2.png[/img]
+磁铁
+[img]https://s2.loli.net/2022/03/08/oCQt5HFWATYm6V4.png[/img]
+[img]https://s2.loli.net/2022/03/08/9vWGunPhdoQZTs6.png[/img]
+合成器
+[img]https://s2.loli.net/2022/03/08/UTvrakmncZtSpRf.png[/img]
+交互机
+[img]https://s2.loli.net/2022/03/08/sNS5IweVBWrAQ37.png[/img]
+协议系统
+[img]https://s2.loli.net/2022/03/08/oK1Se9uALYsUfgc.png[/img]
+[img]https://s2.loli.net/2022/03/08/oJ4B15hRcm8wWQ6.png[/img]
+[img]https://s2.loli.net/2022/03/08/zxuelWS3IrvFHKY.png[/img]
+[img]https://s2.loli.net/2022/03/08/N6atiQSJILXOTMA.png[/img]
+[img]https://s2.loli.net/2022/03/08/fPIHeW4DslQKuhC.png[/img]
+更好的投掷器
+[img]https://s2.loli.net/2022/03/08/foESKOXNsVHzJ9L.png[/img]
+更好的发射器
+[img]https://s2.loli.net/2022/03/08/SYP1zRqhlHfGFnr.png[/img]
+[img]https://s2.loli.net/2022/03/08/IniPcxaFKC1NbE9.png[/img]
+[img]https://s2.loli.net/2022/03/08/AGfhUQMvPimOcTt.png[/img]
+[img]https://s2.loli.net/2022/03/08/AvhTt8oyPfU7FCu.png[/img]
+[img]https://s2.loli.net/2022/03/08/mvN1oSGFj8D6kO2.png[/img]
+残骸再生
+[img]https://s2.loli.net/2022/03/08/e4yvRNPfQYzx8jt.png[/img]
+鞘翅再生
+[img]https://s2.loli.net/2022/03/08/4wSXP6Qp2yarqVA.png[/img]
+海洋之心和三叉戟再生
+[img]https://s2.loli.net/2022/03/08/nH9zZFqWkgvupOK.png[/img]
+砸生物
+[attachimg]1991136[/attachimg]
+超限附魔
+[attachimg]1991139[/attachimg]
+[attachimg]1991142[/attachimg]
+强制附魔
+[attachimg]1991143[/attachimg]
+红石EMP
+[attachimg]1991137[/attachimg]
+美食
+[attachimg]1991133[/attachimg]
+[attachimg]1991134[/attachimg][/b][/size]
 
 
 [page]
 [size=24px][b]铁砧砸[/b][/size]
-[size=16px][list=1][*]基于下落的铁砧生成AEC并标记铁砧
+[size=16px][list=1]
+[*]基于下落的铁砧生成AEC并标记铁砧
 [*]每tick将AECtp至铁砧的位置
-[*]检测不到铁砧时，基于AEC执行相关函数[/list][/size]
+[*]检测不到铁砧时，基于AEC执行相关函数
+[/list][/size]
 [size=24px][b]更好的发射器[/b][/size]
-[size=16px][list=1][*]铁砧砸到发射器时，枚举发射器朝向并生成两个AEC分别标记发射器位置和发射器所指向的位置
-[*]基于发射器第一格物品判定所要执行的函数[/list][/size]
+[size=16px][list=1]
+[*]铁砧砸到发射器时，枚举发射器朝向并生成两个AEC分别标记发射器位置和发射器所指向的位置
+[*]基于发射器第一格物品判定所要执行的函数
+[/list][/size]
 [size=24px][b]空岛生成[/b][/size]
 [size=16px]基本运算函数[/size]
 [code]# 步数减1
@@ -737,10 +576,10 @@ scoreboard players operation $real_z aiValue *= $z aiValue
 [attachimg]1986530[/attachimg]
 [attachimg]1986531[/attachimg][/size]
 [size=24px][b]空岛模式传送系统[/b][/size]
-[size=16px][list=1][*]在玩家加入游戏时用进度触发为玩家分配uid
+[size=16px][list=1]
+[*]在玩家加入游戏时用进度触发为玩家分配uid
 [*]岛屿生成时，将玩家岛屿坐标以uid为索引存入storage
 [*]当玩家尝试访问他人岛屿时，从该玩家对应的储存空间中取出对应坐标值并赋值给标记实体
 [*]以标记实体为定点传送玩家至岛屿并将玩家设置为旁观者模式
-[*]当玩家尝试返回自己岛屿时，优先读取玩家SpawnX/Y/Z标签，当其不存在时，从storage中读取岛屿坐标并执行传送[/list][/size]
-[size=24px][b][/b][/size]
-[size=16px][/size]
+[*]当玩家尝试返回自己岛屿时，优先读取玩家SpawnX/Y/Z标签，当其不存在时，从storage中读取岛屿坐标并执行传送
+[/list][/size]

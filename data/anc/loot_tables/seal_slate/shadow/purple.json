@@ -1,0 +1,99 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [{
+                    "type": "item",
+                    "name": "chorus_flower",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 2,
+                                "min": 1,
+                                "type": "uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "shulker_shell",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 4,
+                                "min": 2,
+                                "type": "uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "anc:elytra_frame",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 2,
+                                "min": 1,
+                                "type": "uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "looting":4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "luck_of_the_sea":4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "fortune":4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "loyalty":4
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

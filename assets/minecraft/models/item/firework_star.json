@@ -241,6 +241,48 @@
         },
         {
             "predicate": {
+                "custom_model_data": 11140059
+            },
+            "model": "anc:item/space_capsule_empty"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140060
+            },
+            "model": "anc:item/space_capsule"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140061
+            },
+            "model": "anc:item/seal_slate_fire"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140062
+            },
+            "model": "anc:item/seal_slate_poison"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140063
+            },
+            "model": "anc:item/seal_slate_shadow"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140064
+            },
+            "model": "anc:item/seal_slate_soul"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140065
+            },
+            "model": "anc:item/seal_slate_water"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 11141000
             },
             "model": "anc:gui/empty"

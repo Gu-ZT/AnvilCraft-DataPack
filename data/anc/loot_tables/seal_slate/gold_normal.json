@@ -1,0 +1,95 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealFire]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/fire/gold_normal"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealPoison]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/poison/gold_normal"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealShadow]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/shadow/gold_normal"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealSoul]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/soul/gold_normal"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "conditions": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[sealWater]}"
+                            }
+                        }
+                    ],
+                    "name": "anc:seal_slate/water/gold_normal"
+                }
+            ]
+        }
+    ]
+}
