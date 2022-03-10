@@ -10,6 +10,9 @@
           "predicate": {
             "nbt": "{Tags:[\"ancInfernal\"]}"
           }
+        },
+        {
+          "condition": "killed_by_player"
         }
       ],
       "entries":[
