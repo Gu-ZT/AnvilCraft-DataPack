@@ -52,6 +52,24 @@
               }
             }
           ],
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"ancInfernal\"]}"
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            },
+            {
+              "condition": "location_check",
+              "predicate":{
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ],
           "name": "minecraft:nether_wart"
         },
         {
