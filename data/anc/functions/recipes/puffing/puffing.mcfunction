@@ -1,4 +1,7 @@
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{id:"minecraft:dirt"}},distance=..1] run function anc:recipes/puffing/loot/clay
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{id:"minecraft:chorus_fruit"}},distance=..1] run function anc:recipes/puffing/loot/chorus_flower
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{id:"minecraft:brown_mushroom"}},distance=..1] run function anc:recipes/puffing/loot/brown_mushroom_block
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{id:"minecraft:red_mushroom"}},distance=..1] run function anc:recipes/puffing/loot/red_mushroom_block
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{id:"minecraft:crimson_fungus"}},distance=..1] run function anc:recipes/puffing/loot/nether_wart_block
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{id:"minecraft:warped_fungus"}},distance=..1] run function anc:recipes/puffing/loot/warped_wart_block
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{id:"minecraft:spider_eye"}},distance=..1] run function anc:recipes/puffing/loot/fermented_spider_eye
