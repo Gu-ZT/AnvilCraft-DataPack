@@ -1,4 +1,3 @@
-
     # 头盔
     scoreboard players reset $temp ancInfernalLevel
     loot replace entity @s armor.head loot anc:infernal_mobs/armor/head
@@ -24,3 +23,4 @@
     loot replace entity @s weapon.mainhand loot anc:infernal_mobs/wepon
     execute if data entity @s HandItems[0] store result score $temp ancInfernalLevel run data get entity @s HandItems[0].tag.Level 
     scoreboard players operation @s ancInfernalLevel += $temp ancInfernalLevel
+    

@@ -5,35 +5,35 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:diamond_helmet\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:golden_sword\",Count:1b}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:diamond_chestplate\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:golden_pickaxe\",Count:1b}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:diamond_leggings\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:golden_axe\",Count:1b}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:diamond_boots\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:golden_hoe\",Count:1b}}"
 			}
 		},
 		{
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:diamond_horse_armor\",Count:1b}}"
+				"nbt": "{Item:{id:\"minecraft:golden_shovel\",Count:1b}}"
 			}
 		}
     ]

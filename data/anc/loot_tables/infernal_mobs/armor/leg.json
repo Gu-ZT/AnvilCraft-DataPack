@@ -7,7 +7,7 @@
                 {
                     "type": "item",
                     "name": "air",
-                    "weight": 2
+                    "weight": 12
                 },
                 {
                     "type": "item",
@@ -21,7 +21,7 @@
                             "tag": "{ancInf:1b,Level:5}"
                         }
                     ],
-                    "weight": 7
+                    "weight": 40
                 },
                 {
                     "type": "item",
@@ -35,7 +35,7 @@
                             "tag": "{ancInf:1b,Level:7}"
                         }
                     ],
-                    "weight": 5
+                    "weight": 15
                 },
                 {
                     "type": "item",
@@ -49,7 +49,7 @@
                             "tag": "{ancInf:1b,Level:9}"
                         }
                     ],
-                    "weight": 3
+                    "weight": 5
                 },
                 {
                     "type": "item",

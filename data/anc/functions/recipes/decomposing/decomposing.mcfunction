@@ -3,6 +3,10 @@ execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:i
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,predicate=anc:decomposing/iron] run function anc:recipes/decomposing/loot/iron 
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,predicate=anc:decomposing/gold] run function anc:recipes/decomposing/loot/gold 
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,predicate=anc:decomposing/netherite] run function anc:recipes/decomposing/loot/netherite 
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,predicate=anc:decomposing/tools/diamond] run function anc:recipes/decomposing/loot/tools/diamond 
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,predicate=anc:decomposing/tools/iron] run function anc:recipes/decomposing/loot/tools/iron 
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,predicate=anc:decomposing/tools/gold] run function anc:recipes/decomposing/loot/tools/gold 
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,predicate=anc:decomposing/tools/netherite] run function anc:recipes/decomposing/loot/tools/netherite 
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{tag:{id:"anc:kernel_of_the_sea"}}}] run function anc:recipes/decomposing/loot/kernel_of_the_sea_loot
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:ancient_debris"}}] at @s run loot spawn ~ ~ ~ loot anc:debris_scrap
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",tag:{Damage:0}}}] at @s run function anc:recipes/decomposing/loot/elytra_loot

@@ -5,34 +5,6 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:iron_sword\",Count:1b}}"
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:iron_pickaxe\",Count:1b}}"
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:iron_axe\",Count:1b}}"
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"nbt": "{Item:{id:\"minecraft:iron_hoe\",Count:1b}}"
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:iron_helmet\",Count:1b}}"
 			}
 		},
