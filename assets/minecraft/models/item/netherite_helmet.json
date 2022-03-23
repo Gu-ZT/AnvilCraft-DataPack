@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/netherite_helmet"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 11140071
+      },
+      "model": "anc:item/sea_helmet"
+    }
+  ]
+}

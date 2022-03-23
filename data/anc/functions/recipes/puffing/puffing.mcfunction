@@ -13,3 +13,4 @@ execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={I
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{tag:{id:"anc:flour"}}},distance=..1] run function anc:recipes/puffing/loot/dough
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{tag:{id:"anc:seed_of_the_sea"}}},distance=..1] run function anc:recipes/puffing/loot/fruit_of_the_sea
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{tag:{id:"anc:sponge_gemmule"}}},distance=..1] run function anc:recipes/puffing/loot/wet_sponge
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=item,nbt={Item:{tag:{id:"anc:bark"}}},distance=..1] run function anc:recipes/puffing/loot/pulp

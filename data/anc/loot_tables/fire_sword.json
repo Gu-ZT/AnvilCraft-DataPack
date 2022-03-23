@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint_and_steel",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140070,id:'anc:fire_sword',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.fire_sword.name\"}'},AttributeModifiers:[{Operation:0,Slot:mainhand,Amount:8,AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",UUID:[I;340992558,1683771192,276139931,273873044]}],Unbreakable:1b,HideFlags:1,Enchantments:[{id:\"minecraft:fire_aspect\",lvl:3s}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

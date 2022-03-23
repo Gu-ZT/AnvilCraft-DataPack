@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_pickaxe",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140069,dict:[\"changeable_pickaxe\"],id:'anc:changeable_pickaxe_fortune',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.changeable_pickaxe_fortune.name\"}'},Unbreakable:1b,HideFlags:1,Enchantments:[{id:\"minecraft:fortune\",lvl:4s},{id:\"minecraft:efficiency\",lvl:6s}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

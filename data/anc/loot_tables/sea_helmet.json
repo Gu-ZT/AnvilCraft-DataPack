@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_helmet",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:11140071,id:'anc:sea_helmet',display:{Name:'{\"italic\":false,\"translate\":\"anc.item.sea_helmet.name\"}'},Unbreakable:1b,HideFlags:1,Enchantments:[{id:\"minecraft:respiration\",lvl:4s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:aqua_affinity\",lvl:2s}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

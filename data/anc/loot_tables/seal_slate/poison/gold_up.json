@@ -6,7 +6,11 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "anc:space_capsule"
+                    "name": "anc:changeable_pickaxe_fortune"
+                },
+                {
+                    "type": "loot_table",
+                    "name": "anc:changeable_pickaxe_silk_touch"
                 }
             ]
         }

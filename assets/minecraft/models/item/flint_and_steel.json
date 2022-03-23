@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/flint_and_steel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 11140070
+      },
+      "model": "anc:item/fire_sword"
+    }
+  ]
+}

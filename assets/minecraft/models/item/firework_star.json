@@ -283,6 +283,18 @@
         },
         {
             "predicate": {
+                "custom_model_data": 11140066
+            },
+            "model": "anc:item/bark"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11140067
+            },
+            "model": "anc:item/pulp"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 11141000
             },
             "model": "anc:gui/empty"

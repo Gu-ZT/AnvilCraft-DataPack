@@ -8,3 +8,4 @@ execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:i
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:cooked_porkchop"}},distance=..1] run function anc:recipes/rolling/loot/grease_8
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:cocoa_beans"}},distance=..1] run function anc:recipes/rolling/loot/cocoa
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{tag:{id:"anc:dough"}}},distance=..1] run function anc:recipes/rolling/loot/flatdough
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{tag:{id:"anc:pulp"}}},distance=..1] run function anc:recipes/rolling/loot/paper

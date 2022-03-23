@@ -6,3 +6,5 @@ execute if score @s ancBrokenSpawner matches 1.. if score @s ancLevel matches 1.
 execute if score @s ancBrokenSpawner matches 1.. run scoreboard players reset @s ancBrokenSpawner
 
 execute if score $ancSkylandMode ancConfig matches 1 if entity @s[advancements={anc:welcome/uid=true},tag=!ancIs] run function anc_is:handle/join
+
+execute if data entity @s Inventory[{Slot:-106b,tag:{dict:["changeable_pickaxe"]}}] run function anc:items/changeable_pickaxe/change

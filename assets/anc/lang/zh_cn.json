@@ -1,6 +1,6 @@
 {
     "block.minecraft.petrified_oak_slab": "竹台阶",
-    "Please install the correct resource pack": "§f§l============================§r\n§b§l欢迎使用铁砧工艺，数据包版本：§r%s§b§l，资源包版本：§6§l0.6.3§r\n§b§l数据包作者：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l资源包作者：§r§6§lXe_Kr§r\n§f§l============================§r",
+    "Please install the correct resource pack": "§f§l============================§r\n§b§l欢迎使用铁砧工艺，数据包版本：§r%s§b§l，资源包版本：§6§l0.6.4§r\n§b§l数据包作者：§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l资源包作者：§r§6§lXe_Kr§r\n§f§l============================§r",
     "anc.block.magnet_block.name": "磁铁",
     "anc.block.magnet_block.lore": "被红石激活时可以吸起其正下方（4个方块内）的铁砧",
     "anc.block.crafting_machine.name": "合成器",
@@ -112,6 +112,12 @@
     "anc.item.seal_slate_shadow.name": "暗影封印石",
     "anc.item.seal_slate_soul.name": "亡魂封印石",
     "anc.item.seal_slate_water.name": "寒水封印石",
-    "anc.item.enchant.beheading":"斩首",
-    "anc.item.enchant.sucking_blood":"吸血"
+    "anc.item.enchant.beheading": "斩首",
+    "anc.item.enchant.sucking_blood": "吸血",
+    "anc.item.bark.name": "树皮",
+    "anc.item.pulp.name": "纸浆",
+    "anc.item.changeable_pickaxe_silk_touch.name": "应变之镐（丝触）",
+    "anc.item.changeable_pickaxe_fortune.name": "应变之镐（时运）",
+    "anc.item.fire_sword.name": "火刀",
+    "anc.item.sea_helmet.name": "海洋头盔"
 }

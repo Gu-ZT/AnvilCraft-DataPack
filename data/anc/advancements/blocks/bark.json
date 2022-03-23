@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "use": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "item": {
+                    "tag": "anc:axe"
+                },
+                "location": {
+                    "block": {
+                        "tag": "minecraft:logs"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [["use"]],
+    "rewards":{
+        "function": "anc:items/bark/loot"
+    }
+}

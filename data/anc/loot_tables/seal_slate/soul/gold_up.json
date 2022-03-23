@@ -5,8 +5,8 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "loot_table",
-                    "name": "anc:space_capsule"
+                    "type": "item",
+                    "name": "netherite_ingot"
                 }
             ]
         }
