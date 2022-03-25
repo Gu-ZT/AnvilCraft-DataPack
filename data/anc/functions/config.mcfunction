@@ -8,6 +8,10 @@ scoreboard players set $ancAttractingFalling ancConfig 1
 scoreboard players set $ancExperienceRepair ancConfig 14
 # 是否启用菜鸟模式
 scoreboard players set $ancRookieMode ancConfig 1
+# 是否启用死亡不掉落
+scoreboard players set $ancKeepInventory ancConfig 0
+# 是否启用游商提醒音效
+scoreboard players set $ancReminderVoice ancConfig 1
 
 # 是否启用空岛模式
 scoreboard players set $ancSkylandMode ancConfig 0

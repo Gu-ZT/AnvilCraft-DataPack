@@ -3,14 +3,18 @@
         "sucking_blood": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
-                "item": {
-                    "nbt": "{ancCustomEnchantments:[{id:\"anc:sucking_blood\",lvl:1b}]}"
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{ancCustomEnchantments:[{id:\"anc:sucking_blood\",lvl:1b}]}"
+                        }
+                    }
                 }
             }
         }
     },
     "requirements": [["sucking_blood"]],
     "rewards":{
-        "function": "anc:custom_enchantments/sucking_blood"
+        "function": "anc:custom_enchantments/sucking_blood/sucking_blood"
     }
 }

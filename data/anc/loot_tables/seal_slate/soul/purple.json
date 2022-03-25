@@ -80,6 +80,10 @@
                             }
                         }
                     ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "anc:enchanted_book_soul_binding"
                 }
             ]
         }

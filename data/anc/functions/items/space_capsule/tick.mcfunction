@@ -1,2 +1,2 @@
-execute if entity @s[type=item,nbt={Item:{tag:{id:"anc:space_capsule"}}},nbt={Item:{tag:{MobHave:0b}}},tag=!ancSpace] align xyz if entity @e[type=!#anc:not_catch,sort=nearest,limit=1,dy=0,dz=0,dx=0] run function anc:items/space_capsule/mob2space
+execute if entity @s[type=item,nbt={Item:{tag:{id:"anc:space_capsule"}}},nbt={Item:{tag:{MobHave:0b},Count:1b}},tag=!ancSpace] align xyz if entity @e[type=!#anc:not_catch,sort=nearest,limit=1,dy=0,dz=0,dx=0] run function anc:items/space_capsule/mob2space
 execute if entity @s[type=item,nbt={Item:{tag:{id:"anc:space_capsule"}}},nbt={Item:{tag:{MobHave:1b}}},tag=!ancSpace] run function anc:items/space_capsule/space2mob

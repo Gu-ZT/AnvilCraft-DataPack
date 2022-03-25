@@ -17,6 +17,14 @@ data modify storage anc:command_book ExperienceRepair set value '[{"text":"[","c
 # 处理效率（个物品/次）
 data modify storage anc:command_book ProcessingCount set value '[{"text":"[","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/processing_count"}},{"score":{"name":"$ancProcessingCount","objective":"ancConfig"},"color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/processing_count"}},{"text":"]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/processing_count"}}]'
 
+# 是否启用死亡不掉落
+execute if score $ancKeepInventory ancConfig matches 1 run data modify storage anc:command_book KeepInventory set value '[{"text":"[T] ","color":"green","bold":true},{"text":"[F]","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/keep_inventory/off"}}]'
+execute unless score $ancKeepInventory ancConfig matches 1 run data modify storage anc:command_book KeepInventory set value '[{"text":"[T] ","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/keep_inventory/on"}},{"text":"[F]","color":"green","bold":true}]'
+
+# 是否启用游商提醒音效
+execute if score $ancReminderVoice ancConfig matches 1 run data modify storage anc:command_book ReminderVoice set value '[{"text":"[T] ","color":"green","bold":true},{"text":"[F]","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/reminder_voice/off"}}]'
+execute unless score $ancReminderVoice ancConfig matches 1 run data modify storage anc:command_book ReminderVoice set value '[{"text":"[T] ","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/reminder_voice/on"}},{"text":"[F]","color":"green","bold":true}]'
+
 # 是否启用空岛模式
 execute if score $ancSkylandMode ancConfig matches 1 run data modify storage anc:command_book SkylandMode set value '[{"text":"[T] ","color":"green","bold":true},{"text":"[F]","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/skyland_mode/off"}}]'
 execute unless score $ancSkylandMode ancConfig matches 1 run data modify storage anc:command_book SkylandMode set value '[{"text":"[T] ","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function anc:items/command_book/skyland_mode/on"}},{"text":"[F]","color":"green","bold":true}]'

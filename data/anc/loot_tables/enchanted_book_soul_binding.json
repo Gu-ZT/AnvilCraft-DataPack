@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ancCustomEnchantments:[{id:\"anc:soul_binding\",lvl:1b}],display:{Lore:['{\"italic\":false,\"translate\":\"anc.item.enchant.soul_binding\",\"color\":\"gray\"}']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
