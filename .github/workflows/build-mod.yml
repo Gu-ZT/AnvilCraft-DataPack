@@ -28,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts for ${{ github.sha }}
-          path: /AnvilCraft-0.6.5-1.18.zip
+          path: /AnvilCraft-0.6.6-1.18.zip

@@ -1,6 +1,6 @@
 {
     "block.minecraft.petrified_oak_slab": "竹臺階",
-    "Please install the correct resource pack": "§f§l============================§r\n§b§l歡迎使用鐵砧工藝,資料包版本:§r%s§b§l,資源包版本:§6§l0.6.5§r\n§b§l資料包作者:§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l資源包作者:§r§6§lXe_Kr§r\n§f§l============================§r",
+    "Please install the correct resource pack": "§f§l============================§r\n§b§l歡迎使用鐵砧工藝,資料包版本:§r%s§b§l,資源包版本:§6§l0.6.6§r\n§b§l資料包作者:§r§6§lGu_ZT§r§b§l、§r§6§lsch246§r  §b§l資源包作者:§r§6§lXe_Kr§r\n§f§l============================§r",
     "anc.block.magnet_block.name": "磁鐵",
     "anc.block.magnet_block.lore": "被紅石啟動時可以吸起其正下方（4個方塊內）的鐵砧",
     "anc.item.empty_protocol.name": "空協定",
