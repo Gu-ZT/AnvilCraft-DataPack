@@ -3,7 +3,7 @@ execute unless data entity @s Inventory[{Slot:102b}].tag.ancCustomEnchantments[{
 execute unless data entity @s Inventory[{Slot:101b}].tag.ancCustomEnchantments[{id:"anc:soul_binding"}] run item replace entity @s armor.legs with air
 execute unless data entity @s Inventory[{Slot:100b}].tag.ancCustomEnchantments[{id:"anc:soul_binding"}] run item replace entity @s armor.feet with air
 
-execute unless data entity @s Inventory[{Slot:-106b}].tag.ancCustomEnchantments[{id:"anc:soul_binding"}] run item replace entity @s weapon.mainhand with air
+execute unless data entity @s Inventory[{Slot:-106b}].tag.ancCustomEnchantments[{id:"anc:soul_binding"}] run item replace entity @s weapon.offhand with air
 
 execute unless data entity @s Inventory[{Slot:0b}].tag.ancCustomEnchantments[{id:"anc:soul_binding"}] run item replace entity @s container.0 with air
 execute unless data entity @s Inventory[{Slot:1b}].tag.ancCustomEnchantments[{id:"anc:soul_binding"}] run item replace entity @s container.1 with air
