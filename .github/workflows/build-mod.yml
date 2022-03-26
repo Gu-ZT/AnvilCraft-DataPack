@@ -10,8 +10,11 @@ on:
       - 'pack.mcmeta'
 
 jobs:
-  build:
+  build-linux:
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python 3.10
