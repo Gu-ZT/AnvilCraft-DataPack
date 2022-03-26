@@ -35,7 +35,10 @@ if __name__ == '__main__':
     try:
         get = argv[1]
         if get == 'pack':
-            pack.pack()
+            if len(argv) == 3:
+                pack.pack(argv[2])
+            else:
+                pack.pack()
         elif get == 'additem':
             addItme.addItem()
         elif get == 'addblock':
