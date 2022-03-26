@@ -73,5 +73,8 @@ execute if data entity @s Item.tag{mobId:"minecraft:glow_squid"} run summon mine
 execute if data entity @s Item.tag{mobId:"minecraft:goat"} run summon minecraft:goat
 
 execute at @s align xyz run data modify entity @e[type=!#anc:not_catch,sort=nearest,limit=1,dy=0,dz=0,dx=0] {} merge from entity @s Item.tag.MobNBT
+data modify entity @s Item.tag.CustomModelData set value 11140059
+execute if score @s ancSuccess matches 1 run data modify entity @s Item.tag.MobHave set value 0b
+execute if score @s ancSuccess matches 1 at @s align xyz run data modify entity @s Item.tag.MobNBT set value {}
 tag @s add ancSpace
 # kill @s

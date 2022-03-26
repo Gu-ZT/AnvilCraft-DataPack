@@ -64,7 +64,7 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "mending":3
+                                "mending":2
                             }
                         }
                     ]
