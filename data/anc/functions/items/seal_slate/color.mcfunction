@@ -29,29 +29,29 @@ scoreboard players add ancLotteryGoldTimes ancValue 1
     execute if entity @s[tag=ancGlodUp] run scoreboard players reset ancGoldTimes ancValue
 
 # 颜色
-    execute if entity @s[tag=sealFire] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealFire"],Color:5635925,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealFire] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealFire"],Color:11141290,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealFire] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealFire"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealFire] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealFire"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
+    execute if entity @s[tag=sealFire] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealFire"],Color:5635925,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealFire] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealFire"],Color:11141290,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealFire] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealFire"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealFire] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealFire"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
     
-    execute if entity @s[tag=sealPoison] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealPoison"],Color:5635925,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealPoison] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealPoison"],Color:11141290,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealPoison] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealPoison"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealPoison] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealPoison"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
+    execute if entity @s[tag=sealPoison] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealPoison"],Color:5635925,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealPoison] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealPoison"],Color:11141290,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealPoison] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealPoison"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealPoison] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealPoison"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
     
-    execute if entity @s[tag=sealShadow] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealShadow"],Color:5635925,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealShadow] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealShadow"],Color:11141290,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealShadow] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealShadow"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealShadow] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealShadow"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
+    execute if entity @s[tag=sealShadow] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealShadow"],Color:5635925,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealShadow] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealShadow"],Color:11141290,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealShadow] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealShadow"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealShadow] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealShadow"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
     
-    execute if entity @s[tag=sealSoul] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealSoul"],Color:5635925,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealSoul] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealSoul"],Color:11141290,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealSoul] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealSoul"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealSoul] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealSoul"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
+    execute if entity @s[tag=sealSoul] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealSoul"],Color:5635925,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealSoul] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealSoul"],Color:11141290,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealSoul] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealSoul"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealSoul] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealSoul"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
     
-    execute if entity @s[tag=sealWater] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealWater"],Color:5635925,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealWater] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealWater"],Color:11141290,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealWater] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealWater"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
-    execute if entity @s[tag=sealWater] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealWater"],Color:16754177,Duration:2147438647,Particle:"minecraft:dust",Radius:0.01f}
+    execute if entity @s[tag=sealWater] if entity @s[tag=ancGreen] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGreen","ancSeal","sealWater"],Color:5635925,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealWater] if entity @s[tag=ancPurple] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancPurple","ancSeal","sealWater"],Color:11141290,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealWater] if entity @s[tag=ancGlodNormal] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodNormal","ancSeal","sealWater"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
+    execute if entity @s[tag=sealWater] if entity @s[tag=ancGlodUp] run summon area_effect_cloud ~ ~ ~ {Tags:["ancColorTemp","ancGlodUp","ancSeal","sealWater"],Color:16754177,Duration:2147438647,Particle:"minecraft:effect",Radius:0.01f}
     scoreboard players operation @e[tag=ancColorTemp,limit=1] ancValue = @s ancValue
     kill @s
