@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Check dir
-        run: cd .
+        run: cd
       - name: Make out dir
         run: mkdir out/
       - name: Copy assets file
