@@ -26,9 +26,9 @@ jobs:
       - name: Grant execute permission
         run: chmod +x Tools.py
       - name: Build with Tools
-        run: python ./Tools.py pack
+        run: python ./Tools.py pack $env:GITHUB_REF
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts for ${{ github.sha }}
-          path: /AnvilCraft-0.6.6-1.18.zip
+          path: /out
