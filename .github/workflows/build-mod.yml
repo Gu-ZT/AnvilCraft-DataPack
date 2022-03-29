@@ -1,13 +1,6 @@
 name: Build Mod
 
-on:
-  push:
-    branches: [ 'main' ]
-    # paths:
-    #   - 'data/*'
-    #   - 'assets/*'
-    #   - 'tools/*'
-    #   - 'pack.mcmeta'
+on: push
 
 jobs:
   build-linux:
@@ -20,19 +13,17 @@ jobs:
         run: cd ${{ github.workspace }}
       - name: Back Dir
         run: cd ..
-      - name: Print AllFile
-        run: ls
       - name: Make out dir
-        run: mkdir ${{ github.workspace }}/out
+        run: mkdir ./out
       - name: Copy assets file
-        run: cp -r ${{ github.workspace }}/assets ${{ github.workspace }}/out
+        run: cp -r ./assets ./out
       - name: Copy data file
-        run: cp -r ${{ github.workspace }}/data ${{ github.workspace }}/out
+        run: cp -r ./data ./out
       - uses: actions/checkout@v2
       - name: Copy pack.mcmeta
-        run: cp ${{ github.workspace }}/pack.mcmeta ${{ github.workspace }}/out
+        run: cp ./pack.mcmeta ./out
       - name: Copy LICENSE
-        run: cp ${{ github.workspace }}/LICENSE ${{ github.workspace }}/out
+        run: cp ./LICENSE ./out
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
