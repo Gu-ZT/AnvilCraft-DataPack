@@ -11,17 +11,17 @@ def pack(args: str = 'null'):
     pmm = json.loads(open(pack_mcmeta, 'r+', encoding='utf-8').read())
     version = pmm['pack']['description'][1]['text']
     version = version[2:]
-    name = os.path.join(pro_dir,"out",readConfig.getConfig('settings', 'pack_name').format(version=version, mcv=readConfig.getConfig('settings', 'mcv'))+".zip")
+    name = os.path.join(pro_dir,readConfig.getConfig('settings', 'pack_name').format(version=version, mcv=readConfig.getConfig('settings', 'mcv'))+".zip")
     if args != 'null':
-        name = os.path.join(pro_dir,"out",readConfig.getConfig('settings', 'pack_name').format(version=version, mcv=readConfig.getConfig('settings', 'mcv'))+f"-{args}"+".zip")
-    out_dir = os.path.join(pro_dir, "out")
+        name = os.path.join(pro_dir,readConfig.getConfig('settings', 'pack_name').format(version=version, mcv=readConfig.getConfig('settings', 'mcv'))+f"-{args}"+".zip")
+    # out_dir = os.path.join(pro_dir)
     data = os.path.join(pro_dir, 'data')
     assets = os.path.join(pro_dir, 'assets')
     pack_png = os.path.join(pro_dir, 'pack.png')
     license_f = os.path.join(pro_dir, 'LICENSE')
 
-    if not os.path.isdir(out_dir):
-        mkdir(out_dir)
+    # if not os.path.isdir(out_dir):
+    #     mkdir(out_dir)
 
     z = zipfile.ZipFile(name, 'w')
     z.write(pack_png, "pack.png")

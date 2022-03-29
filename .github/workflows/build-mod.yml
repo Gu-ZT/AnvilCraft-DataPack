@@ -3,11 +3,11 @@ name: Build Mod
 on:
   push:
     branches: [ 'main' ]
-    paths:
-      - 'data/*'
-      - 'assets/*'
-      - 'tools/*'
-      - 'pack.mcmeta'
+    # paths:
+    #   - 'data/*'
+    #   - 'assets/*'
+    #   - 'tools/*'
+    #   - 'pack.mcmeta'
 
 jobs:
   build-linux:
@@ -16,19 +16,25 @@ jobs:
       max-parallel: 5
 
     steps:
+      - name: Change Dir
+        run: cd ${{ github.workspace }}
+      - name: Back Dir
+        run: cd ..
+      - name: Print AllFile
+        run: ls
+      - name: Make out dir
+        run: mkdir ${{ github.workspace }}/out
+      - name: Copy assets file
+        run: cp -r ${{ github.workspace }}/assets ${{ github.workspace }}/out
+      - name: Copy data file
+        run: cp -r ${{ github.workspace }}/data ${{ github.workspace }}/out
       - uses: actions/checkout@v2
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.10"
-      - name: Installation requirements
-        run: pip install -r ./requirements.txt
-      - name: Grant execute permission
-        run: chmod +x Tools.py
-      - name: Build with Tools
-        run: python ./Tools.py pack $env:GITHUB_REF
+      - name: Copy pack.mcmeta
+        run: cp ${{ github.workspace }}/pack.mcmeta ${{ github.workspace }}/out
+      - name: Copy LICENSE
+        run: cp ${{ github.workspace }}/LICENSE ${{ github.workspace }}/out
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: Artifacts for ${{ github.sha }}
-          path: /out
+          name: AnvilCraft-${{ github.run_id }}-1.18
+          path: out/
