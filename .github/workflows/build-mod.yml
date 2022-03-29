@@ -19,9 +19,9 @@ jobs:
         run: cp -r data/ out/
       - uses: actions/checkout@v2
       - name: Copy pack.mcmeta
-        run: cp pack.mcmeta out/
+        run: cp pack.mcmeta out/pack.mcmeta
       - name: Copy LICENSE
-        run: cp LICENSE out/
+        run: cp LICENSE out/LICENSE
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
