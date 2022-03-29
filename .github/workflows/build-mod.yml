@@ -2,6 +2,9 @@ name: Build Mod
 
 on: push
 
+env:
+  datapack_version : 0.6.6
+
 jobs:
   build-linux:
     runs-on: ubuntu-latest
@@ -9,23 +12,28 @@ jobs:
       max-parallel: 5
 
     steps:
-      - name: Change Dir
-        run: cd ${{ github.workspace }}
-      - name: Back Dir
-        run: cd ..
+      - name: Check out Git repository
+        uses: actions/checkout@v2
       - name: Make out dir
-        run: mkdir ./out
+        run: mkdir out/
       - name: Copy assets file
-        run: cp -r ./assets ./out
+        run: cp -r assets/ out/
       - name: Copy data file
-        run: cp -r ./data ./out
-      - uses: actions/checkout@v2
+        run: cp -r data/ out/
       - name: Copy pack.mcmeta
-        run: cp ./pack.mcmeta ./out
+        run: cp pack.mcmeta out/
+      - name: Copy pack.png
+        run: cp pack.png out/
       - name: Copy LICENSE
-        run: cp ./LICENSE ./out
+        run: cp LICENSE out/
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: AnvilCraft-${{ github.run_id }}-1.18
+          name: AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}
           path: out/
+      - name: Create package
+        run: zip -9 -r AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }} out/
+      - name: Install khl.py
+        run: pip install khl.py
+      - name: Upload to kaiheila.co
+        run: python public2khl.py ${{ secrets.BOT_TOKEN }} ${{ secrets.CHANNEL_ID }} AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}
