@@ -3,7 +3,7 @@ name: Build Mod
 on: push
 
 env:
-  datapack_version : 0.6.5
+  datapack_version : 0.6.6
 
 jobs:
   build-linux:
