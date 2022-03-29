@@ -9,8 +9,8 @@ jobs:
       max-parallel: 5
 
     steps:
-      - name: Check dir
-        run: pwd
+      - name: Check out Git repository
+        uses: actions/checkout@v2
       - name: Make out dir
         run: mkdir out/
       - name: Copy assets file
