@@ -1,6 +1,13 @@
 name: Build Mod
 
-on: push
+on: 
+  push:
+    paths:
+      - "assets/*"
+      - "data/*"
+      - "pack.mcmeta"
+      - "pack.png"
+      - "LICENSE"
 
 env:
   datapack_version : 0.6.6
@@ -32,8 +39,11 @@ jobs:
           name: AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}
           path: out/
       - name: Create package
-        run: zip -9 -r AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }} out/
+        run: cd out/ && zip -9 -r '../AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}.zip' * && cd ..
       - name: Install khl.py
         run: pip install khl.py
       - name: Upload to kaiheila.co
-        run: python public2khl.py ${{ secrets.BOT_TOKEN }} ${{ secrets.CHANNEL_ID }} AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}
+        env:
+          BOT_TOKEN : ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID : ${{ secrets.CHANNEL_ID }}
+        run: python public2khl.py './AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}.zip'
