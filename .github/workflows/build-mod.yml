@@ -36,14 +36,14 @@ jobs:
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}
+          name: AnvilCraft-${{ env.datapack_version }}-1.18-build.${{ github.run_number }}
           path: out/
       - name: Create package
-        run: cd out/ && zip -9 -r '../AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}.zip' * && cd ..
+        run: cd out/ && zip -9 -r '../AnvilCraft-${{ env.datapack_version }}-1.18-build.${{ github.run_number }}.zip' * && cd ..
       - name: Install khl.py
         run: pip install khl.py
       - name: Upload to kaiheila.co
         env:
           BOT_TOKEN : ${{ secrets.BOT_TOKEN }}
           CHANNEL_ID : ${{ secrets.CHANNEL_ID }}
-        run: python public2khl.py './AnvilCraft-${{ env.datapack_version }}-1.18+build.${{ github.run_number }}.zip'
+        run: python public2khl.py './AnvilCraft-${{ env.datapack_version }}-1.18-build.${{ github.run_number }}.zip'

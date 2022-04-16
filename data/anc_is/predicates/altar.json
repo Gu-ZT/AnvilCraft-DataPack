@@ -10,7 +10,9 @@
                 "offsetZ": 1,
                 "predicate": {
                     "block": {
-                        "blocks": ["anvil"]
+                        "blocks": [
+                            "anvil"
+                        ]
                     }
                 }
             }
@@ -24,7 +26,9 @@
                 "offsetZ": -1,
                 "predicate": {
                     "block": {
-                        "blocks": ["anvil"]
+                        "blocks": [
+                            "anvil"
+                        ]
                     }
                 }
             }
@@ -38,7 +42,9 @@
                 "offsetZ": 1,
                 "predicate": {
                     "block": {
-                        "blocks": ["anvil"]
+                        "blocks": [
+                            "anvil"
+                        ]
                     }
                 }
             }
@@ -52,7 +58,9 @@
                 "offsetZ": -1,
                 "predicate": {
                     "block": {
-                        "blocks": ["anvil"]
+                        "blocks": [
+                            "anvil"
+                        ]
                     }
                 }
             }
@@ -66,7 +74,9 @@
                 "offsetZ": 2,
                 "predicate": {
                     "block": {
-                        "blocks": ["anvil"]
+                        "blocks": [
+                            "anvil"
+                        ]
                     }
                 }
             }
@@ -80,7 +90,9 @@
                 "offsetZ": 2,
                 "predicate": {
                     "block": {
-                        "blocks": ["anvil"]
+                        "blocks": [
+                            "anvil"
+                        ]
                     }
                 }
             }
@@ -94,7 +106,9 @@
                 "offsetZ": -2,
                 "predicate": {
                     "block": {
-                        "blocks": ["anvil"]
+                        "blocks": [
+                            "anvil"
+                        ]
                     }
                 }
             }
@@ -108,7 +122,9 @@
                 "offsetZ": -2,
                 "predicate": {
                     "block": {
-                        "blocks": ["anvil"]
+                        "blocks": [
+                            "anvil"
+                        ]
                     }
                 }
             }
@@ -122,7 +138,25 @@
                 "offsetZ": 1,
                 "predicate": {
                     "block": {
-                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "blocks": [
+                            "candle",
+                            "blue_candle",
+                            "red_candle",
+                            "gray_candle",
+                            "lime_candle",
+                            "pink_candle",
+                            "cyan_candle",
+                            "green_candle",
+                            "white_candle",
+                            "brown_candle",
+                            "black_candle",
+                            "orange_candle",
+                            "purple_candle",
+                            "yellow_candle",
+                            "magenta_candle",
+                            "light_blue_candle",
+                            "light_gray_candle"
+                        ],
                         "state": {
                             "lit": true
                         }
@@ -139,7 +173,25 @@
                 "offsetZ": 1,
                 "predicate": {
                     "block": {
-                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "blocks": [
+                            "candle",
+                            "blue_candle",
+                            "red_candle",
+                            "gray_candle",
+                            "lime_candle",
+                            "pink_candle",
+                            "cyan_candle",
+                            "green_candle",
+                            "white_candle",
+                            "brown_candle",
+                            "black_candle",
+                            "orange_candle",
+                            "purple_candle",
+                            "yellow_candle",
+                            "magenta_candle",
+                            "light_blue_candle",
+                            "light_gray_candle"
+                        ],
                         "state": {
                             "lit": true
                         }
@@ -156,7 +208,25 @@
                 "offsetZ": 0,
                 "predicate": {
                     "block": {
-                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "blocks": [
+                            "candle",
+                            "blue_candle",
+                            "red_candle",
+                            "gray_candle",
+                            "lime_candle",
+                            "pink_candle",
+                            "cyan_candle",
+                            "green_candle",
+                            "white_candle",
+                            "brown_candle",
+                            "black_candle",
+                            "orange_candle",
+                            "purple_candle",
+                            "yellow_candle",
+                            "magenta_candle",
+                            "light_blue_candle",
+                            "light_gray_candle"
+                        ],
                         "state": {
                             "lit": true
                         }
@@ -173,7 +243,25 @@
                 "offsetZ": -1,
                 "predicate": {
                     "block": {
-                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "blocks": [
+                            "candle",
+                            "blue_candle",
+                            "red_candle",
+                            "gray_candle",
+                            "lime_candle",
+                            "pink_candle",
+                            "cyan_candle",
+                            "green_candle",
+                            "white_candle",
+                            "brown_candle",
+                            "black_candle",
+                            "orange_candle",
+                            "purple_candle",
+                            "yellow_candle",
+                            "magenta_candle",
+                            "light_blue_candle",
+                            "light_gray_candle"
+                        ],
                         "state": {
                             "lit": true
                         }
@@ -190,7 +278,25 @@
                 "offsetZ": -1,
                 "predicate": {
                     "block": {
-                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "blocks": [
+                            "candle",
+                            "blue_candle",
+                            "red_candle",
+                            "gray_candle",
+                            "lime_candle",
+                            "pink_candle",
+                            "cyan_candle",
+                            "green_candle",
+                            "white_candle",
+                            "brown_candle",
+                            "black_candle",
+                            "orange_candle",
+                            "purple_candle",
+                            "yellow_candle",
+                            "magenta_candle",
+                            "light_blue_candle",
+                            "light_gray_candle"
+                        ],
                         "state": {
                             "lit": true
                         }
@@ -207,7 +313,25 @@
                 "offsetZ": -1,
                 "predicate": {
                     "block": {
-                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "blocks": [
+                            "candle",
+                            "blue_candle",
+                            "red_candle",
+                            "gray_candle",
+                            "lime_candle",
+                            "pink_candle",
+                            "cyan_candle",
+                            "green_candle",
+                            "white_candle",
+                            "brown_candle",
+                            "black_candle",
+                            "orange_candle",
+                            "purple_candle",
+                            "yellow_candle",
+                            "magenta_candle",
+                            "light_blue_candle",
+                            "light_gray_candle"
+                        ],
                         "state": {
                             "lit": true
                         }
@@ -224,7 +348,25 @@
                 "offsetZ": 0,
                 "predicate": {
                     "block": {
-                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "blocks": [
+                            "candle",
+                            "blue_candle",
+                            "red_candle",
+                            "gray_candle",
+                            "lime_candle",
+                            "pink_candle",
+                            "cyan_candle",
+                            "green_candle",
+                            "white_candle",
+                            "brown_candle",
+                            "black_candle",
+                            "orange_candle",
+                            "purple_candle",
+                            "yellow_candle",
+                            "magenta_candle",
+                            "light_blue_candle",
+                            "light_gray_candle"
+                        ],
                         "state": {
                             "lit": true
                         }
@@ -241,7 +383,25 @@
                 "offsetZ": 1,
                 "predicate": {
                     "block": {
-                        "blocks": ["candle","blue_candle","red_candle","gray_candle","lime_candle","pink_candle","cyan_candle","green_candle","white_candle","brown_candle","black_candle","orange_candle","purple_candle","yellow_candle","magenta_candle","light_blue_candle","light_gray_candle"],
+                        "blocks": [
+                            "candle",
+                            "blue_candle",
+                            "red_candle",
+                            "gray_candle",
+                            "lime_candle",
+                            "pink_candle",
+                            "cyan_candle",
+                            "green_candle",
+                            "white_candle",
+                            "brown_candle",
+                            "black_candle",
+                            "orange_candle",
+                            "purple_candle",
+                            "yellow_candle",
+                            "magenta_candle",
+                            "light_blue_candle",
+                            "light_gray_candle"
+                        ],
                         "state": {
                             "lit": true
                         }
