@@ -1,13 +1,7 @@
 name: Build Mod
 
 on: 
-  push:
-    paths:
-      - "assets/*"
-      - "data/*"
-      - "pack.mcmeta"
-      - "pack.png"
-      - "LICENSE"
+  - push
 
 env:
   datapack_version : 0.6.6
