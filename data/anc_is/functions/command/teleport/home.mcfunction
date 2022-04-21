@@ -1,7 +1,7 @@
 # 标记玩家
 tag @s add aiTpPlayer
 # 生成as
-summon marker ~ ~ ~ {Tags:["aiTpHome"],NoGravity:1b}
+execute in minecraft:overworld run summon marker 0 0 0 {Tags:["aiTpHome"],NoGravity:1b}
 # 寻找传送点
 data modify storage anc:s3_io obj set value {}
 scoreboard players operation addr tmp = @s ancUid
