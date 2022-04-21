@@ -1,0 +1,44 @@
+name: Release Mod
+
+on:
+  release:
+    types: [ published ]
+
+
+env:
+  datapack_version: 0.6.6
+
+jobs:
+  build-in-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+      - name: Copy datapack files to out
+        run: |
+          mkdir out
+          cp -r assets/ out/
+          cp -r data/ out/
+          cp pack.mcmeta out/
+          cp pack.png out/
+          cp LICENSE out/
+      - name: Publish artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: AnvilCraft-${{ github.event.release.tag_name }}-1.18
+          path: out/
+      - name: Create package
+        run: cd out/ && zip -9 -r '../AnvilCraft-${{ github.event.release.tag_name }}-1.18.zip' * && cd ..
+      - name: Install khl.py
+        run: pip install khl.py
+      - name: Upload to kaiheila.co
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.RELEASE_CHANNEL_ID }}
+        run: python public2khl.py './AnvilCraft-${{ github.event.release.tag_name }}-1.18.zip'
+      - name: Upload assets to GitHub
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: ./AnvilCraft-${{ github.event.release.tag_name }}-1.18.zip
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
