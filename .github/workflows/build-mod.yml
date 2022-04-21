@@ -1,7 +1,14 @@
 name: Build Mod
 
 on: 
-  - push
+  push:
+    paths:
+      - ".github/**"
+      - "assets/**"
+      - "data/**"
+      - "pack.mcmeta"
+      - "pack.png"
+      - "LICENSE"
 
 env:
   datapack_version : 0.6.6
@@ -15,18 +22,14 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
-      - name: Make out dir
-        run: mkdir out/
-      - name: Copy assets file
-        run: cp -r assets/ out/
-      - name: Copy data file
-        run: cp -r data/ out/
-      - name: Copy pack.mcmeta
-        run: cp pack.mcmeta out/
-      - name: Copy pack.png
-        run: cp pack.png out/
-      - name: Copy LICENSE
-        run: cp LICENSE out/
+      - name: Copy datapack files to out
+        run: |
+          mkdir out
+          cp -r assets/ out/
+          cp -r data/ out/
+          cp pack.mcmeta out/
+          cp pack.png out/
+          cp LICENSE out/
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
