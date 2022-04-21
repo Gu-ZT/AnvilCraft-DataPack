@@ -14,14 +14,14 @@ data remove storage anc:temp ChangeItem[1].Slot
 execute if score #inoverworld ancValue matches 1 run setblock ~ 319 ~ shulker_box
 execute if score #inoverworld ancValue matches 1 run loot replace block ~ 319 ~ container.0 loot anc:gui/empty
 execute if score #inoverworld ancValue matches 1 run data modify block ~ 319 ~ Items[0] set from storage anc:temp ChangeItem[1]
-execute if score #inoverworld ancValue matches 1 run loot replace entity @s weapon.mainhand mine ~ 319 ~ tnt{drop_content:1b}
+execute if score #inoverworld ancValue matches 1 run item replace entity @s weapon.mainhand from block ~ 319 ~ container.0
 execute if score #inoverworld ancValue matches 1 run data modify block ~ 319 ~ Items[0] set from storage anc:temp ChangeItem[0]
-execute if score #inoverworld ancValue matches 1 run loot replace entity @s weapon.offhand mine ~ 319 ~ tnt{drop_content:1b}
+execute if score #inoverworld ancValue matches 1 run item replace entity @s weapon.offhand from block ~ 319 ~ container.0
 execute if score #inoverworld ancValue matches 1 run setblock ~ 319 ~ air
 execute if score #inoverworld ancValue matches 0 run setblock ~ 255 ~ shulker_box
 execute if score #inoverworld ancValue matches 0 run loot replace block ~ 255 ~ container.0 loot anc:gui/empty
 execute if score #inoverworld ancValue matches 0 run data modify block ~ 255 ~ Items[0] set from storage anc:temp ChangeItem[1]
-execute if score #inoverworld ancValue matches 0 run loot replace entity @s weapon.mainhand mine ~ 255 ~ tnt{drop_content:1b}
+execute if score #inoverworld ancValue matches 0 run item replace entity @s weapon.mainhand from block ~ 255 ~ container.0
 execute if score #inoverworld ancValue matches 0 run data modify block ~ 255 ~ Items[0] set from storage anc:temp ChangeItem[0]
-execute if score #inoverworld ancValue matches 0 run loot replace entity @s weapon.offhand mine ~ 255 ~ tnt{drop_content:1b}
+execute if score #inoverworld ancValue matches 0 run item replace entity @s weapon.offhand from block ~ 255 ~ container.0
 execute if score #inoverworld ancValue matches 0 run setblock ~ 255 ~ air
