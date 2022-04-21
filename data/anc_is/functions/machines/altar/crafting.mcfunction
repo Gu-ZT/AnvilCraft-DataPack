@@ -1,0 +1,1 @@
+execute if score #exe_count ancValue matches 1.. as @e[type=minecraft:item,nbt={Item:{id:"minecraft:enchanting_table",Count:1b}},distance=..1] at @s if block ~ ~ ~ #minecraft:cauldrons run function anc_is:machines/altar/crafting/loot

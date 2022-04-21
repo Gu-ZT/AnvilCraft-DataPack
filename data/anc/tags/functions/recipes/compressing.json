@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "anc_me:mending_2/main"
+        "anc_me:mending_2/main",
+        "anc_is:machines/altar/crafting"
     ]
 }
