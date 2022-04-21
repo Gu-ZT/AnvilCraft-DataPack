@@ -8,4 +8,5 @@ execute if score @s ancPlayerDeath matches 1.. run function anc:handle/death
 
 execute if score $ancSkylandMode ancConfig matches 1 if entity @s[advancements={anc:welcome/uid=true},tag=!ancIs] run function anc_is:handle/join
 
+# 应变之镐
 execute if data entity @s Inventory[{Slot:-106b,tag:{dict:["changeable_pickaxe"]}}] run function anc:items/changeable_pickaxe/change
