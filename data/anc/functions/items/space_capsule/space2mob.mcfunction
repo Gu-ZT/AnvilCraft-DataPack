@@ -76,6 +76,7 @@ execute at @s align xyz run data modify entity @e[type=!#anc:not_catch,sort=near
 data modify entity @s Item.tag.CustomModelData set value 11140059
 data modify entity @s Item.tag.MobHave set value 0b
 data remove entity @s Item.tag.MobNBT
+data remove entity @s Item.tag.display.Lore
 data modify entity @s Item.tag.MobNBT set value {}
 tag @s add ancSpace
 # kill @s
