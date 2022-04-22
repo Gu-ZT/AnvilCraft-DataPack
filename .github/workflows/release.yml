@@ -4,10 +4,6 @@ on:
   release:
     types: [ published ]
 
-
-env:
-  datapack_version: 0.6.6
-
 jobs:
   build-in-linux:
     runs-on: ubuntu-latest
