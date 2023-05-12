@@ -11,3 +11,16 @@ execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:i
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:ancient_debris"}}] at @s run loot spawn ~ ~ ~ loot anc:debris_scrap
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",tag:{Damage:0}}}] at @s run function anc:recipes/decomposing/loot/elytra_loot
 execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{tag:{dict:["seal_slate"]}}}] at @s run function anc:recipes/decomposing/loot/seal_slate
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:chest_minecart"}}] at @s run function anc:recipes/decomposing/loot/minecarts/chest_minecart
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:furnace_minecart"}}] at @s run function anc:recipes/decomposing/loot/minecarts/furnace_minecart
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:tnt_minecart"}}] at @s run function anc:recipes/decomposing/loot/minecarts/tnt_minecart
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:hopper_minecart"}}] at @s run function anc:recipes/decomposing/loot/minecarts/hopper_minecart
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:oak_chest_boat"}}] at @s run function anc:recipes/decomposing/loot/boats/oak_chest_boat
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_chest_boat"}}] at @s run function anc:recipes/decomposing/loot/boats/spruce_chest_boat
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:birch_chest_boat"}}] at @s run function anc:recipes/decomposing/loot/boats/birch_chest_boat
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:jungle_chest_boat"}}] at @s run function anc:recipes/decomposing/loot/boats/jungle_chest_boat
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:acacia_chest_boat"}}] at @s run function anc:recipes/decomposing/loot/boats/acacia_chest_boat
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:dark_oak_chest_boat"}}] at @s run function anc:recipes/decomposing/loot/boats/dark_oak_chest_boat
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:mangrove_chest_boat"}}] at @s run function anc:recipes/decomposing/loot/boats/mangrove_chest_boat
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:cherry_chest_boat"}}] at @s run function anc:recipes/decomposing/loot/boats/cherry_chest_boat
+execute if score $ancTemp ancItemCount matches 1.. if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:bamboo_chest_raft"}}] at @s run function anc:recipes/decomposing/loot/boats/bamboo_chest_raft

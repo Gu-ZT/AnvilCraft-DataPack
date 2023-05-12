@@ -322,6 +322,97 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:chest_minecart\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:furnace_minecart\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:tnt_minecart\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:hopper_minecart\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:oak_chest_boat\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:spruce_chest_boat\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:birch_chest_boat\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:jungle_chest_boat\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:acacia_chest_boat\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:dark_oak_chest_boat\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:mangrove_chest_boat\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:cherry_chest_boat\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:bamboo_chest_raft\",Count:1b}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
 				"nbt": "{Item:{tag:{id:\"anc:kernel_of_the_sea\"}}}"
 			}
 		},
