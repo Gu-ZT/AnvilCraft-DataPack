@@ -71,7 +71,9 @@ execute if data entity @s Item.tag{mobId:"minecraft:zombified_piglin"} run summo
 execute if data entity @s Item.tag{mobId:"minecraft:axolotl"} run summon minecraft:axolotl
 execute if data entity @s Item.tag{mobId:"minecraft:glow_squid"} run summon minecraft:glow_squid
 execute if data entity @s Item.tag{mobId:"minecraft:goat"} run summon minecraft:goat
-
+execute if data entity @s Item.tag{mobId:"minecraft:allay"} run summon minecraft:allay
+execute if data entity @s Item.tag{mobId:"minecraft:frog"} run summon minecraft:frog
+execute if data entity @s Item.tag{mobId:"minecraft:tadpole"} run summon minecraft:tadpole
 execute at @s align xyz run data modify entity @e[type=!#anc:not_catch,sort=nearest,limit=1,dy=0,dz=0,dx=0] {} merge from entity @s Item.tag.MobNBT
 data modify entity @s Item.tag.CustomModelData set value 11140059
 data modify entity @s Item.tag.MobHave set value 0b

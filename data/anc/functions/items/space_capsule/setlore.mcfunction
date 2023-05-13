@@ -71,3 +71,6 @@ execute if data entity @s Item.tag{mobId:"minecraft:zombified_piglin"} run data 
 execute if data entity @s Item.tag{mobId:"minecraft:axolotl"} run data modify entity @s Item.tag.display.Lore insert 0 value '{"translate":"entity.minecraft.axolotl","color":"green","italic":false}'
 execute if data entity @s Item.tag{mobId:"minecraft:glow_squid"} run data modify entity @s Item.tag.display.Lore insert 0 value '{"translate":"entity.minecraft.glow_squid","color":"green","italic":false}'
 execute if data entity @s Item.tag{mobId:"minecraft:goat"} run data modify entity @s Item.tag.display.Lore insert 0 value '{"translate":"entity.minecraft.goat","color":"green","italic":false}'
+execute if data entity @s Item.tag{mobId:"minecraft:allay"} run data modify entity @s Item.tag.display.Lore insert 0 value '{"translate":"entity.minecraft.allay","color":"green","italic":false}'
+execute if data entity @s Item.tag{mobId:"minecraft:frog"} run data modify entity @s Item.tag.display.Lore insert 0 value '{"translate":"entity.minecraft.frog","color":"green","italic":false}'
+execute if data entity @s Item.tag{mobId:"minecraft:tadpole"} run data modify entity @s Item.tag.display.Lore insert 0 value '{"translate":"entity.minecraft.tadpole","color":"green","italic":false}'

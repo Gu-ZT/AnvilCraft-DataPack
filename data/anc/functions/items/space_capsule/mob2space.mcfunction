@@ -71,6 +71,9 @@ execute unless score @s ancSuccess matches 1 at @s align xyz if entity @e[type=m
 execute unless score @s ancSuccess matches 1 at @s align xyz if entity @e[type=minecraft:axolotl,sort=nearest,limit=1,dy=0,dz=0,dx=0] store success score @s ancSuccess run data modify entity @s Item.tag.mobId set value "minecraft:axolotl"
 execute unless score @s ancSuccess matches 1 at @s align xyz if entity @e[type=minecraft:glow_squid,sort=nearest,limit=1,dy=0,dz=0,dx=0] store success score @s ancSuccess run data modify entity @s Item.tag.mobId set value "minecraft:glow_squid"
 execute unless score @s ancSuccess matches 1 at @s align xyz if entity @e[type=minecraft:goat,sort=nearest,limit=1,dy=0,dz=0,dx=0] store success score @s ancSuccess run data modify entity @s Item.tag.mobId set value "minecraft:goat"
+execute unless score @s ancSuccess matches 1 at @s align xyz if entity @e[type=minecraft:allay,sort=nearest,limit=1,dy=0,dz=0,dx=0] store success score @s ancSuccess run data modify entity @s Item.tag.mobId set value "minecraft:allay"
+execute unless score @s ancSuccess matches 1 at @s align xyz if entity @e[type=minecraft:frog,sort=nearest,limit=1,dy=0,dz=0,dx=0] store success score @s ancSuccess run data modify entity @s Item.tag.mobId set value "minecraft:frog"
+execute unless score @s ancSuccess matches 1 at @s align xyz if entity @e[type=minecraft:tadpole,sort=nearest,limit=1,dy=0,dz=0,dx=0] store success score @s ancSuccess run data modify entity @s Item.tag.mobId set value "minecraft:tadpole"
 execute if score @s ancSuccess matches 1 run data modify entity @s Item.tag.MobHave set value 1b
 execute if score @s ancSuccess matches 1 at @s align xyz run data modify entity @s Item.tag.MobNBT merge from entity @e[type=!#anc:not_catch,sort=nearest,limit=1,dy=0,dz=0,dx=0] {}
 execute if score @s ancSuccess matches 1 run data remove entity @s Item.tag.MobNBT.Pos
