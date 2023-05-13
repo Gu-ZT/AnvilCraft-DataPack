@@ -418,6 +418,28 @@ execute if score #make ancValue matches 1.. store result storage anc:temp input[
 scoreboard players set #Count ancValue 0
 scoreboard players set #left ancValue 0
 scoreboard players set #make ancValue 0
+execute if score #exe_count ancValue matches 1.. as @e[type=minecraft:item,nbt={Item:{id:"minecraft:popped_chorus_fruit"}},distance=..1] run function anc:recipes/compressing/add_count
+scoreboard players set #multi ancValue 4
+execute if score #exe_count ancValue matches 1.. run function anc:recipes/compressing/get_count
+execute if score #left ancValue matches 1.. run data modify storage anc:temp input append value {id:"minecraft:popped_chorus_fruit"}
+execute if score #left ancValue matches 1.. store result storage anc:temp input[-1].Count int 1 run scoreboard players get #left ancValue
+execute if score #make ancValue matches 1.. run data modify storage anc:temp input append value {id:"minecraft:purpur_block"}
+execute if score #make ancValue matches 1.. store result storage anc:temp input[-1].Count int 1 run scoreboard players get #make ancValue
+
+scoreboard players set #Count ancValue 0
+scoreboard players set #left ancValue 0
+scoreboard players set #make ancValue 0
+execute if score #exe_count ancValue matches 1.. as @e[type=minecraft:item,nbt={Item:{id:"minecraft:disk_fragment_5"}},distance=..1] run function anc:recipes/compressing/add_count
+scoreboard players set #multi ancValue 9
+execute if score #exe_count ancValue matches 1.. run function anc:recipes/compressing/get_count
+execute if score #left ancValue matches 1.. run data modify storage anc:temp input append value {id:"minecraft:disk_fragment_5"}
+execute if score #left ancValue matches 1.. store result storage anc:temp input[-1].Count int 1 run scoreboard players get #left ancValue
+execute if score #make ancValue matches 1.. run data modify storage anc:temp input append value {id:"minecraft:music_disk_5"}
+execute if score #make ancValue matches 1.. store result storage anc:temp input[-1].Count int 1 run scoreboard players get #make ancValue
+
+scoreboard players set #Count ancValue 0
+scoreboard players set #left ancValue 0
+scoreboard players set #make ancValue 0
 execute if score #exe_count ancValue matches 1.. as @e[type=minecraft:item,nbt={Item:{tag:{id:"anc:fruit_of_the_sea"}}},distance=..1] run function anc:recipes/compressing/add_count
 scoreboard players set #multi ancValue 1
 execute if score #exe_count ancValue matches 1.. run function anc:recipes/compressing/get_count

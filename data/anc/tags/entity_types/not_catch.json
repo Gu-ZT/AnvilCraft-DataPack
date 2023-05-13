@@ -28,11 +28,13 @@
         "falling_block",
         "llama_spit",
         "boat",
+        "chest_boat",
         "wither_skull",
         "egg",
         "potion",
         "shulker_bullet",
         "ender_dragon",
+        "warden",
         "wither"
     ]
 }

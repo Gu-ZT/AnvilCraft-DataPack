@@ -271,6 +271,20 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:popped_chorus_fruit\"}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:disk_fragment_5\"}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
 				"nbt": "{Item:{tag:{id:\"anc:fruit_of_the_sea\"}}}"
 			}
 		}

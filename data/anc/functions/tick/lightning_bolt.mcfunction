@@ -3,3 +3,4 @@ execute if score $magnet ancSuccess matches 1 run advancement grant @a[distance=
 execute if score $magnet ancSuccess matches 1 run scoreboard players reset $magnet ancSuccess
 
 execute as @e[type=slime,distance=..4] at @s run function anc:handle/summon_magma_cube
+execute as @e[type=vex,distance=..4] at @s run function anc:handle/summon_allay

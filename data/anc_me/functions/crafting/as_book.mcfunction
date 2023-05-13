@@ -36,4 +36,5 @@ execute if data storage anc:temp enchant_list[{id:"minecraft:protection",lvl:4s}
 execute if data storage anc:temp enchant_list[{id:"minecraft:respiration",lvl:3s}] run function anc_me:crafting/enchanted_book/respiration_4
 execute if data storage anc:temp enchant_list[{id:"minecraft:thorns",lvl:3s}] run function anc_me:crafting/enchanted_book/thorns_4
 execute if data storage anc:temp enchant_list[{id:"minecraft:soul_speed",lvl:3s}] run function anc_me:crafting/enchanted_book/soul_speed_4
+execute if data storage anc:temp enchant_list[{id:"minecraft:swift_sneak",lvl:3s}] run function anc_me:crafting/enchanted_book/swift_sneak_4
 tag @s remove amCrafting
